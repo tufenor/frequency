@@ -479,7 +479,8 @@ async function loadOwnerSubscription() {
       const plan = data.assinatura?.plano || "Frequency";
       const message = whatsappPaymentMessage(name, plan);
       const whatsapp = element("a", traduzir("Continuar pelo WhatsApp"), "button button-primary");
-      whatsapp.href = `https://wa.me/59175443696?text=${encodeURIComponent(message)}`;
+      const salesPhone = (data.contato?.contato_telefone || "").replace(/\D/g, "");
+      if (!salesPhone) { whatsapp.hidden = true; } else { whatsapp.href = `https://wa.me/${salesPhone}?text=${encodeURIComponent(message)}`; }
       whatsapp.target = "_blank"; whatsapp.rel = "noopener noreferrer";
       const dialogError = $("#business-dialog-error");
       dialogError.replaceChildren(element("span", traduzir("O pagamento online está indisponível. Continue pelo WhatsApp para concluir.")), whatsapp.cloneNode(true));
@@ -502,8 +503,8 @@ async function loadOwnerSubscription() {
   if (invoice) await privateImage("/assinatura-frequency/qr", "#owner-frequency-qr", "#owner-frequency-qr-empty", "owner-qr");
   else { $("#owner-frequency-qr").hidden = true; $("#owner-frequency-qr-empty").hidden = true; }
   const contact = $("#owner-frequency-contact"); contact.replaceChildren();
-  const adminEmail = data.contato?.contato_email || "frequencygym@gmail.com";
-  const adminPhone = data.contato?.contato_telefone || "+591 75443696";
+  const adminEmail = data.contato?.contato_email || "";
+  const adminPhone = data.contato?.contato_telefone || "";
   contact.append(element("p", adminEmail), element("p", adminPhone));
   if (invoice) {
     const message = `Olá, enviei o comprovante da fatura Frequency ${invoice.referencia || invoice.id}. Academia: ${state.user?.academia_nome || ""}.`;

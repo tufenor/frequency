@@ -4,7 +4,7 @@ if (translations) {
     const service = translations;
     service.captureStatic();
     let locale = service.initialLocale();
-    const whatsappNumber = "59175443696";
+    const whatsappNumber = ""; // defina o WhatsApp comercial do negocio
     const planNames = {
         essencial: "Essencial",
         profissional: "Profissional",
@@ -106,6 +106,7 @@ if (translations) {
             const plan = asPlanKey(link.dataset.plan);
             if (bolivia) {
                 const message = whatsappMessages[locale](planNames[plan]);
+                if (!whatsappNumber) { link.hidden = true; return; }
                 link.href = `https://web.whatsapp.com/send/?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`;
                 link.target = "_blank";
                 link.rel = "noopener noreferrer";

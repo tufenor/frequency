@@ -3,7 +3,7 @@
   if (!i18n) return;
   i18n.captureStatic();
   let locale = i18n.initialLocale();
-  const whatsappNumber = "59175443696";
+  const whatsappNumber = ""; // defina o WhatsApp comercial do negocio
   const savedCountry = (() => { try { return localStorage.getItem("frequency.sales.country"); } catch { return null; } })();
   const countrySelect = document.querySelector("#sales-country");
   const status = document.querySelector("#sales-route-status");
@@ -90,6 +90,7 @@
       const plan = link.dataset.plan || "profissional";
       if (bolivia) {
         const message = (whatsappMessages[locale] || whatsappMessages["en-US"])(planNames[plan]);
+        if (!whatsappNumber) { link.hidden = true; return; }
         link.href = `https://web.whatsapp.com/send/?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`;
         link.target = "_blank";
         link.rel = "noopener noreferrer";

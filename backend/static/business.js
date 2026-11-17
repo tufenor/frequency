@@ -383,7 +383,7 @@ async function loadOwnerSubscription() {
   else { $("#owner-frequency-qr").hidden = true; $("#owner-frequency-qr-empty").hidden = true; }
   const contact = $("#owner-frequency-contact"); contact.replaceChildren();
   const adminEmail = data.contato?.contato_email || "contato@exemplo.invalid";
-  const adminPhone = data.contato?.contato_telefone || "+591 75443696";
+  const adminPhone = data.contato?.contato_telefone || "";
   contact.append(element("p", adminEmail), element("p", adminPhone));
   if (invoice) {
     const message = `OlÃ¡, enviei o comprovante da fatura Frequency ${invoice.referencia || invoice.id}. Academia: ${state.user?.academia_nome || ""}.`;

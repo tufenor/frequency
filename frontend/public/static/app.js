@@ -1,3 +1,5 @@
+const SALES_WHATSAPP = ""; // defina o numero comercial do negocio (formato 591XXXXXXXX)
+
 // Modo de teste: simula internet indisponível sem desligar a rede do computador.
 // Ative com ?teste_offline=1 e desative com ?teste_offline=0.
 const offlineTestStorageKey = "frequency.test_offline";
@@ -2170,7 +2172,7 @@ $("#login-form").addEventListener("submit", async (event) => {
 $("#forgot-password-action")?.addEventListener("click", () => {
   const email = $("#login-email")?.value.trim() || "";
   const message = email ? `Olá, preciso recuperar o acesso ao Frequency. Meu e-mail de cadastro é ${email}.` : "Olá, preciso recuperar o acesso ao Frequency. Meu e-mail de cadastro é: ";
-  window.open(`https://wa.me/59175443696?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer");
+  if (SALES_WHATSAPP) window.open(`https://wa.me/${SALES_WHATSAPP}?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer");
 });
 
 $("#logout-button").addEventListener("click", () => endSession("Você saiu do Frequency."));
@@ -2231,7 +2233,8 @@ function configureSignupNextActions() {
   const country = signupCountry?.value || "Brasil";
   const whatsappMessage = (signupWhatsappMessages[interfaceLocale] || signupWhatsappMessages["en-US"])(planName);
   signupCheckoutAction.href = `/app?plano=${encodeURIComponent(plan)}`;
-  signupWhatsappAction.href = `https://web.whatsapp.com/send/?phone=59175443696&text=${encodeURIComponent(whatsappMessage)}`;
+  signupWhatsappAction.hidden = !SALES_WHATSAPP;
+  signupWhatsappAction.href = `https://web.whatsapp.com/send/?phone=${SALES_WHATSAPP}&text=${encodeURIComponent(whatsappMessage)}`;
   signupCheckoutAction.classList.toggle("button-primary", country !== "Bolivia");
   signupCheckoutAction.classList.toggle("button-secondary", country === "Bolivia");
   signupWhatsappAction.classList.toggle("button-primary", country === "Bolivia");
@@ -2248,7 +2251,8 @@ const signupSupportMessages = {
 function configureSignupSupportAction() {
   if (!signupSupportAction) return;
   const message = signupSupportMessages[interfaceLocale] || signupSupportMessages["en-US"];
-  signupSupportAction.href = `https://web.whatsapp.com/send/?phone=59175443696&text=${encodeURIComponent(message)}`;
+  signupSupportAction.hidden = !SALES_WHATSAPP;
+  signupSupportAction.href = `https://web.whatsapp.com/send/?phone=${SALES_WHATSAPP}&text=${encodeURIComponent(message)}`;
 }
 
 function syncSignupCountry() {

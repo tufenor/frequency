@@ -19,7 +19,7 @@ O produto reduz o trabalho manual da recepção e ajuda o dono a saber quem est�
 Site público: https://frequencygym.tech  
 Aplicativo: https://frequencygym.tech/app  
 Instagram: https://www.instagram.com/frequencygym.bo/  
-WhatsApp comercial: https://wa.me/59175443696  
+WhatsApp comercial: https://wa.me/00000000000  
 E-mail de contato: tufenor@gmail.com
 
 ## 2. Público principal

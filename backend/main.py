@@ -4971,8 +4971,8 @@ def obter_configuracao_frequency(admin=Depends(somente_admin_plataforma)):
             "WHERE id = 1"
         ).fetchone()
     return {
-        "contato_email": configuracao["contato_email"] or os.getenv("FREQUENCY_ADMIN_EMAIL", "frequencygym@gmail.com"),
-        "contato_telefone": configuracao["contato_telefone"] or os.getenv("FREQUENCY_ADMIN_PHONE", "+591 75443696"),
+        "contato_email": configuracao["contato_email"] or os.getenv("FREQUENCY_ADMIN_EMAIL", ""),
+        "contato_telefone": configuracao["contato_telefone"] or os.getenv("FREQUENCY_ADMIN_PHONE", ""),
     }
 
 
@@ -5028,8 +5028,8 @@ def minha_assinatura_frequency(usuario=Depends(usuario_atual)):
     if contato is None:
         contato = {"contato_email": None, "contato_telefone": None}
     contato = {
-        "contato_email": contato["contato_email"] or os.getenv("FREQUENCY_ADMIN_EMAIL", "frequencygym@gmail.com"),
-        "contato_telefone": contato["contato_telefone"] or os.getenv("FREQUENCY_ADMIN_PHONE", "+591 75443696"),
+        "contato_email": contato["contato_email"] or os.getenv("FREQUENCY_ADMIN_EMAIL", ""),
+        "contato_telefone": contato["contato_telefone"] or os.getenv("FREQUENCY_ADMIN_PHONE", ""),
     }
     return {
         **{key: value for key, value in estado.items() if key != "fatura_frequency"},
