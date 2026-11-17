@@ -1,0 +1,3336 @@
+{
+ "grupos": [
+  "peito",
+  "costas",
+  "ombros",
+  "biceps",
+  "triceps",
+  "antebraco",
+  "abdomen",
+  "lombar",
+  "quadriceps",
+  "posteriores",
+  "gluteos",
+  "panturrilhas"
+ ],
+ "exercicios": [
+  {
+   "id": "pushups",
+   "nome": "Flexão de braço",
+   "grupo": "peito",
+   "nivel": "Iniciante",
+   "equip": "Peso do corpo",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": "pushups"
+  },
+  {
+   "id": "machine_bench_press",
+   "nome": "Supino na máquina",
+   "grupo": "peito",
+   "nivel": "Iniciante",
+   "equip": "Máquina",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": "machine_bench_press"
+  },
+  {
+   "id": "dumbbell_bench_press",
+   "nome": "Supino reto com halteres",
+   "grupo": "peito",
+   "nivel": "Iniciante",
+   "equip": "Halteres",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": "dumbbell_bench_press"
+  },
+  {
+   "id": "barbell_bench_press_medium_grip",
+   "nome": "Supino reto com barra",
+   "grupo": "peito",
+   "nivel": "Intermediário",
+   "equip": "Barra",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": "barbell_bench_press_medium_grip"
+  },
+  {
+   "id": "incline_dumbbell_flyes",
+   "nome": "Crucifixo inclinado com halteres",
+   "grupo": "peito",
+   "nivel": "Intermediário",
+   "equip": "Halteres",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": "incline_dumbbell_flyes"
+  },
+  {
+   "id": "cable_crossover",
+   "nome": "Crucifixo na polia (cross-over)",
+   "grupo": "peito",
+   "nivel": "Intermediário",
+   "equip": "Polia",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": "cable_crossover"
+  },
+  {
+   "id": "barbell_incline_bench_press_medium_grip",
+   "nome": "Supino inclinado com barra",
+   "grupo": "peito",
+   "nivel": "Avançado",
+   "equip": "Barra",
+   "series": 4,
+   "reps": "6-10",
+   "tempo": false,
+   "desc": 90,
+   "foto": "barbell_incline_bench_press_medium_grip"
+  },
+  {
+   "id": "single_arm_push_up",
+   "nome": "Flexão com um braço",
+   "grupo": "peito",
+   "nivel": "Avançado",
+   "equip": "Peso do corpo",
+   "series": 4,
+   "reps": "6-10",
+   "tempo": false,
+   "desc": 90,
+   "foto": "single_arm_push_up"
+  },
+  {
+   "id": "wide_grip_lat_pulldown",
+   "nome": "Puxada frontal aberta",
+   "grupo": "costas",
+   "nivel": "Iniciante",
+   "equip": "Polia",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": "wide_grip_lat_pulldown"
+  },
+  {
+   "id": "dumbbell_incline_row",
+   "nome": "Remada inclinada com halteres",
+   "grupo": "costas",
+   "nivel": "Iniciante",
+   "equip": "Halteres",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": "dumbbell_incline_row"
+  },
+  {
+   "id": "one_arm_dumbbell_row",
+   "nome": "Remada unilateral com halter",
+   "grupo": "costas",
+   "nivel": "Iniciante",
+   "equip": "Halteres",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": "one_arm_dumbbell_row"
+  },
+  {
+   "id": "bent_over_barbell_row",
+   "nome": "Remada curvada com barra",
+   "grupo": "costas",
+   "nivel": "Intermediário",
+   "equip": "Barra",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": "bent_over_barbell_row"
+  },
+  {
+   "id": "v_bar_pulldown",
+   "nome": "Puxada com triângulo",
+   "grupo": "costas",
+   "nivel": "Intermediário",
+   "equip": "Polia",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": "v_bar_pulldown"
+  },
+  {
+   "id": "chin_up",
+   "nome": "Barra fixa supinada",
+   "grupo": "costas",
+   "nivel": "Intermediário",
+   "equip": "Peso do corpo",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": "chin_up"
+  },
+  {
+   "id": "barbell_deadlift",
+   "nome": "Levantamento terra",
+   "grupo": "costas",
+   "nivel": "Avançado",
+   "equip": "Barra",
+   "series": 4,
+   "reps": "6-10",
+   "tempo": false,
+   "desc": 90,
+   "foto": "barbell_deadlift"
+  },
+  {
+   "id": "wide_grip_rear_pull_up",
+   "nome": "Barra fixa pegada aberta",
+   "grupo": "costas",
+   "nivel": "Avançado",
+   "equip": "Peso do corpo",
+   "series": 4,
+   "reps": "6-10",
+   "tempo": false,
+   "desc": 90,
+   "foto": "wide_grip_rear_pull_up"
+  },
+  {
+   "id": "side_lateral_raise",
+   "nome": "Elevação lateral",
+   "grupo": "ombros",
+   "nivel": "Iniciante",
+   "equip": "Halteres",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": "side_lateral_raise"
+  },
+  {
+   "id": "front_dumbbell_raise",
+   "nome": "Elevação frontal com halteres",
+   "grupo": "ombros",
+   "nivel": "Iniciante",
+   "equip": "Halteres",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": "front_dumbbell_raise"
+  },
+  {
+   "id": "leverage_shoulder_press",
+   "nome": "Desenvolvimento na máquina",
+   "grupo": "ombros",
+   "nivel": "Iniciante",
+   "equip": "Máquina",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": "leverage_shoulder_press"
+  },
+  {
+   "id": "dumbbell_shoulder_press",
+   "nome": "Desenvolvimento com halteres",
+   "grupo": "ombros",
+   "nivel": "Intermediário",
+   "equip": "Halteres",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": "dumbbell_shoulder_press"
+  },
+  {
+   "id": "reverse_flyes",
+   "nome": "Crucifixo inverso",
+   "grupo": "ombros",
+   "nivel": "Intermediário",
+   "equip": "Halteres",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": "reverse_flyes"
+  },
+  {
+   "id": "face_pull",
+   "nome": "Face pull",
+   "grupo": "ombros",
+   "nivel": "Intermediário",
+   "equip": "Polia",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": "face_pull"
+  },
+  {
+   "id": "barbell_shoulder_press",
+   "nome": "Desenvolvimento com barra",
+   "grupo": "ombros",
+   "nivel": "Avançado",
+   "equip": "Barra",
+   "series": 4,
+   "reps": "6-10",
+   "tempo": false,
+   "desc": 90,
+   "foto": "barbell_shoulder_press"
+  },
+  {
+   "id": "arnold_dumbbell_press",
+   "nome": "Desenvolvimento Arnold",
+   "grupo": "ombros",
+   "nivel": "Avançado",
+   "equip": "Halteres",
+   "series": 4,
+   "reps": "6-10",
+   "tempo": false,
+   "desc": 90,
+   "foto": "arnold_dumbbell_press"
+  },
+  {
+   "id": "barbell_curl",
+   "nome": "Rosca direta com barra",
+   "grupo": "biceps",
+   "nivel": "Iniciante",
+   "equip": "Barra",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": "barbell_curl"
+  },
+  {
+   "id": "alternate_hammer_curl",
+   "nome": "Rosca martelo alternada",
+   "grupo": "biceps",
+   "nivel": "Iniciante",
+   "equip": "Halteres",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": "alternate_hammer_curl"
+  },
+  {
+   "id": "concentration_curls",
+   "nome": "Rosca concentrada",
+   "grupo": "biceps",
+   "nivel": "Iniciante",
+   "equip": "Halteres",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": "concentration_curls"
+  },
+  {
+   "id": "cable_preacher_curl",
+   "nome": "Rosca scott na polia",
+   "grupo": "biceps",
+   "nivel": "Intermediário",
+   "equip": "Polia",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": "cable_preacher_curl"
+  },
+  {
+   "id": "dumbbell_alternate_bicep_curl",
+   "nome": "Rosca alternada com halteres",
+   "grupo": "biceps",
+   "nivel": "Intermediário",
+   "equip": "Halteres",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": "dumbbell_alternate_bicep_curl"
+  },
+  {
+   "id": "close_grip_ez_bar_curl",
+   "nome": "Rosca com barra W, pegada fechada",
+   "grupo": "biceps",
+   "nivel": "Intermediário",
+   "equip": "Barra",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": "close_grip_ez_bar_curl"
+  },
+  {
+   "id": "drag_curl",
+   "nome": "Rosca drag",
+   "grupo": "biceps",
+   "nivel": "Avançado",
+   "equip": "Barra",
+   "series": 4,
+   "reps": "6-10",
+   "tempo": false,
+   "desc": 90,
+   "foto": "drag_curl"
+  },
+  {
+   "id": "zottman_curl",
+   "nome": "Rosca Zottman",
+   "grupo": "biceps",
+   "nivel": "Avançado",
+   "equip": "Halteres",
+   "series": 4,
+   "reps": "6-10",
+   "tempo": false,
+   "desc": 90,
+   "foto": "zottman_curl"
+  },
+  {
+   "id": "triceps_pushdown",
+   "nome": "Tríceps na polia com barra",
+   "grupo": "triceps",
+   "nivel": "Iniciante",
+   "equip": "Polia",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": "triceps_pushdown"
+  },
+  {
+   "id": "triceps_pushdown_rope_attachment",
+   "nome": "Tríceps na polia com corda",
+   "grupo": "triceps",
+   "nivel": "Iniciante",
+   "equip": "Polia",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": "triceps_pushdown_rope_attachment"
+  },
+  {
+   "id": "bench_dips",
+   "nome": "Mergulho no banco",
+   "grupo": "triceps",
+   "nivel": "Iniciante",
+   "equip": "Peso do corpo",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": "bench_dips"
+  },
+  {
+   "id": "cable_rope_overhead_triceps_extension",
+   "nome": "Tríceps overhead na corda",
+   "grupo": "triceps",
+   "nivel": "Intermediário",
+   "equip": "Polia",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": "cable_rope_overhead_triceps_extension"
+  },
+  {
+   "id": "ez_bar_skullcrusher",
+   "nome": "Tríceps testa com barra W",
+   "grupo": "triceps",
+   "nivel": "Intermediário",
+   "equip": "Barra W",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": "ez_bar_skullcrusher"
+  },
+  {
+   "id": "dumbbell_one_arm_triceps_extension",
+   "nome": "Extensão de tríceps unilateral",
+   "grupo": "triceps",
+   "nivel": "Intermediário",
+   "equip": "Halteres",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": "dumbbell_one_arm_triceps_extension"
+  },
+  {
+   "id": "dips_triceps_version",
+   "nome": "Paralelas para tríceps",
+   "grupo": "triceps",
+   "nivel": "Avançado",
+   "equip": "Peso do corpo",
+   "series": 4,
+   "reps": "6-10",
+   "tempo": false,
+   "desc": 90,
+   "foto": "dips_triceps_version"
+  },
+  {
+   "id": "close_grip_barbell_bench_press",
+   "nome": "Supino fechado com barra",
+   "grupo": "triceps",
+   "nivel": "Avançado",
+   "equip": "Barra",
+   "series": 4,
+   "reps": "6-10",
+   "tempo": false,
+   "desc": 90,
+   "foto": "close_grip_barbell_bench_press"
+  },
+  {
+   "id": "crunches",
+   "nome": "Abdominal crunch",
+   "grupo": "abdomen",
+   "nivel": "Iniciante",
+   "equip": "Peso do corpo",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": "crunches"
+  },
+  {
+   "id": "plank",
+   "nome": "Prancha",
+   "grupo": "abdomen",
+   "nivel": "Iniciante",
+   "equip": "Peso do corpo",
+   "series": 3,
+   "reps": "30-45",
+   "tempo": true,
+   "desc": 60,
+   "foto": "plank"
+  },
+  {
+   "id": "cable_crunch",
+   "nome": "Abdominal na polia",
+   "grupo": "abdomen",
+   "nivel": "Iniciante",
+   "equip": "Polia",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": "cable_crunch"
+  },
+  {
+   "id": "decline_crunch",
+   "nome": "Abdominal declinado",
+   "grupo": "abdomen",
+   "nivel": "Intermediário",
+   "equip": "Peso do corpo",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": "decline_crunch"
+  },
+  {
+   "id": "flat_bench_lying_leg_raise",
+   "nome": "Elevação de pernas no banco",
+   "grupo": "abdomen",
+   "nivel": "Intermediário",
+   "equip": "Peso do corpo",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": "flat_bench_lying_leg_raise"
+  },
+  {
+   "id": "ab_crunch_machine",
+   "nome": "Abdominal na máquina",
+   "grupo": "abdomen",
+   "nivel": "Intermediário",
+   "equip": "Máquina",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": "ab_crunch_machine"
+  },
+  {
+   "id": "hanging_leg_raise",
+   "nome": "Elevação de pernas na barra",
+   "grupo": "abdomen",
+   "nivel": "Avançado",
+   "equip": "Peso do corpo",
+   "series": 4,
+   "reps": "6-10",
+   "tempo": false,
+   "desc": 90,
+   "foto": "hanging_leg_raise"
+  },
+  {
+   "id": "barbell_ab_rollout",
+   "nome": "Roda abdominal com barra",
+   "grupo": "abdomen",
+   "nivel": "Avançado",
+   "equip": "Barra",
+   "series": 4,
+   "reps": "6-10",
+   "tempo": false,
+   "desc": 90,
+   "foto": "barbell_ab_rollout"
+  },
+  {
+   "id": "bodyweight_squat",
+   "nome": "Agachamento livre",
+   "grupo": "quadriceps",
+   "nivel": "Iniciante",
+   "equip": "Peso do corpo",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": "bodyweight_squat"
+  },
+  {
+   "id": "leg_press",
+   "nome": "Leg press",
+   "grupo": "quadriceps",
+   "nivel": "Iniciante",
+   "equip": "Máquina",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": "leg_press"
+  },
+  {
+   "id": "leg_extensions",
+   "nome": "Cadeira extensora",
+   "grupo": "quadriceps",
+   "nivel": "Iniciante",
+   "equip": "Máquina",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": "leg_extensions"
+  },
+  {
+   "id": "barbell_squat",
+   "nome": "Agachamento com barra",
+   "grupo": "quadriceps",
+   "nivel": "Intermediário",
+   "equip": "Barra",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": "barbell_squat"
+  },
+  {
+   "id": "dumbbell_lunges",
+   "nome": "Avanço com halteres",
+   "grupo": "quadriceps",
+   "nivel": "Intermediário",
+   "equip": "Halteres",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": "dumbbell_lunges"
+  },
+  {
+   "id": "barbell_walking_lunge",
+   "nome": "Passada com barra",
+   "grupo": "quadriceps",
+   "nivel": "Intermediário",
+   "equip": "Barra",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": "barbell_walking_lunge"
+  },
+  {
+   "id": "barbell_full_squat",
+   "nome": "Agachamento profundo",
+   "grupo": "quadriceps",
+   "nivel": "Avançado",
+   "equip": "Barra",
+   "series": 4,
+   "reps": "6-10",
+   "tempo": false,
+   "desc": 90,
+   "foto": "barbell_full_squat"
+  },
+  {
+   "id": "front_barbell_squat",
+   "nome": "Agachamento frontal",
+   "grupo": "quadriceps",
+   "nivel": "Avançado",
+   "equip": "Barra",
+   "series": 4,
+   "reps": "6-10",
+   "tempo": false,
+   "desc": 90,
+   "foto": "front_barbell_squat"
+  },
+  {
+   "id": "lying_leg_curls",
+   "nome": "Mesa flexora",
+   "grupo": "posteriores",
+   "nivel": "Iniciante",
+   "equip": "Máquina",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": "lying_leg_curls"
+  },
+  {
+   "id": "seated_leg_curl",
+   "nome": "Cadeira flexora",
+   "grupo": "posteriores",
+   "nivel": "Iniciante",
+   "equip": "Máquina",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": "seated_leg_curl"
+  },
+  {
+   "id": "stiff_legged_dumbbell_deadlift",
+   "nome": "Stiff com halteres",
+   "grupo": "posteriores",
+   "nivel": "Iniciante",
+   "equip": "Halteres",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": "stiff_legged_dumbbell_deadlift"
+  },
+  {
+   "id": "romanian_deadlift",
+   "nome": "Levantamento terra romeno",
+   "grupo": "posteriores",
+   "nivel": "Intermediário",
+   "equip": "Barra",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": "romanian_deadlift"
+  },
+  {
+   "id": "good_morning",
+   "nome": "Bom dia (good morning)",
+   "grupo": "posteriores",
+   "nivel": "Intermediário",
+   "equip": "Barra",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": "good_morning"
+  },
+  {
+   "id": "standing_leg_curl",
+   "nome": "Flexora em pé",
+   "grupo": "posteriores",
+   "nivel": "Intermediário",
+   "equip": "Máquina",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": "standing_leg_curl"
+  },
+  {
+   "id": "glute_ham_raise",
+   "nome": "Glute-ham raise",
+   "grupo": "posteriores",
+   "nivel": "Avançado",
+   "equip": "Máquina",
+   "series": 4,
+   "reps": "6-10",
+   "tempo": false,
+   "desc": 90,
+   "foto": "glute_ham_raise"
+  },
+  {
+   "id": "stiff_leg_barbell_good_morning",
+   "nome": "Good morning com pernas estendidas",
+   "grupo": "posteriores",
+   "nivel": "Avançado",
+   "equip": "Barra",
+   "series": 4,
+   "reps": "6-10",
+   "tempo": false,
+   "desc": 90,
+   "foto": "stiff_leg_barbell_good_morning"
+  },
+  {
+   "id": "single_leg_glute_bridge",
+   "nome": "Ponte de glúteo unilateral",
+   "grupo": "gluteos",
+   "nivel": "Iniciante",
+   "equip": "Peso do corpo",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": "single_leg_glute_bridge"
+  },
+  {
+   "id": "glute_kickback",
+   "nome": "Coice de glúteo",
+   "grupo": "gluteos",
+   "nivel": "Iniciante",
+   "equip": "Peso do corpo",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": "glute_kickback"
+  },
+  {
+   "id": "butt_lift_bridge",
+   "nome": "Elevação pélvica (ponte)",
+   "grupo": "gluteos",
+   "nivel": "Iniciante",
+   "equip": "Peso do corpo",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": "butt_lift_bridge"
+  },
+  {
+   "id": "barbell_glute_bridge",
+   "nome": "Ponte de glúteo com barra",
+   "grupo": "gluteos",
+   "nivel": "Intermediário",
+   "equip": "Barra",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": "barbell_glute_bridge"
+  },
+  {
+   "id": "one_legged_cable_kickback",
+   "nome": "Coice na polia",
+   "grupo": "gluteos",
+   "nivel": "Intermediário",
+   "equip": "Polia",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": "one_legged_cable_kickback"
+  },
+  {
+   "id": "pull_through",
+   "nome": "Pull-through na polia",
+   "grupo": "gluteos",
+   "nivel": "Intermediário",
+   "equip": "Polia",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": "pull_through"
+  },
+  {
+   "id": "barbell_hip_thrust",
+   "nome": "Hip thrust com barra",
+   "grupo": "gluteos",
+   "nivel": "Avançado",
+   "equip": "Barra",
+   "series": 4,
+   "reps": "6-10",
+   "tempo": false,
+   "desc": 90,
+   "foto": "barbell_hip_thrust"
+  },
+  {
+   "id": "elevated_back_lunge",
+   "nome": "Avanço com pé de trás elevado",
+   "grupo": "gluteos",
+   "nivel": "Avançado",
+   "equip": "Barra",
+   "series": 4,
+   "reps": "6-10",
+   "tempo": false,
+   "desc": 90,
+   "foto": "elevated_back_lunge"
+  },
+  {
+   "id": "standing_calf_raises",
+   "nome": "Panturrilha em pé na máquina",
+   "grupo": "panturrilhas",
+   "nivel": "Iniciante",
+   "equip": "Máquina",
+   "series": 3,
+   "reps": "12-20",
+   "tempo": false,
+   "desc": 60,
+   "foto": "standing_calf_raises"
+  },
+  {
+   "id": "seated_calf_raise",
+   "nome": "Panturrilha sentado",
+   "grupo": "panturrilhas",
+   "nivel": "Iniciante",
+   "equip": "Máquina",
+   "series": 3,
+   "reps": "12-20",
+   "tempo": false,
+   "desc": 60,
+   "foto": "seated_calf_raise"
+  },
+  {
+   "id": "calf_press_on_the_leg_press_machine",
+   "nome": "Panturrilha no leg press",
+   "grupo": "panturrilhas",
+   "nivel": "Iniciante",
+   "equip": "Máquina",
+   "series": 3,
+   "reps": "12-20",
+   "tempo": false,
+   "desc": 60,
+   "foto": "calf_press_on_the_leg_press_machine"
+  },
+  {
+   "id": "standing_barbell_calf_raise",
+   "nome": "Panturrilha em pé com barra",
+   "grupo": "panturrilhas",
+   "nivel": "Intermediário",
+   "equip": "Barra",
+   "series": 4,
+   "reps": "12-20",
+   "tempo": false,
+   "desc": 75,
+   "foto": "standing_barbell_calf_raise"
+  },
+  {
+   "id": "standing_dumbbell_calf_raise",
+   "nome": "Panturrilha em pé com halteres",
+   "grupo": "panturrilhas",
+   "nivel": "Intermediário",
+   "equip": "Halteres",
+   "series": 4,
+   "reps": "12-20",
+   "tempo": false,
+   "desc": 75,
+   "foto": "standing_dumbbell_calf_raise"
+  },
+  {
+   "id": "smith_machine_calf_raise",
+   "nome": "Panturrilha no Smith",
+   "grupo": "panturrilhas",
+   "nivel": "Intermediário",
+   "equip": "Máquina",
+   "series": 4,
+   "reps": "12-20",
+   "tempo": false,
+   "desc": 75,
+   "foto": "smith_machine_calf_raise"
+  },
+  {
+   "id": "calf_raise_on_a_dumbbell",
+   "nome": "Panturrilha sobre halter",
+   "grupo": "panturrilhas",
+   "nivel": "Avançado",
+   "equip": "Halteres",
+   "series": 4,
+   "reps": "10-15",
+   "tempo": false,
+   "desc": 90,
+   "foto": "calf_raise_on_a_dumbbell"
+  },
+  {
+   "id": "dumbbell_seated_one_leg_calf_raise",
+   "nome": "Panturrilha sentado, uma perna",
+   "grupo": "panturrilhas",
+   "nivel": "Avançado",
+   "equip": "Halteres",
+   "series": 4,
+   "reps": "10-15",
+   "tempo": false,
+   "desc": 90,
+   "foto": "dumbbell_seated_one_leg_calf_raise"
+  },
+  {
+   "id": "supino_declinado_barra",
+   "nome": "Supino declinado com barra",
+   "grupo": "peito",
+   "nivel": "Intermediário",
+   "equip": "Barra",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": null
+  },
+  {
+   "id": "crucifixo_reto_halteres",
+   "nome": "Crucifixo reto com halteres",
+   "grupo": "peito",
+   "nivel": "Iniciante",
+   "equip": "Halteres",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": null
+  },
+  {
+   "id": "pullover_halter",
+   "nome": "Pullover com halter",
+   "grupo": "peito",
+   "nivel": "Intermediário",
+   "equip": "Halteres",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": null
+  },
+  {
+   "id": "supino_smith",
+   "nome": "Supino reto no Smith",
+   "grupo": "peito",
+   "nivel": "Iniciante",
+   "equip": "Máquina",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": null
+  },
+  {
+   "id": "remada_cavalinho",
+   "nome": "Remada cavalinho",
+   "grupo": "costas",
+   "nivel": "Intermediário",
+   "equip": "Barra",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": null
+  },
+  {
+   "id": "remada_maquina",
+   "nome": "Remada na máquina",
+   "grupo": "costas",
+   "nivel": "Iniciante",
+   "equip": "Máquina",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": null
+  },
+  {
+   "id": "pulldown_braco_reto",
+   "nome": "Pulldown com braço estendido",
+   "grupo": "costas",
+   "nivel": "Intermediário",
+   "equip": "Polia",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": null
+  },
+  {
+   "id": "barra_fixa_neutra",
+   "nome": "Barra fixa pegada neutra",
+   "grupo": "costas",
+   "nivel": "Intermediário",
+   "equip": "Peso do corpo",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": null
+  },
+  {
+   "id": "desenvolvimento_smith",
+   "nome": "Desenvolvimento no Smith",
+   "grupo": "ombros",
+   "nivel": "Intermediário",
+   "equip": "Máquina",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": null
+  },
+  {
+   "id": "elevacao_lateral_polia",
+   "nome": "Elevação lateral na polia",
+   "grupo": "ombros",
+   "nivel": "Intermediário",
+   "equip": "Polia",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": null
+  },
+  {
+   "id": "remada_alta_barra",
+   "nome": "Remada alta com barra",
+   "grupo": "ombros",
+   "nivel": "Intermediário",
+   "equip": "Barra",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": null
+  },
+  {
+   "id": "encolhimento_halteres",
+   "nome": "Encolhimento com halteres",
+   "grupo": "ombros",
+   "nivel": "Iniciante",
+   "equip": "Halteres",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": null
+  },
+  {
+   "id": "rosca_inclinada_halteres",
+   "nome": "Rosca inclinada com halteres",
+   "grupo": "biceps",
+   "nivel": "Intermediário",
+   "equip": "Halteres",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": null
+  },
+  {
+   "id": "rosca_polia_baixa",
+   "nome": "Rosca na polia baixa",
+   "grupo": "biceps",
+   "nivel": "Iniciante",
+   "equip": "Polia",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": null
+  },
+  {
+   "id": "rosca_21",
+   "nome": "Rosca 21",
+   "grupo": "biceps",
+   "nivel": "Avançado",
+   "equip": "Barra",
+   "series": 4,
+   "reps": "6-10",
+   "tempo": false,
+   "desc": 90,
+   "foto": null
+  },
+  {
+   "id": "rosca_scott_barra_w",
+   "nome": "Rosca scott com barra W",
+   "grupo": "biceps",
+   "nivel": "Intermediário",
+   "equip": "Barra W",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": null
+  },
+  {
+   "id": "triceps_frances_halter",
+   "nome": "Tríceps francês com halter",
+   "grupo": "triceps",
+   "nivel": "Intermediário",
+   "equip": "Halteres",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": null
+  },
+  {
+   "id": "triceps_coice",
+   "nome": "Tríceps coice",
+   "grupo": "triceps",
+   "nivel": "Iniciante",
+   "equip": "Halteres",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": null
+  },
+  {
+   "id": "mergulho_maquina",
+   "nome": "Mergulho na máquina",
+   "grupo": "triceps",
+   "nivel": "Iniciante",
+   "equip": "Máquina",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": null
+  },
+  {
+   "id": "flexao_diamante",
+   "nome": "Flexão diamante",
+   "grupo": "triceps",
+   "nivel": "Avançado",
+   "equip": "Peso do corpo",
+   "series": 4,
+   "reps": "6-10",
+   "tempo": false,
+   "desc": 90,
+   "foto": null
+  },
+  {
+   "id": "prancha_lateral",
+   "nome": "Prancha lateral",
+   "grupo": "abdomen",
+   "nivel": "Iniciante",
+   "equip": "Peso do corpo",
+   "series": 3,
+   "reps": "30-45",
+   "tempo": true,
+   "desc": 60,
+   "foto": null
+  },
+  {
+   "id": "abdominal_bicicleta",
+   "nome": "Abdominal bicicleta",
+   "grupo": "abdomen",
+   "nivel": "Iniciante",
+   "equip": "Peso do corpo",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": null
+  },
+  {
+   "id": "abdominal_infra_solo",
+   "nome": "Abdominal infra no solo",
+   "grupo": "abdomen",
+   "nivel": "Iniciante",
+   "equip": "Peso do corpo",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": null
+  },
+  {
+   "id": "rotacao_russa",
+   "nome": "Rotação russa",
+   "grupo": "abdomen",
+   "nivel": "Intermediário",
+   "equip": "Peso do corpo",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": null
+  },
+  {
+   "id": "agachamento_hack",
+   "nome": "Agachamento hack",
+   "grupo": "quadriceps",
+   "nivel": "Intermediário",
+   "equip": "Máquina",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": null
+  },
+  {
+   "id": "agachamento_bulgaro",
+   "nome": "Agachamento búlgaro",
+   "grupo": "quadriceps",
+   "nivel": "Avançado",
+   "equip": "Halteres",
+   "series": 4,
+   "reps": "6-10",
+   "tempo": false,
+   "desc": 90,
+   "foto": null
+  },
+  {
+   "id": "agachamento_smith",
+   "nome": "Agachamento no Smith",
+   "grupo": "quadriceps",
+   "nivel": "Iniciante",
+   "equip": "Máquina",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": null
+  },
+  {
+   "id": "step_up_banco",
+   "nome": "Step-up no banco",
+   "grupo": "quadriceps",
+   "nivel": "Iniciante",
+   "equip": "Halteres",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": null
+  },
+  {
+   "id": "flexora_polia_unilateral",
+   "nome": "Flexora unilateral na polia",
+   "grupo": "posteriores",
+   "nivel": "Intermediário",
+   "equip": "Polia",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": null
+  },
+  {
+   "id": "stiff_barra",
+   "nome": "Stiff com barra",
+   "grupo": "posteriores",
+   "nivel": "Intermediário",
+   "equip": "Barra",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": null
+  },
+  {
+   "id": "stiff_unilateral_halter",
+   "nome": "Stiff unilateral com halter",
+   "grupo": "posteriores",
+   "nivel": "Avançado",
+   "equip": "Halteres",
+   "series": 4,
+   "reps": "6-10",
+   "tempo": false,
+   "desc": 90,
+   "foto": null
+  },
+  {
+   "id": "flexora_nordica",
+   "nome": "Flexora nórdica",
+   "grupo": "posteriores",
+   "nivel": "Avançado",
+   "equip": "Peso do corpo",
+   "series": 4,
+   "reps": "6-10",
+   "tempo": false,
+   "desc": 90,
+   "foto": null
+  },
+  {
+   "id": "abducao_quadril_maquina",
+   "nome": "Abdução de quadril na máquina",
+   "grupo": "gluteos",
+   "nivel": "Iniciante",
+   "equip": "Máquina",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": null
+  },
+  {
+   "id": "agachamento_sumo_halter",
+   "nome": "Agachamento sumô com halter",
+   "grupo": "gluteos",
+   "nivel": "Iniciante",
+   "equip": "Halteres",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": null
+  },
+  {
+   "id": "hip_thrust_maquina",
+   "nome": "Hip thrust na máquina",
+   "grupo": "gluteos",
+   "nivel": "Intermediário",
+   "equip": "Máquina",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": null
+  },
+  {
+   "id": "afundo_reverso",
+   "nome": "Afundo reverso",
+   "grupo": "gluteos",
+   "nivel": "Intermediário",
+   "equip": "Halteres",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": null
+  },
+  {
+   "id": "panturrilha_degrau",
+   "nome": "Panturrilha no degrau",
+   "grupo": "panturrilhas",
+   "nivel": "Iniciante",
+   "equip": "Peso do corpo",
+   "series": 3,
+   "reps": "12-20",
+   "tempo": false,
+   "desc": 60,
+   "foto": null
+  },
+  {
+   "id": "panturrilha_burrinho",
+   "nome": "Panturrilha burrinho",
+   "grupo": "panturrilhas",
+   "nivel": "Intermediário",
+   "equip": "Máquina",
+   "series": 4,
+   "reps": "12-20",
+   "tempo": false,
+   "desc": 75,
+   "foto": null
+  },
+  {
+   "id": "panturrilha_hack",
+   "nome": "Panturrilha no hack",
+   "grupo": "panturrilhas",
+   "nivel": "Intermediário",
+   "equip": "Máquina",
+   "series": 4,
+   "reps": "12-20",
+   "tempo": false,
+   "desc": 75,
+   "foto": null
+  },
+  {
+   "id": "panturrilha_unilateral_em_pe",
+   "nome": "Panturrilha unilateral em pé",
+   "grupo": "panturrilhas",
+   "nivel": "Intermediário",
+   "equip": "Peso do corpo",
+   "series": 4,
+   "reps": "12-20",
+   "tempo": false,
+   "desc": 75,
+   "foto": null
+  },
+  {
+   "id": "rosca_punho_barra",
+   "nome": "Rosca de punho com barra",
+   "grupo": "antebraco",
+   "nivel": "Iniciante",
+   "equip": "Barra",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": null
+  },
+  {
+   "id": "rosca_punho_inversa",
+   "nome": "Rosca de punho inversa",
+   "grupo": "antebraco",
+   "nivel": "Iniciante",
+   "equip": "Barra",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": null
+  },
+  {
+   "id": "rosca_inversa_barra",
+   "nome": "Rosca inversa com barra",
+   "grupo": "antebraco",
+   "nivel": "Intermediário",
+   "equip": "Barra",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": null
+  },
+  {
+   "id": "rosca_martelo_corda",
+   "nome": "Rosca martelo na corda",
+   "grupo": "antebraco",
+   "nivel": "Iniciante",
+   "equip": "Polia",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": null
+  },
+  {
+   "id": "flexao_punho_halter",
+   "nome": "Flexão de punho com halter",
+   "grupo": "antebraco",
+   "nivel": "Iniciante",
+   "equip": "Halteres",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": null
+  },
+  {
+   "id": "extensao_punho_halter",
+   "nome": "Extensão de punho com halter",
+   "grupo": "antebraco",
+   "nivel": "Iniciante",
+   "equip": "Halteres",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": null
+  },
+  {
+   "id": "suspensao_barra",
+   "nome": "Suspensão na barra",
+   "grupo": "antebraco",
+   "nivel": "Intermediário",
+   "equip": "Peso do corpo",
+   "series": 4,
+   "reps": "30-45",
+   "tempo": true,
+   "desc": 75,
+   "foto": null
+  },
+  {
+   "id": "caminhada_fazendeiro",
+   "nome": "Caminhada do fazendeiro",
+   "grupo": "antebraco",
+   "nivel": "Intermediário",
+   "equip": "Halteres",
+   "series": 4,
+   "reps": "30-45",
+   "tempo": true,
+   "desc": 75,
+   "foto": null
+  },
+  {
+   "id": "pinca_anilha",
+   "nome": "Pinça com anilha",
+   "grupo": "antebraco",
+   "nivel": "Avançado",
+   "equip": "Anilha",
+   "series": 4,
+   "reps": "30-45",
+   "tempo": true,
+   "desc": 90,
+   "foto": null
+  },
+  {
+   "id": "rosca_punho_polia",
+   "nome": "Rosca de punho na polia",
+   "grupo": "antebraco",
+   "nivel": "Intermediário",
+   "equip": "Polia",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": null
+  },
+  {
+   "id": "rolo_de_punho",
+   "nome": "Rolo de punho",
+   "grupo": "antebraco",
+   "nivel": "Avançado",
+   "equip": "Barra",
+   "series": 4,
+   "reps": "6-10",
+   "tempo": false,
+   "desc": 90,
+   "foto": null
+  },
+  {
+   "id": "rosca_inversa_halteres",
+   "nome": "Rosca inversa com halteres",
+   "grupo": "antebraco",
+   "nivel": "Iniciante",
+   "equip": "Halteres",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": null
+  },
+  {
+   "id": "hiperextensao_banco",
+   "nome": "Hiperextensão no banco",
+   "grupo": "lombar",
+   "nivel": "Iniciante",
+   "equip": "Peso do corpo",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": null
+  },
+  {
+   "id": "hiperextensao_45",
+   "nome": "Hiperextensão 45°",
+   "grupo": "lombar",
+   "nivel": "Intermediário",
+   "equip": "Peso do corpo",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": null
+  },
+  {
+   "id": "extensao_lombar_maquina",
+   "nome": "Extensão lombar na máquina",
+   "grupo": "lombar",
+   "nivel": "Iniciante",
+   "equip": "Máquina",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": null
+  },
+  {
+   "id": "superman",
+   "nome": "Superman",
+   "grupo": "lombar",
+   "nivel": "Iniciante",
+   "equip": "Peso do corpo",
+   "series": 3,
+   "reps": "30-45",
+   "tempo": true,
+   "desc": 60,
+   "foto": null
+  },
+  {
+   "id": "bird_dog",
+   "nome": "Bird dog",
+   "grupo": "lombar",
+   "nivel": "Iniciante",
+   "equip": "Peso do corpo",
+   "series": 3,
+   "reps": "30-45",
+   "tempo": true,
+   "desc": 60,
+   "foto": null
+  },
+  {
+   "id": "extensao_lombar_chao",
+   "nome": "Extensão lombar no chão",
+   "grupo": "lombar",
+   "nivel": "Iniciante",
+   "equip": "Peso do corpo",
+   "series": 3,
+   "reps": "10-12",
+   "tempo": false,
+   "desc": 60,
+   "foto": null
+  },
+  {
+   "id": "hiperextensao_anilha",
+   "nome": "Hiperextensão com anilha",
+   "grupo": "lombar",
+   "nivel": "Intermediário",
+   "equip": "Anilha",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": null
+  },
+  {
+   "id": "bom_dia_halter",
+   "nome": "Bom dia com halter",
+   "grupo": "lombar",
+   "nivel": "Intermediário",
+   "equip": "Halteres",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": null
+  },
+  {
+   "id": "elevacao_tronco_bola",
+   "nome": "Elevação de tronco na bola suíça",
+   "grupo": "lombar",
+   "nivel": "Intermediário",
+   "equip": "Bola suíça",
+   "series": 4,
+   "reps": "8-12",
+   "tempo": false,
+   "desc": 75,
+   "foto": null
+  },
+  {
+   "id": "prancha_elevacao_perna",
+   "nome": "Prancha com elevação de perna",
+   "grupo": "lombar",
+   "nivel": "Intermediário",
+   "equip": "Peso do corpo",
+   "series": 4,
+   "reps": "30-45",
+   "tempo": true,
+   "desc": 75,
+   "foto": null
+  },
+  {
+   "id": "terra_sumo",
+   "nome": "Levantamento terra sumô",
+   "grupo": "lombar",
+   "nivel": "Avançado",
+   "equip": "Barra",
+   "series": 4,
+   "reps": "6-10",
+   "tempo": false,
+   "desc": 90,
+   "foto": null
+  },
+  {
+   "id": "terra_hexagonal",
+   "nome": "Terra com barra hexagonal",
+   "grupo": "lombar",
+   "nivel": "Avançado",
+   "equip": "Barra",
+   "series": 4,
+   "reps": "6-10",
+   "tempo": false,
+   "desc": 90,
+   "foto": null
+  }
+ ],
+ "modelos": [
+  {
+   "nome": "ABC clássico",
+   "descricao": "Peito e tríceps, costas e bíceps, pernas e ombros.",
+   "nivel": "Intermediário",
+   "dias": [
+    {
+     "nome": "Peito e tríceps",
+     "blocos": [
+      {
+       "grupo": "peito",
+       "exercicios": [
+        "pushups",
+        "machine_bench_press",
+        "dumbbell_bench_press",
+        "barbell_bench_press_medium_grip"
+       ]
+      },
+      {
+       "grupo": "triceps",
+       "exercicios": [
+        "triceps_pushdown",
+        "triceps_pushdown_rope_attachment",
+        "bench_dips"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Costas e bíceps",
+     "blocos": [
+      {
+       "grupo": "costas",
+       "exercicios": [
+        "wide_grip_lat_pulldown",
+        "dumbbell_incline_row",
+        "one_arm_dumbbell_row",
+        "bent_over_barbell_row"
+       ]
+      },
+      {
+       "grupo": "biceps",
+       "exercicios": [
+        "barbell_curl",
+        "alternate_hammer_curl",
+        "concentration_curls"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Pernas e ombros",
+     "blocos": [
+      {
+       "grupo": "quadriceps",
+       "exercicios": [
+        "bodyweight_squat",
+        "leg_press",
+        "leg_extensions"
+       ]
+      },
+      {
+       "grupo": "posteriores",
+       "exercicios": [
+        "lying_leg_curls",
+        "seated_leg_curl"
+       ]
+      },
+      {
+       "grupo": "ombros",
+       "exercicios": [
+        "side_lateral_raise",
+        "front_dumbbell_raise",
+        "leverage_shoulder_press"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nome": "ABCD",
+   "descricao": "Quatro dias: peito/tríceps, costas/bíceps, pernas, ombros/abdômen.",
+   "nivel": "Intermediário",
+   "dias": [
+    {
+     "nome": "Peito e tríceps",
+     "blocos": [
+      {
+       "grupo": "peito",
+       "exercicios": [
+        "pushups",
+        "machine_bench_press",
+        "dumbbell_bench_press",
+        "barbell_bench_press_medium_grip"
+       ]
+      },
+      {
+       "grupo": "triceps",
+       "exercicios": [
+        "triceps_pushdown",
+        "triceps_pushdown_rope_attachment",
+        "bench_dips"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Costas e bíceps",
+     "blocos": [
+      {
+       "grupo": "costas",
+       "exercicios": [
+        "wide_grip_lat_pulldown",
+        "dumbbell_incline_row",
+        "one_arm_dumbbell_row",
+        "bent_over_barbell_row"
+       ]
+      },
+      {
+       "grupo": "biceps",
+       "exercicios": [
+        "barbell_curl",
+        "alternate_hammer_curl",
+        "concentration_curls"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Pernas",
+     "blocos": [
+      {
+       "grupo": "quadriceps",
+       "exercicios": [
+        "bodyweight_squat",
+        "leg_press",
+        "leg_extensions"
+       ]
+      },
+      {
+       "grupo": "posteriores",
+       "exercicios": [
+        "lying_leg_curls",
+        "seated_leg_curl",
+        "stiff_legged_dumbbell_deadlift"
+       ]
+      },
+      {
+       "grupo": "panturrilhas",
+       "exercicios": [
+        "standing_calf_raises",
+        "seated_calf_raise"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Ombros e abdômen",
+     "blocos": [
+      {
+       "grupo": "ombros",
+       "exercicios": [
+        "side_lateral_raise",
+        "front_dumbbell_raise",
+        "leverage_shoulder_press",
+        "dumbbell_shoulder_press"
+       ]
+      },
+      {
+       "grupo": "abdomen",
+       "exercicios": [
+        "crunches",
+        "plank",
+        "cable_crunch"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nome": "ABCDE",
+   "descricao": "Um grupo principal por dia.",
+   "nivel": "Avançado",
+   "dias": [
+    {
+     "nome": "Peito",
+     "blocos": [
+      {
+       "grupo": "peito",
+       "exercicios": [
+        "pushups",
+        "machine_bench_press",
+        "dumbbell_bench_press",
+        "barbell_bench_press_medium_grip",
+        "incline_dumbbell_flyes"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Costas",
+     "blocos": [
+      {
+       "grupo": "costas",
+       "exercicios": [
+        "wide_grip_lat_pulldown",
+        "dumbbell_incline_row",
+        "one_arm_dumbbell_row",
+        "bent_over_barbell_row",
+        "v_bar_pulldown"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Pernas",
+     "blocos": [
+      {
+       "grupo": "quadriceps",
+       "exercicios": [
+        "bodyweight_squat",
+        "leg_press",
+        "leg_extensions"
+       ]
+      },
+      {
+       "grupo": "posteriores",
+       "exercicios": [
+        "lying_leg_curls",
+        "seated_leg_curl",
+        "stiff_legged_dumbbell_deadlift"
+       ]
+      },
+      {
+       "grupo": "gluteos",
+       "exercicios": [
+        "single_leg_glute_bridge",
+        "glute_kickback"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Ombros",
+     "blocos": [
+      {
+       "grupo": "ombros",
+       "exercicios": [
+        "side_lateral_raise",
+        "front_dumbbell_raise",
+        "leverage_shoulder_press",
+        "dumbbell_shoulder_press",
+        "reverse_flyes"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Braços",
+     "blocos": [
+      {
+       "grupo": "biceps",
+       "exercicios": [
+        "barbell_curl",
+        "alternate_hammer_curl",
+        "concentration_curls"
+       ]
+      },
+      {
+       "grupo": "triceps",
+       "exercicios": [
+        "triceps_pushdown",
+        "triceps_pushdown_rope_attachment",
+        "bench_dips"
+       ]
+      },
+      {
+       "grupo": "antebraco",
+       "exercicios": [
+        "rosca_punho_barra",
+        "rosca_punho_inversa"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nome": "Full body 3x",
+   "descricao": "Corpo inteiro em cada treino, três vezes por semana.",
+   "nivel": "Iniciante",
+   "dias": [
+    {
+     "nome": "Corpo inteiro A",
+     "blocos": [
+      {
+       "grupo": "peito",
+       "exercicios": [
+        "pushups"
+       ]
+      },
+      {
+       "grupo": "costas",
+       "exercicios": [
+        "wide_grip_lat_pulldown"
+       ]
+      },
+      {
+       "grupo": "quadriceps",
+       "exercicios": [
+        "bodyweight_squat"
+       ]
+      },
+      {
+       "grupo": "ombros",
+       "exercicios": [
+        "side_lateral_raise"
+       ]
+      },
+      {
+       "grupo": "abdomen",
+       "exercicios": [
+        "crunches"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Corpo inteiro B",
+     "blocos": [
+      {
+       "grupo": "peito",
+       "exercicios": [
+        "pushups"
+       ]
+      },
+      {
+       "grupo": "costas",
+       "exercicios": [
+        "wide_grip_lat_pulldown"
+       ]
+      },
+      {
+       "grupo": "quadriceps",
+       "exercicios": [
+        "bodyweight_squat"
+       ]
+      },
+      {
+       "grupo": "ombros",
+       "exercicios": [
+        "side_lateral_raise"
+       ]
+      },
+      {
+       "grupo": "abdomen",
+       "exercicios": [
+        "crunches"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Corpo inteiro C",
+     "blocos": [
+      {
+       "grupo": "peito",
+       "exercicios": [
+        "pushups"
+       ]
+      },
+      {
+       "grupo": "costas",
+       "exercicios": [
+        "wide_grip_lat_pulldown"
+       ]
+      },
+      {
+       "grupo": "quadriceps",
+       "exercicios": [
+        "bodyweight_squat"
+       ]
+      },
+      {
+       "grupo": "ombros",
+       "exercicios": [
+        "side_lateral_raise"
+       ]
+      },
+      {
+       "grupo": "abdomen",
+       "exercicios": [
+        "crunches"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nome": "Push / Pull / Legs",
+   "descricao": "Empurrar, puxar e pernas.",
+   "nivel": "Intermediário",
+   "dias": [
+    {
+     "nome": "Push",
+     "blocos": [
+      {
+       "grupo": "peito",
+       "exercicios": [
+        "pushups",
+        "machine_bench_press",
+        "dumbbell_bench_press"
+       ]
+      },
+      {
+       "grupo": "ombros",
+       "exercicios": [
+        "side_lateral_raise",
+        "front_dumbbell_raise",
+        "leverage_shoulder_press"
+       ]
+      },
+      {
+       "grupo": "triceps",
+       "exercicios": [
+        "triceps_pushdown",
+        "triceps_pushdown_rope_attachment",
+        "bench_dips"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Pull",
+     "blocos": [
+      {
+       "grupo": "costas",
+       "exercicios": [
+        "wide_grip_lat_pulldown",
+        "dumbbell_incline_row",
+        "one_arm_dumbbell_row",
+        "bent_over_barbell_row"
+       ]
+      },
+      {
+       "grupo": "biceps",
+       "exercicios": [
+        "barbell_curl",
+        "alternate_hammer_curl",
+        "concentration_curls"
+       ]
+      },
+      {
+       "grupo": "antebraco",
+       "exercicios": [
+        "rosca_punho_barra"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Legs",
+     "blocos": [
+      {
+       "grupo": "quadriceps",
+       "exercicios": [
+        "bodyweight_squat",
+        "leg_press",
+        "leg_extensions"
+       ]
+      },
+      {
+       "grupo": "posteriores",
+       "exercicios": [
+        "lying_leg_curls",
+        "seated_leg_curl",
+        "stiff_legged_dumbbell_deadlift"
+       ]
+      },
+      {
+       "grupo": "gluteos",
+       "exercicios": [
+        "single_leg_glute_bridge",
+        "glute_kickback"
+       ]
+      },
+      {
+       "grupo": "panturrilhas",
+       "exercicios": [
+        "standing_calf_raises",
+        "seated_calf_raise"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nome": "Superior / Inferior",
+   "descricao": "Dois dias alternados.",
+   "nivel": "Intermediário",
+   "dias": [
+    {
+     "nome": "Superior",
+     "blocos": [
+      {
+       "grupo": "peito",
+       "exercicios": [
+        "pushups",
+        "machine_bench_press"
+       ]
+      },
+      {
+       "grupo": "costas",
+       "exercicios": [
+        "wide_grip_lat_pulldown",
+        "dumbbell_incline_row"
+       ]
+      },
+      {
+       "grupo": "ombros",
+       "exercicios": [
+        "side_lateral_raise",
+        "front_dumbbell_raise"
+       ]
+      },
+      {
+       "grupo": "biceps",
+       "exercicios": [
+        "barbell_curl"
+       ]
+      },
+      {
+       "grupo": "triceps",
+       "exercicios": [
+        "triceps_pushdown"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Inferior",
+     "blocos": [
+      {
+       "grupo": "quadriceps",
+       "exercicios": [
+        "bodyweight_squat",
+        "leg_press",
+        "leg_extensions"
+       ]
+      },
+      {
+       "grupo": "posteriores",
+       "exercicios": [
+        "lying_leg_curls",
+        "seated_leg_curl"
+       ]
+      },
+      {
+       "grupo": "gluteos",
+       "exercicios": [
+        "single_leg_glute_bridge",
+        "glute_kickback"
+       ]
+      },
+      {
+       "grupo": "panturrilhas",
+       "exercicios": [
+        "standing_calf_raises",
+        "seated_calf_raise"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nome": "Iniciante ABC",
+   "descricao": "Poucos exercícios por grupo, sem equipamento complexo.",
+   "nivel": "Iniciante",
+   "dias": [
+    {
+     "nome": "A – Empurrar",
+     "blocos": [
+      {
+       "grupo": "peito",
+       "exercicios": [
+        "pushups",
+        "machine_bench_press"
+       ]
+      },
+      {
+       "grupo": "ombros",
+       "exercicios": [
+        "side_lateral_raise",
+        "front_dumbbell_raise"
+       ]
+      },
+      {
+       "grupo": "triceps",
+       "exercicios": [
+        "triceps_pushdown",
+        "triceps_pushdown_rope_attachment"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "B – Puxar",
+     "blocos": [
+      {
+       "grupo": "costas",
+       "exercicios": [
+        "wide_grip_lat_pulldown",
+        "dumbbell_incline_row",
+        "one_arm_dumbbell_row"
+       ]
+      },
+      {
+       "grupo": "biceps",
+       "exercicios": [
+        "barbell_curl",
+        "alternate_hammer_curl"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "C – Pernas",
+     "blocos": [
+      {
+       "grupo": "quadriceps",
+       "exercicios": [
+        "bodyweight_squat",
+        "leg_press",
+        "leg_extensions"
+       ]
+      },
+      {
+       "grupo": "posteriores",
+       "exercicios": [
+        "lying_leg_curls",
+        "seated_leg_curl"
+       ]
+      },
+      {
+       "grupo": "abdomen",
+       "exercicios": [
+        "crunches",
+        "plank"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nome": "Iniciante 2x por semana",
+   "descricao": "Dois treinos curtos para começar.",
+   "nivel": "Iniciante",
+   "dias": [
+    {
+     "nome": "Dia 1",
+     "blocos": [
+      {
+       "grupo": "peito",
+       "exercicios": [
+        "pushups"
+       ]
+      },
+      {
+       "grupo": "costas",
+       "exercicios": [
+        "wide_grip_lat_pulldown"
+       ]
+      },
+      {
+       "grupo": "quadriceps",
+       "exercicios": [
+        "bodyweight_squat",
+        "leg_press"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Dia 2",
+     "blocos": [
+      {
+       "grupo": "ombros",
+       "exercicios": [
+        "side_lateral_raise"
+       ]
+      },
+      {
+       "grupo": "posteriores",
+       "exercicios": [
+        "lying_leg_curls"
+       ]
+      },
+      {
+       "grupo": "abdomen",
+       "exercicios": [
+        "crunches",
+        "plank"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nome": "Emagrecimento (circuito)",
+   "descricao": "Aquecimento, circuito de força e cardio.",
+   "nivel": "Iniciante",
+   "dias": [
+    {
+     "nome": "Circuito A",
+     "blocos": [
+      {
+       "grupo": "aquecimento",
+       "exercicios": [],
+       "livres": [
+        {
+         "nome": "Esteira leve",
+         "tempo": true,
+         "reps": "300",
+         "series": 1
+        }
+       ]
+      },
+      {
+       "grupo": "quadriceps",
+       "exercicios": [
+        "bodyweight_squat",
+        "leg_press"
+       ]
+      },
+      {
+       "grupo": "peito",
+       "exercicios": [
+        "pushups"
+       ]
+      },
+      {
+       "grupo": "costas",
+       "exercicios": [
+        "wide_grip_lat_pulldown"
+       ]
+      },
+      {
+       "grupo": "cardio",
+       "exercicios": [],
+       "livres": [
+        {
+         "nome": "Bicicleta",
+         "tempo": true,
+         "reps": "900",
+         "series": 1
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Circuito B",
+     "blocos": [
+      {
+       "grupo": "aquecimento",
+       "exercicios": [],
+       "livres": [
+        {
+         "nome": "Elíptico leve",
+         "tempo": true,
+         "reps": "300",
+         "series": 1
+        }
+       ]
+      },
+      {
+       "grupo": "gluteos",
+       "exercicios": [
+        "single_leg_glute_bridge",
+        "glute_kickback"
+       ]
+      },
+      {
+       "grupo": "ombros",
+       "exercicios": [
+        "side_lateral_raise"
+       ]
+      },
+      {
+       "grupo": "abdomen",
+       "exercicios": [
+        "crunches",
+        "plank"
+       ]
+      },
+      {
+       "grupo": "cardio",
+       "exercicios": [],
+       "livres": [
+        {
+         "nome": "Esteira",
+         "tempo": true,
+         "reps": "900",
+         "series": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nome": "Hipertrofia ABCD",
+   "descricao": "Volume maior por grupo.",
+   "nivel": "Avançado",
+   "dias": [
+    {
+     "nome": "Peito e tríceps",
+     "blocos": [
+      {
+       "grupo": "peito",
+       "exercicios": [
+        "pushups",
+        "machine_bench_press",
+        "dumbbell_bench_press",
+        "barbell_bench_press_medium_grip",
+        "incline_dumbbell_flyes"
+       ]
+      },
+      {
+       "grupo": "triceps",
+       "exercicios": [
+        "triceps_pushdown",
+        "triceps_pushdown_rope_attachment",
+        "bench_dips",
+        "cable_rope_overhead_triceps_extension"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Costas e bíceps",
+     "blocos": [
+      {
+       "grupo": "costas",
+       "exercicios": [
+        "wide_grip_lat_pulldown",
+        "dumbbell_incline_row",
+        "one_arm_dumbbell_row",
+        "bent_over_barbell_row",
+        "v_bar_pulldown"
+       ]
+      },
+      {
+       "grupo": "biceps",
+       "exercicios": [
+        "barbell_curl",
+        "alternate_hammer_curl",
+        "concentration_curls",
+        "cable_preacher_curl"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Pernas",
+     "blocos": [
+      {
+       "grupo": "quadriceps",
+       "exercicios": [
+        "bodyweight_squat",
+        "leg_press",
+        "leg_extensions",
+        "barbell_squat"
+       ]
+      },
+      {
+       "grupo": "posteriores",
+       "exercicios": [
+        "lying_leg_curls",
+        "seated_leg_curl",
+        "stiff_legged_dumbbell_deadlift"
+       ]
+      },
+      {
+       "grupo": "panturrilhas",
+       "exercicios": [
+        "standing_calf_raises",
+        "seated_calf_raise",
+        "calf_press_on_the_leg_press_machine"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Ombros e core",
+     "blocos": [
+      {
+       "grupo": "ombros",
+       "exercicios": [
+        "side_lateral_raise",
+        "front_dumbbell_raise",
+        "leverage_shoulder_press",
+        "dumbbell_shoulder_press",
+        "reverse_flyes"
+       ]
+      },
+      {
+       "grupo": "abdomen",
+       "exercicios": [
+        "crunches",
+        "plank",
+        "cable_crunch"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nome": "Em casa, sem equipamento",
+   "descricao": "Só peso do corpo.",
+   "nivel": "Iniciante",
+   "dias": [
+    {
+     "nome": "Casa A",
+     "blocos": [
+      {
+       "grupo": "peito",
+       "exercicios": [
+        "pushups",
+        "flexao_diamante"
+       ]
+      },
+      {
+       "grupo": "quadriceps",
+       "exercicios": [
+        "bodyweight_squat",
+        "step_up_banco"
+       ]
+      },
+      {
+       "grupo": "abdomen",
+       "exercicios": [
+        "plank",
+        "crunches"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Casa B",
+     "blocos": [
+      {
+       "grupo": "gluteos",
+       "exercicios": [
+        "butt_lift_bridge",
+        "glute_kickback"
+       ]
+      },
+      {
+       "grupo": "lombar",
+       "exercicios": [
+        "superman",
+        "bird_dog"
+       ]
+      },
+      {
+       "grupo": "abdomen",
+       "exercicios": [
+        "abdominal_bicicleta",
+        "prancha_lateral"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nome": "Só halteres",
+   "descricao": "Para quem tem apenas halteres.",
+   "nivel": "Intermediário",
+   "dias": [
+    {
+     "nome": "Superior",
+     "blocos": [
+      {
+       "grupo": "peito",
+       "exercicios": [
+        "dumbbell_bench_press",
+        "incline_dumbbell_flyes"
+       ]
+      },
+      {
+       "grupo": "costas",
+       "exercicios": [
+        "one_arm_dumbbell_row",
+        "dumbbell_incline_row"
+       ]
+      },
+      {
+       "grupo": "ombros",
+       "exercicios": [
+        "dumbbell_shoulder_press",
+        "side_lateral_raise"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Inferior e braços",
+     "blocos": [
+      {
+       "grupo": "quadriceps",
+       "exercicios": [
+        "dumbbell_lunges",
+        "agachamento_bulgaro"
+       ]
+      },
+      {
+       "grupo": "posteriores",
+       "exercicios": [
+        "stiff_legged_dumbbell_deadlift"
+       ]
+      },
+      {
+       "grupo": "biceps",
+       "exercicios": [
+        "alternate_hammer_curl",
+        "concentration_curls"
+       ]
+      },
+      {
+       "grupo": "triceps",
+       "exercicios": [
+        "dumbbell_one_arm_triceps_extension",
+        "triceps_coice"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nome": "Foco em glúteos",
+   "descricao": "Glúteos duas vezes por semana.",
+   "nivel": "Intermediário",
+   "dias": [
+    {
+     "nome": "Glúteos A",
+     "blocos": [
+      {
+       "grupo": "gluteos",
+       "exercicios": [
+        "single_leg_glute_bridge",
+        "glute_kickback",
+        "butt_lift_bridge",
+        "barbell_glute_bridge"
+       ]
+      },
+      {
+       "grupo": "posteriores",
+       "exercicios": [
+        "lying_leg_curls",
+        "seated_leg_curl"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Pernas e core",
+     "blocos": [
+      {
+       "grupo": "quadriceps",
+       "exercicios": [
+        "bodyweight_squat",
+        "leg_press",
+        "leg_extensions"
+       ]
+      },
+      {
+       "grupo": "gluteos",
+       "exercicios": [
+        "single_leg_glute_bridge",
+        "glute_kickback"
+       ]
+      },
+      {
+       "grupo": "abdomen",
+       "exercicios": [
+        "crunches",
+        "plank"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Glúteos B",
+     "blocos": [
+      {
+       "grupo": "gluteos",
+       "exercicios": [
+        "single_leg_glute_bridge",
+        "glute_kickback",
+        "butt_lift_bridge",
+        "barbell_glute_bridge"
+       ]
+      },
+      {
+       "grupo": "panturrilhas",
+       "exercicios": [
+        "standing_calf_raises",
+        "seated_calf_raise"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nome": "Mobilidade e alongamento",
+   "descricao": "Sessão leve de recuperação.",
+   "nivel": "Iniciante",
+   "dias": [
+    {
+     "nome": "Mobilidade",
+     "blocos": [
+      {
+       "grupo": "aquecimento",
+       "exercicios": [],
+       "livres": [
+        {
+         "nome": "Caminhada leve",
+         "tempo": true,
+         "reps": "300",
+         "series": 1
+        }
+       ]
+      },
+      {
+       "grupo": "alongamento",
+       "exercicios": [],
+       "livres": [
+        {
+         "nome": "Alongamento geral",
+         "tempo": true,
+         "reps": "600",
+         "series": 1
+        }
+       ]
+      },
+      {
+       "grupo": "lombar",
+       "exercicios": [
+        "bird_dog",
+        "superman"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nome": "Peito e costas",
+   "descricao": "Dois grupos grandes juntos.",
+   "nivel": "Intermediário",
+   "dias": [
+    {
+     "nome": "Peito e costas",
+     "blocos": [
+      {
+       "grupo": "peito",
+       "exercicios": [
+        "pushups",
+        "machine_bench_press",
+        "dumbbell_bench_press",
+        "barbell_bench_press_medium_grip"
+       ]
+      },
+      {
+       "grupo": "costas",
+       "exercicios": [
+        "wide_grip_lat_pulldown",
+        "dumbbell_incline_row",
+        "one_arm_dumbbell_row",
+        "bent_over_barbell_row"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Braços e ombros",
+     "blocos": [
+      {
+       "grupo": "ombros",
+       "exercicios": [
+        "side_lateral_raise",
+        "front_dumbbell_raise",
+        "leverage_shoulder_press"
+       ]
+      },
+      {
+       "grupo": "biceps",
+       "exercicios": [
+        "barbell_curl",
+        "alternate_hammer_curl",
+        "concentration_curls"
+       ]
+      },
+      {
+       "grupo": "triceps",
+       "exercicios": [
+        "triceps_pushdown",
+        "triceps_pushdown_rope_attachment",
+        "bench_dips"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nome": "Braços e ombros",
+   "descricao": "Dia dedicado a braços.",
+   "nivel": "Intermediário",
+   "dias": [
+    {
+     "nome": "Braços e ombros",
+     "blocos": [
+      {
+       "grupo": "ombros",
+       "exercicios": [
+        "side_lateral_raise",
+        "front_dumbbell_raise",
+        "leverage_shoulder_press"
+       ]
+      },
+      {
+       "grupo": "biceps",
+       "exercicios": [
+        "barbell_curl",
+        "alternate_hammer_curl",
+        "concentration_curls"
+       ]
+      },
+      {
+       "grupo": "triceps",
+       "exercicios": [
+        "triceps_pushdown",
+        "triceps_pushdown_rope_attachment",
+        "bench_dips"
+       ]
+      },
+      {
+       "grupo": "antebraco",
+       "exercicios": [
+        "rosca_punho_barra",
+        "rosca_punho_inversa"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nome": "Pernas completas",
+   "descricao": "Quadríceps, posteriores, glúteos e panturrilhas.",
+   "nivel": "Intermediário",
+   "dias": [
+    {
+     "nome": "Pernas completas",
+     "blocos": [
+      {
+       "grupo": "quadriceps",
+       "exercicios": [
+        "bodyweight_squat",
+        "leg_press",
+        "leg_extensions",
+        "barbell_squat"
+       ]
+      },
+      {
+       "grupo": "posteriores",
+       "exercicios": [
+        "lying_leg_curls",
+        "seated_leg_curl",
+        "stiff_legged_dumbbell_deadlift"
+       ]
+      },
+      {
+       "grupo": "gluteos",
+       "exercicios": [
+        "single_leg_glute_bridge",
+        "glute_kickback"
+       ]
+      },
+      {
+       "grupo": "panturrilhas",
+       "exercicios": [
+        "standing_calf_raises",
+        "seated_calf_raise",
+        "calf_press_on_the_leg_press_machine"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nome": "Core e lombar",
+   "descricao": "Abdômen e lombar.",
+   "nivel": "Iniciante",
+   "dias": [
+    {
+     "nome": "Core e lombar",
+     "blocos": [
+      {
+       "grupo": "abdomen",
+       "exercicios": [
+        "crunches",
+        "plank",
+        "cable_crunch",
+        "decline_crunch"
+       ]
+      },
+      {
+       "grupo": "lombar",
+       "exercicios": [
+        "hiperextensao_banco",
+        "hiperextensao_45",
+        "extensao_lombar_maquina",
+        "superman"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nome": "Feminino: pernas e glúteos",
+   "descricao": "Ênfase em membros inferiores.",
+   "nivel": "Iniciante",
+   "dias": [
+    {
+     "nome": "Pernas e glúteos",
+     "blocos": [
+      {
+       "grupo": "gluteos",
+       "exercicios": [
+        "single_leg_glute_bridge",
+        "glute_kickback",
+        "butt_lift_bridge"
+       ]
+      },
+      {
+       "grupo": "quadriceps",
+       "exercicios": [
+        "bodyweight_squat",
+        "leg_press",
+        "leg_extensions"
+       ]
+      },
+      {
+       "grupo": "posteriores",
+       "exercicios": [
+        "lying_leg_curls",
+        "seated_leg_curl"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Superior leve",
+     "blocos": [
+      {
+       "grupo": "costas",
+       "exercicios": [
+        "wide_grip_lat_pulldown",
+        "dumbbell_incline_row"
+       ]
+      },
+      {
+       "grupo": "ombros",
+       "exercicios": [
+        "side_lateral_raise",
+        "front_dumbbell_raise"
+       ]
+      },
+      {
+       "grupo": "abdomen",
+       "exercicios": [
+        "crunches",
+        "plank"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nome": "Força (básicos)",
+   "descricao": "Foco nos movimentos básicos.",
+   "nivel": "Avançado",
+   "dias": [
+    {
+     "nome": "Força A",
+     "blocos": [
+      {
+       "grupo": "quadriceps",
+       "exercicios": [
+        "barbell_squat"
+       ]
+      },
+      {
+       "grupo": "peito",
+       "exercicios": [
+        "barbell_bench_press_medium_grip"
+       ]
+      },
+      {
+       "grupo": "costas",
+       "exercicios": [
+        "bent_over_barbell_row"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Força B",
+     "blocos": [
+      {
+       "grupo": "costas",
+       "exercicios": [
+        "barbell_deadlift"
+       ]
+      },
+      {
+       "grupo": "ombros",
+       "exercicios": [
+        "barbell_shoulder_press"
+       ]
+      },
+      {
+       "grupo": "quadriceps",
+       "exercicios": [
+        "front_barbell_squat"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nome": "Treino rápido 30 minutos",
+   "descricao": "Poucos exercícios, intervalos curtos.",
+   "nivel": "Iniciante",
+   "dias": [
+    {
+     "nome": "Rápido",
+     "blocos": [
+      {
+       "grupo": "peito",
+       "exercicios": [
+        "pushups"
+       ]
+      },
+      {
+       "grupo": "costas",
+       "exercicios": [
+        "wide_grip_lat_pulldown"
+       ]
+      },
+      {
+       "grupo": "quadriceps",
+       "exercicios": [
+        "bodyweight_squat"
+       ]
+      },
+      {
+       "grupo": "abdomen",
+       "exercicios": [
+        "crunches"
+       ]
+      },
+      {
+       "grupo": "cardio",
+       "exercicios": [],
+       "livres": [
+        {
+         "nome": "Cardio leve",
+         "tempo": true,
+         "reps": "300",
+         "series": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nome": "Costas e ombros (postura)",
+   "descricao": "Fortalecer a parte de trás do corpo.",
+   "nivel": "Intermediário",
+   "dias": [
+    {
+     "nome": "Postura",
+     "blocos": [
+      {
+       "grupo": "costas",
+       "exercicios": [
+        "wide_grip_lat_pulldown",
+        "dumbbell_incline_row",
+        "one_arm_dumbbell_row",
+        "bent_over_barbell_row"
+       ]
+      },
+      {
+       "grupo": "ombros",
+       "exercicios": [
+        "side_lateral_raise",
+        "front_dumbbell_raise",
+        "leverage_shoulder_press"
+       ]
+      },
+      {
+       "grupo": "lombar",
+       "exercicios": [
+        "hiperextensao_banco",
+        "hiperextensao_45",
+        "extensao_lombar_maquina"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nome": "Cardio e abdômen",
+   "descricao": "Aquecimento, cardio e core.",
+   "nivel": "Iniciante",
+   "dias": [
+    {
+     "nome": "Cardio e core",
+     "blocos": [
+      {
+       "grupo": "aquecimento",
+       "exercicios": [],
+       "livres": [
+        {
+         "nome": "Esteira leve",
+         "tempo": true,
+         "reps": "300",
+         "series": 1
+        }
+       ]
+      },
+      {
+       "grupo": "cardio",
+       "exercicios": [],
+       "livres": [
+        {
+         "nome": "Bicicleta",
+         "tempo": true,
+         "reps": "1200",
+         "series": 1
+        }
+       ]
+      },
+      {
+       "grupo": "abdomen",
+       "exercicios": [
+        "crunches",
+        "plank",
+        "cable_crunch",
+        "decline_crunch"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,279 @@
+.integrations {
+  width: min(100%, 1180px);
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+}
+
+.integrations [hidden] { display: none !important; }
+.integration-back {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  margin-bottom: 24px;
+  color: var(--green-dark);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.integration-back:hover { text-decoration: underline; }
+.integration-status {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 0 18px;
+  padding: 10px 13px;
+  border: 1px solid #d7e5c1;
+  border-radius: 11px;
+  background: #f2f7e9;
+  color: #496821;
+  font-size: 13px;
+  font-weight: 650;
+}
+.integration-status.integration-error { border-color: #efcbc8; background: #fff0ef; color: #9f3934; }
+.integration-status.integration-success { border-color: #d7e5c1; }
+
+.integration-tabs, .integration-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0; }
+.integration-tabs a { padding: 12px; border: 1px solid #cbd5cd; border-radius: 12px; }
+.integrations label { display: grid; gap: 8px; margin: 12px 0; }
+.integrations input, .integrations select { max-width: 100%; }
+.wide { grid-column: 1 / -1; }
+.camera-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 20px; margin-top: 24px; }
+.camera-card { border: 1px solid #cbd5cd; border-radius: 16px; padding: 16px; overflow: hidden; }
+.camera-card video, .camera-card img { display: block; width: 100%; max-height: 360px; object-fit: contain; background: #14221c; }
+.integrations code { display: block; overflow-wrap: anywhere; }
+.camera-message { min-height: 24px; }
+
+.camera-icon-library { position: absolute; width: 0; height: 0; overflow: hidden; }
+.camera-icon { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; flex: 0 0 auto; }
+.camera-page-header { display: flex; align-items: center; gap: 14px; margin: 22px 0 18px; }
+.camera-page-header h1 { margin: 3px 0 5px; font-size: 30px; letter-spacing: -.045em; }
+.camera-page-header .muted { margin: 0; font-size: 13px; }
+.camera-brand-mark { display: grid; width: 52px; height: 52px; place-items: center; border-radius: 16px; color: #fff; background: linear-gradient(145deg, #31593f, #173125); box-shadow: 0 10px 22px rgb(25 67 43 / 18%); }
+.camera-brand-mark .camera-icon { width: 26px; height: 26px; }
+.camera-status-pill { display: inline-flex; align-items: center; gap: 8px; margin-left: auto; padding: 8px 11px; border: 1px solid #d6e4d0; border-radius: 999px; color: #416534; background: #f2f8ef; font-size: 11px; font-weight: 750; }
+.integration-language { display: grid; gap: 4px; margin-left: auto; color: var(--muted); font-size: 10px; }
+.integration-language select { min-width: 96px; padding: 7px 9px; border: 1px solid #d5e3d1; border-radius: 9px; color: var(--ink); background: #fff; font: inherit; font-size: 11px; }
+.camera-status-pill i, .camera-playing i { width: 7px; height: 7px; border-radius: 50%; background: #73a950; box-shadow: 0 0 0 4px rgb(115 169 80 / 15%); }
+.camera-shell { padding: clamp(20px, 3vw, 32px); border: 1px solid #dde8da; border-radius: 24px; background: linear-gradient(145deg, #f8fbf6, #f1f7ef); box-shadow: 0 18px 42px rgb(37 73 44 / 7%); }
+.camera-toolbar, .camera-add-heading, .camera-list-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+.camera-toolbar h2, .camera-add-heading h3, .camera-list-heading h3 { margin: 4px 0 0; letter-spacing: -.03em; }
+.camera-toolbar .muted { margin: 6px 0 0; font-size: 13px; }
+.camera-toolbar-note { display: flex; align-items: center; gap: 9px; padding: 10px 12px; border: 1px solid #dbe8d8; border-radius: 13px; color: #537444; background: #fff; font-size: 12px; font-weight: 750; }
+.camera-toolbar-note small, .camera-add-heading > span, .camera-list-heading > span { color: var(--muted); font-size: 11px; font-weight: 500; }
+.camera-privacy { display: flex; align-items: flex-start; gap: 10px; margin: 20px 0 24px; padding: 12px 14px; border: 1px solid #d9e8d3; border-radius: 14px; color: #55724c; background: #f5faF3; font-size: 12px; line-height: 1.45; }
+.camera-privacy strong { color: #315b3c; }
+.camera-add-heading, .camera-list-heading { align-items: end; margin-top: 20px; padding-bottom: 10px; border-bottom: 1px solid #dce8d8; }
+.camera-add-heading .eyebrow, .camera-list-heading .eyebrow { margin: 0; }
+.camera-shell .form-grid { margin-top: 15px; padding: 16px; border: 1px solid #dce8d8; border-radius: 16px; background: #fff; }
+.camera-shell label small { color: var(--muted); font-size: 11px; font-weight: 500; }
+.camera-grid { margin-top: 18px; }
+.camera-grid > p { margin: 0; padding: 22px; border: 1px dashed #c7d9c1; border-radius: 15px; color: var(--muted); background: rgb(255 255 255 / 64%); text-align: center; }
+.camera-card { display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; padding: 14px; border: 1px solid #d7e3d5; border-radius: 17px; background: #fff; box-shadow: 0 7px 18px rgb(28 45 33 / 5%); }
+.camera-card h3 { margin: 0; font-size: 14px; }
+.camera-card > div:first-of-type { min-height: 180px; overflow: hidden; display: grid; place-items: center; border-radius: 12px; background: #14221c; }
+.camera-card video, .camera-card img { width: 100%; height: 220px; max-height: none; object-fit: contain; background: #14221c; }
+.camera-message { min-height: 18px; margin: 0; color: var(--muted); font-size: 11px; }
+.camera-card .button { min-height: 34px; }
+.camera-playing { display: inline-flex; align-items: center; gap: 7px; color: #4e783c; font-size: 11px; font-weight: 700; }
+
+.youtube-icon-library { position: absolute; width: 0; height: 0; overflow: hidden; }
+.youtube-icon {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.youtube-integration { max-width: 1040px; }
+.youtube-page-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0 0 24px;
+}
+.youtube-brand-mark {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  border-radius: 16px;
+  background: #feeae8;
+  color: #d4473f;
+}
+.youtube-brand-mark .youtube-icon { width: 27px; height: 27px; fill: currentColor; stroke: currentColor; }
+.youtube-page-header h1 { margin: 4px 0 5px; font-size: 31px; letter-spacing: -.05em; }
+.youtube-page-header .muted { margin: 0; font-size: 13px; line-height: 1.5; }
+
+.youtube-shell {
+  display: flex;
+  flex-direction: column;
+  padding: clamp(20px, 3vw, 32px);
+  border: 1px solid #dde8da;
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at 100% 0, rgb(198 239 98 / 25%), transparent 34%),
+    linear-gradient(145deg, #ffffff, #f1f7ee);
+  box-shadow: 0 18px 44px rgb(20 34 28 / 8%);
+}
+.youtube-workspace { order: 1; position: sticky; top: 12px; z-index: 2; }
+.youtube-empty-state { order: 2; }
+.youtube-search { order: 3; }
+.youtube-results-wrap { order: 4; }
+.youtube-toolbar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+.youtube-toolbar h2 { max-width: 620px; margin: 5px 0 7px; font-size: clamp(22px, 3vw, 30px); letter-spacing: -.045em; }
+.youtube-toolbar .muted { max-width: 590px; margin: 0; font-size: 13px; line-height: 1.6; }
+.youtube-live-pill, .youtube-playing-dot {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  flex: 0 0 auto;
+  min-height: 30px;
+  padding: 6px 11px;
+  border: 1px solid #d6e6b9;
+  border-radius: 999px;
+  background: #f5faeb;
+  color: #526c24;
+  font-size: 11px;
+  font-weight: 780;
+}
+.youtube-live-pill i, .youtube-playing-dot i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #82b53c;
+  box-shadow: 0 0 0 4px rgb(130 181 60 / 14%);
+}
+
+.youtube-search {
+  margin: 28px 0 0;
+  padding: 16px;
+  border: 1px solid #dce7d7;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgb(20 34 28 / 4%);
+}
+.youtube-search > label { margin: 0 0 9px; color: var(--ink); font-size: 13px; font-weight: 760; }
+.youtube-search > label span { color: var(--muted); font-size: 11px; font-weight: 500; }
+.youtube-input-row { display: flex; align-items: center; gap: 10px; }
+.youtube-input-icon {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  border-radius: 11px;
+  background: #eef4e8;
+  color: var(--green-dark);
+}
+.youtube-input-row input { min-width: 0; min-height: 43px; flex: 1; margin: 0; border-color: #cfddcc; }
+.youtube-input-row .button { min-height: 43px; }
+.youtube-name-search { margin-top: 12px; background: rgb(255 255 255 / 58%); }
+.youtube-results-wrap { margin-top: 20px; padding: 18px; border: 1px solid #dce7d7; border-radius: 17px; background: rgb(255 255 255 / 72%); }
+.youtube-results-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+.youtube-results-heading .muted { font-size: 11px; }
+.youtube-results { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 11px; }
+.youtube-result-card { display: grid; grid-template-columns: 118px minmax(0, 1fr); gap: 11px; overflow: hidden; border: 1px solid #dce7d7; border-radius: 13px; background: #fff; }
+.youtube-result-card img { display: block; width: 118px; height: 78px; object-fit: cover; background: #14221c; }
+.youtube-result-body { display: flex; min-width: 0; flex-direction: column; align-items: flex-start; justify-content: space-between; gap: 7px; padding: 9px 9px 9px 0; }
+.youtube-result-body h3 { display: -webkit-box; overflow: hidden; margin: 0; color: var(--ink); font-size: 12px; line-height: 1.35; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+.youtube-result-body .button { min-height: 29px; padding: 5px 9px; font-size: 11px; }
+
+.youtube-empty-state {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px dashed #c4d5bc;
+  border-radius: 17px;
+  background: rgb(255 255 255 / 58%);
+}
+.youtube-empty-icon, .youtube-queue-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  background: #eaf2e4;
+  color: var(--green-dark);
+}
+.youtube-empty-icon .youtube-icon, .youtube-queue-icon .youtube-icon { width: 21px; height: 21px; }
+.youtube-empty-state h3 { margin: 0 0 5px; font-size: 15px; letter-spacing: -.02em; }
+.youtube-empty-state p { margin: 0; color: var(--ink-soft); font-size: 12px; line-height: 1.55; }
+.youtube-empty-tip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  max-width: 205px;
+  color: #577236;
+  font-size: 11px;
+  font-weight: 650;
+  line-height: 1.4;
+}
+.youtube-empty-tip .youtube-icon { width: 16px; height: 16px; }
+
+.youtube-workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 250px;
+  gap: 18px;
+  margin-top: 20px;
+}
+.youtube-player-card, .youtube-queue {
+  border: 1px solid #d7e3d5;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 10px 26px rgb(28 45 33 / 6%);
+}
+.youtube-player-card { padding: 15px; }
+.youtube-player-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 15px; padding: 2px 3px 13px; }
+.youtube-player-heading h3 { margin: 4px 0 3px; font-size: 16px; letter-spacing: -.025em; }
+.youtube-player-heading code { color: var(--muted); font-family: inherit; font-size: 11px; }
+#youtube-player-wrap #youtube-player, #youtube-player-wrap #youtube-player iframe { display: block; width: 100%; aspect-ratio: 16 / 9; min-height: 220px; border: 0; border-radius: 12px; background: #14221c; overflow: hidden; }
+.integration-actions { margin: 14px 0 10px; }
+.integration-actions .button { min-width: 114px; }
+
+.youtube-queue-note .youtube-icon { width: 16px; height: 16px; color: #607f38; }
+.youtube-queue { padding: 18px; background: linear-gradient(180deg, #173025, #10241b); color: #f2f7ef; }
+.youtube-queue h3 { margin: 5px 0 6px; color: #ffffff; font-size: 18px; letter-spacing: -.03em; }
+.youtube-queue > .muted { color: #b8cbb9; font-size: 12px; line-height: 1.5; }
+.youtube-queue .youtube-queue-icon { background: #d9f19b; color: #173025; }
+.youtube-queue .youtube-queue-list { max-height: 290px; margin: 16px 0; overflow: auto; padding-right: 3px; }
+.youtube-queue-item { margin: 7px 0; padding: 10px 11px; border: 1px solid rgb(255 255 255 / 12%); border-radius: 11px; color: #c8d7c8; font-size: 12px; line-height: 1.35; }
+.youtube-queue-item.is-playing { border-color: #c6ef62; background: rgb(198 239 98 / 14%); color: #ffffff; }
+.youtube-queue .youtube-queue-note { display: flex; gap: 8px; align-items: flex-start; margin: 12px 0 16px; padding: 10px; border-radius: 11px; background: rgb(255 255 255 / 8%); color: #c8d7c8; font-size: 11px; line-height: 1.45; }
+.youtube-queue .button-quiet { border-color: rgb(255 255 255 / 26%); color: #ffffff; }
+
+body.embedded .youtube-integration { width: 100%; max-width: none; padding: 0; }
+body.embedded .integration-back, body.embedded .youtube-page-header { display: none; }
+body.embedded .integration-language { display: none; }
+body.embedded .youtube-shell { margin: 0; border-radius: 18px; }
+body.embedded .camera-page-header { display: none; }
+
+@media (max-width: 760px) {
+  .integrations { padding: 20px 14px 32px; }
+  .youtube-toolbar, .youtube-workspace { display: block; }
+  .youtube-live-pill { margin-top: 16px; }
+  .youtube-input-row { flex-wrap: wrap; }
+  .youtube-input-row input { min-width: calc(100% - 52px); }
+  .youtube-input-row .button { width: 100%; }
+  .youtube-results { grid-template-columns: 1fr; }
+  .youtube-results-heading { display: block; }
+  .youtube-results-heading .muted { display: block; margin-top: 5px; }
+  .youtube-empty-state { grid-template-columns: auto minmax(0, 1fr); }
+  .youtube-empty-tip { grid-column: 2; max-width: none; }
+  .youtube-queue { margin-top: 14px; }
+  .youtube-player-heading { display: block; }
+  .youtube-playing-dot { margin-top: 10px; }
+  .camera-page-header, .camera-toolbar, .camera-add-heading, .camera-list-heading { align-items: flex-start; flex-wrap: wrap; }
+  .camera-status-pill { margin-left: 0; }
+  .camera-toolbar-note { margin-left: 0; }
+}

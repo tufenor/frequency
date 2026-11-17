@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Câmeras e Spotify · Frequency</title>
+  <link rel="icon" href="/static/brand-mark.svg"><link rel="stylesheet" href="/static/styles.css?v=11">
+  <link rel="stylesheet" href="/static/integracoes.css?v=1">
+  <script type="module" src="/static/integracoes.mjs?v=1"></script>
+</head>
+<body>
+  <main class="integrations">
+    <a href="/app">← Voltar ao Frequency</a>
+    <h1>Câmeras e música</h1>
+    <p id="integration-status" role="status" aria-live="polite">Verificando acesso…</p>
+    <div id="integration-content" hidden>
+      <nav class="integration-tabs" aria-label="Integrações"><a href="#cameras">Câmeras de segurança</a><a href="#spotify">Spotify</a></nav>
+      <section id="cameras" class="panel">
+        <p class="eyebrow">ACOMPANHAMENTO OPCIONAL</p><h2>Câmeras de segurança</h2>
+        <p>Adicione a transmissão fornecida pelo instalador. Os endereços ficam somente neste navegador, separados por conta. Nenhuma imagem é gravada ou enviada ao Frequency.</p>
+        <form id="camera-form" class="form-grid">
+          <label>Nome da câmera<input name="name" required maxlength="80" placeholder="Entrada principal"></label>
+          <label>Tipo de transmissão<select name="kind"><option value="mjpeg">MJPEG</option><option value="video">Vídeo compatível com navegador</option></select></label>
+          <label class="wide">Endereço da transmissão<input name="url" type="url" required maxlength="2048" placeholder="https://camera.exemplo/stream"></label>
+          <p class="wide field-help">Sem senha ou token no endereço. RTSP e ONVIF precisam de uma ponte local instalada pelo técnico. HLS depende do suporte do navegador. Em uma página HTTPS, a câmera também precisa usar HTTPS.</p>
+          <button class="button button-primary" type="submit">Adicionar câmera</button>
+        </form>
+        <div id="camera-list" class="camera-grid"></div>
+      </section>
+      <section id="spotify" class="panel">
+        <p class="eyebrow">CONTROLE DE DISPOSITIVOS</p><h2>Spotify</h2>
+        <p>Controle uma sessão pessoal em um dispositivo com Spotify aberto. Requer Premium e um aplicativo autorizado no Spotify for Developers.</p>
+        <p>Spotify é destinado ao uso pessoal e não permite sonorização comercial da academia. Para o ambiente da academia, escolha um serviço licenciado para empresas. <a href="https://support.spotify.com/us/article/spotify-public-commercial-use/" target="_blank" rel="noopener noreferrer">Consultar regras</a></p>
+        <details><summary>Configurar conexão</summary><p>Cadastre este endereço de retorno no aplicativo Spotify:</p><code id="spotify-redirect"></code><p>Informe apenas o Client ID público. Nunca informe Client Secret ou senha.</p><label>Client ID<input id="spotify-client" maxlength="32" autocomplete="off" spellcheck="false"></label></details>
+        <div class="integration-actions"><button id="spotify-connect" class="button button-primary" type="button">Conectar Spotify</button><button id="spotify-disconnect" class="button button-secondary" type="button" hidden>Desconectar</button></div>
+        <div id="spotify-controls" hidden>
+          <p id="spotify-track" aria-live="polite">Atualize para consultar a reprodução.</p>
+          <label>Dispositivo<select id="spotify-device"><option value="">Dispositivo ativo</option></select></label>
+          <div class="integration-actions">
+            <button class="button button-secondary" data-player="previous" type="button">Anterior</button><button class="button button-primary" data-player="play" type="button">Reproduzir</button><button class="button button-secondary" data-player="pause" type="button">Pausar</button><button class="button button-secondary" data-player="next" type="button">Próxima</button><button class="button button-secondary" id="spotify-refresh" type="button">Atualizar</button>
+          </div>
+          <label>Volume <input id="spotify-volume" type="range" min="0" max="100" value="50"></label><button id="spotify-set-volume" class="button button-secondary" type="button">Aplicar volume</button>
+          <p class="field-help">Sem atualização automática para economizar rede. A conexão é encerrada ao sair do Frequency. Desconectar aqui não pausa o dispositivo; revogue a autorização na sua conta Spotify se necessário.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,9 @@
+[Unit]
+Description=Frequency preventive disk maintenance
+After=docker.service
+Requires=docker.service
+
+[Service]
+Type=oneshot
+ExecStart=/opt/frequency/backend/ops/frequency-maintenance.sh
+TimeoutStartSec=15min

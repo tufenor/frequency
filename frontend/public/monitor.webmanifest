@@ -1,0 +1,14 @@
+{
+  "name": "Frequency Gym — Tela de acesso",
+  "short_name": "Tela Frequency",
+  "description": "Monitor de acesso da academia.",
+  "start_url": "/monitor",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0d2118",
+  "theme_color": "#0d2118",
+  "lang": "pt-BR",
+  "icons": [
+    { "src": "/static/brand-mark-light.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

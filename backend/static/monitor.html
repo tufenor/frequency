@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#14221c">
+  <title>Tela de entrada</title>
+  <link rel="stylesheet" href="/static/monitor.css">
+  <script src="/static/monitor.js" defer></script>
+</head>
+<body>
+  <main class="monitor-shell">
+    <header class="monitor-topbar">
+      <div class="academy-brand">
+        <img id="academy-logo" alt="" hidden>
+        <div class="academy-name-wrap">
+          <span id="brand-greeting" class="brand-overline">BEM-VINDO À</span>
+          <strong id="academy-name">Sua academia</strong>
+        </div>
+      </div>
+      <div class="monitor-controls">
+        <label class="language-choice"><span id="language-label">Idioma</span>
+          <select id="monitor-language" aria-label="Idioma da tela">
+            <option value="pt-BR">Português</option>
+            <option value="es-BO">Español</option>
+            <option value="en">English</option>
+            <option value="zh-CN">中文</option>
+            <option value="hi-IN">हिन्दी</option>
+          </select>
+        </label>
+        <button id="sound-button" class="sound-button" type="button" aria-pressed="false">Ativar som</button>
+        <span class="connection-indicator"><i id="connection-dot"></i><span id="connection-label">Aguardando conexão</span></span>
+      </div>
+    </header>
+
+    <section id="access-card" class="access-card idle" aria-live="assertive" aria-atomic="true">
+      <div class="access-emblem" aria-hidden="true">
+        <svg class="emblem-waiting" viewBox="0 0 96 96"><circle cx="48" cy="48" r="39"/><path d="M48 27v23l15 9"/></svg>
+        <svg class="emblem-allowed" viewBox="0 0 96 96"><circle cx="48" cy="48" r="39"/><path d="m28 49 13 13 28-29"/></svg>
+        <svg class="emblem-denied" viewBox="0 0 96 96"><circle cx="48" cy="48" r="39"/><path d="m34 34 28 28m0-28L34 62"/></svg>
+      </div>
+      <p id="access-kicker" class="access-kicker">FREQUENCY · ACESSO</p>
+      <h1 id="access-title">Aproxime sua digital</h1>
+      <p id="access-message" class="access-message">A catraca mostrará o resultado da sua entrada aqui.</p>
+      <div class="photo-ring"><img id="student-photo" alt="" hidden><span id="photo-fallback" aria-hidden="true">F</span></div>
+      <p id="access-time" class="access-time" hidden></p>
+    </section>
+
+    <footer class="monitor-footer">
+      <span id="monitor-footer-hint">Sua informação aparece por alguns segundos e depois é removida.</span>
+      <span id="frequency-signature">Acesso protegido por <strong>Frequency</strong></span>
+    </footer>
+
+    <section id="key-dialog" class="key-dialog" aria-labelledby="key-title">
+      <form id="key-form" class="key-card">
+        <div class="key-symbol" aria-hidden="true">↗</div>
+        <p class="brand-overline">TELA DA ACADEMIA</p>
+        <h2 id="key-title">Conectar esta tela</h2>
+        <p id="key-description">Cole o código criado pelo dono da academia. Este código só permite mostrar o resultado de novas entradas.</p>
+        <label id="key-label" for="monitor-key">Código de conexão</label>
+        <input id="monitor-key" type="password" autocomplete="off" required maxlength="100">
+        <button id="connect-button" class="connect-button" type="submit">Conectar monitor</button>
+        <p id="key-error" class="key-error" role="alert" hidden></p>
+      </form>
+    </section>
+    <p id="screen-error" class="screen-error" role="status" hidden></p>
+  </main>
+</body>
+</html>

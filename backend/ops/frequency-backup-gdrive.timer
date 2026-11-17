@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily Frequency backup to Google Drive
+
+[Timer]
+OnCalendar=*-*-* 03:10:00 UTC
+Persistent=true
+RandomizedDelaySec=20m
+Unit=frequency-backup-gdrive.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,23 @@
+[Unit]
+Description=Encrypted daily Frequency PostgreSQL backup
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=frequency
+Group=frequency
+WorkingDirectory=/opt/frequency/backend
+EnvironmentFile=/etc/frequency/backup.env
+ExecStart=/opt/frequency/backend/venv/bin/python -m ops.backup_postgres
+UMask=0077
+NoNewPrivileges=true
+PrivateDevices=true
+PrivateTmp=true
+ProtectControlGroups=true
+ProtectHome=true
+ProtectKernelModules=true
+ProtectKernelTunables=true
+ProtectSystem=strict
+RestrictSUIDSGID=true
+ReadWritePaths=/var/lib/frequency/backups

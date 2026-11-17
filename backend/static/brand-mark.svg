@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title">
+  <title id="title">Frequency</title>
+  <rect width="48" height="48" rx="15" fill="#14221c"/>
+  <path d="M8 24h8l2.5-6 5 12 5-12 2.5 6h9" fill="none" stroke="#c6ef62" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M8 19v10m32-10v10" fill="none" stroke="#c6ef62" stroke-width="3.4" stroke-linecap="round"/>
+</svg>

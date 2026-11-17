@@ -1,0 +1,25 @@
+﻿# dependências e builds
+node_modules/
+dist/
+build/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# segredos e ambiente
+.env
+.env.local
+.env.*.local
+
+# dados locais
+*.db
+*.sqlite
+*.sqlite3
+*.log
+uploads/
+backups/
+
+# sistema
+.DS_Store
+Thumbs.db

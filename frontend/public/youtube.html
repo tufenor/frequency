@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="referrer" content="origin">
+  <title>YouTube · Frequency</title>
+  <link rel="icon" href="/static/brand-mark.svg"><link rel="stylesheet" href="/static/styles.css?v=14">
+  <link rel="stylesheet" href="/static/integracoes.css?v=4">
+  <script src="/static/i18n.js?v=3"></script><script type="module" src="/static/integracoes.mjs?v=20"></script>
+</head>
+<body data-feature="youtube">
+  <svg class="youtube-icon-library" aria-hidden="true" focusable="false">
+    <symbol id="youtube-logo" viewBox="0 0 24 24"><path d="M21.4 7.2a2.9 2.9 0 0 0-2-2C17.6 4.7 12 4.7 12 4.7s-5.6 0-7.4.5a2.9 2.9 0 0 0-2 2A30.5 30.5 0 0 0 2.1 12a30.5 30.5 0 0 0 .5 4.8 2.9 2.9 0 0 0 2 2c1.8.5 7.4.5 7.4.5s5.6 0 7.4-.5a2.9 2.9 0 0 0 2-2 30.5 30.5 0 0 0 .5-4.8 30.5 30.5 0 0 0-.5-4.8Z"/><path d="m10 15.3 5.2-3.3L10 8.7v6.6Z"/></symbol>
+    <symbol id="youtube-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7V5Z"/></symbol>
+    <symbol id="youtube-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+    <symbol id="youtube-stop" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></symbol>
+    <symbol id="youtube-list" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01"/></symbol>
+    <symbol id="youtube-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.1.1l2-2a5 5 0 0 0-7.1-7.1l-1.1 1.1"/><path d="M14 11a5 5 0 0 0-7.1-.1l-2 2A5 5 0 0 0 12 20l1.1-1.1"/></symbol>
+    <symbol id="youtube-spark" viewBox="0 0 24 24"><path d="m12 3 1.7 5.3L19 10l-5.3 1.7L12 17l-1.7-5.3L5 10l5.3-1.7L12 3Z"/><path d="m19 16 .7 2.3L22 19l-2.3.7L19 22l-.7-2.3L16 19l2.3-.7L19 16Z"/></symbol>
+  </svg>
+  <main class="integrations youtube-integration">
+    <a class="integration-back" href="/app">← Voltar ao Frequency</a>
+    <header class="youtube-page-header">
+      <span class="youtube-brand-mark"><svg class="youtube-icon"><use href="#youtube-logo"></use></svg></span>
+      <div><p class="eyebrow">SOM AMBIENTE</p><h1>YouTube</h1><p class="muted">Uma playlist contínua, sem interromper a operação da academia.</p></div>
+      <label class="integration-language"><span>Idioma</span><select id="integration-language" aria-label="Idioma"><option value="pt-BR">Português</option><option value="es-BO">Español</option><option value="en-US">English</option><option value="zh-CN">中文</option><option value="hi-IN">हिन्दी</option></select></label>
+    </header>
+    <p id="integration-status" class="integration-status" role="status" aria-live="polite">Verificando acesso…</p>
+    <div id="integration-content" hidden>
+      <section class="youtube-shell">
+        <div class="youtube-toolbar">
+          <div><p class="eyebrow">PLAYER DA ACADEMIA</p><h2>Som contínuo, sem sair do Frequency</h2><p class="muted">Conecte uma playlist para o YouTube seguir as próximas faixas automaticamente.</p></div>
+          <span class="youtube-live-pill"><i></i> Premium ativo</span>
+        </div>
+        <form id="youtube-form" class="youtube-search" role="search">
+          <label for="youtube-video">Playlist ou vídeo do YouTube<span>Use o link compartilhado do YouTube ou o identificador.</span></label>
+          <div class="youtube-input-row"><span class="youtube-input-icon"><svg class="youtube-icon"><use href="#youtube-link"></use></svg></span><input id="youtube-video" autocomplete="off" maxlength="300" placeholder="Cole uma playlist ou um vídeo…"><button class="button button-primary" type="submit"><svg class="youtube-icon"><use href="#youtube-play"></use></svg><span>Carregar</span></button></div>
+        </form>
+        <form id="youtube-search-form" class="youtube-search youtube-name-search" role="search">
+          <label for="youtube-search-query">Ou pesquise pelo nome<span>Escolha um resultado e ele será carregado no player acima.</span></label>
+          <div class="youtube-input-row"><span class="youtube-input-icon"><svg class="youtube-icon"><use href="#youtube-spark"></use></svg></span><input id="youtube-search-query" autocomplete="off" maxlength="120" placeholder="Ex.: música para treino, cardio…"><button class="button button-secondary" type="submit"><svg class="youtube-icon"><use href="#youtube-list"></use></svg><span>Pesquisar</span></button></div>
+        </form>
+        <div id="youtube-results-wrap" class="youtube-results-wrap" hidden>
+          <div class="youtube-results-heading"><p class="eyebrow">RESULTADOS</p><span class="muted">Selecione uma faixa para reproduzir</span></div>
+          <div id="youtube-results" class="youtube-results"></div>
+        </div>
+        <div id="youtube-empty-state" class="youtube-empty-state">
+          <span class="youtube-empty-icon"><svg class="youtube-icon"><use href="#youtube-list"></use></svg></span>
+          <div><h3>Comece por uma playlist</h3><p>Ela organiza a sequência de músicas para o ambiente e mantém a reprodução enquanto você navega pelo painel.</p></div>
+          <span class="youtube-empty-tip"><svg class="youtube-icon"><use href="#youtube-spark"></use></svg> A próxima faixa é escolhida pela playlist</span>
+        </div>
+        <div id="youtube-player-wrap" class="youtube-workspace" hidden>
+          <div class="youtube-player-card">
+            <div class="youtube-player-heading"><div><p id="youtube-source-kind" class="eyebrow">Player conectado</p><h3 id="youtube-search-title">Em reprodução</h3><code id="youtube-source-id"></code></div><span class="youtube-playing-dot"><i></i> Ao vivo</span></div>
+            <div id="youtube-player" title="Player do YouTube" referrerpolicy="strict-origin-when-cross-origin"></div>
+            <div class="integration-actions">
+              <button class="button button-primary" data-youtube="playVideo" type="button"><svg class="youtube-icon"><use href="#youtube-play"></use></svg><span>Reproduzir</span></button>
+              <button class="button button-secondary" data-youtube="pauseVideo" type="button"><svg class="youtube-icon"><use href="#youtube-pause"></use></svg><span>Pausar</span></button>
+              <button class="button button-secondary" data-youtube="stopVideo" type="button"><svg class="youtube-icon"><use href="#youtube-stop"></use></svg><span>Parar</span></button>
+            </div>
+          </div>
+          <aside class="youtube-queue"><span class="youtube-queue-icon"><svg class="youtube-icon"><use href="#youtube-list"></use></svg></span><p class="eyebrow">SEQUÊNCIA</p><h3>Próximas músicas</h3><p class="muted">Cada vídeo escolhido entra automaticamente na fila e o próximo começa sozinho.</p><div id="youtube-queue-list" class="youtube-queue-list"></div><div class="youtube-queue-note"><svg class="youtube-icon"><use href="#youtube-spark"></use></svg><span>Use uma playlist do YouTube para manter uma curadoria contínua no ambiente.</span></div><button id="youtube-clear" class="button button-quiet button-small" type="button">Limpar fila</button></aside>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

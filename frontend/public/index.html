@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#14221c">
+    <link rel="manifest" href="/frequency.webmanifest">
+    <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="#14221c">
+    <title>Frequency — gestão da academia</title>
+    <link rel="icon" type="image/svg+xml" href="/static/brand-mark.svg">
+    <link rel="stylesheet" href="/static/styles.css?v=heatmap-20261005">
+    <script src="/static/meta-pixel.js?v=20261011" defer></script>
+    <script src="/static/i18n.js?v=oauth-20261010" defer></script>
+    <script src="/static/app.js?v=backup-save-device-20261004-v7-oauth-20261010" defer></script>
+    <script src="/static/pwa-register.js" defer></script>
+    <script src="/static/lutas.js?v=lutas-20261012" defer></script>
+    <script src="/static/onda1b.js?v=onda1b-20261012" defer></script>
+    <script src="/static/business.js?v=heatmap-20261005" defer></script>
+  </head>
+  <body>
+    <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+      <symbol id="icon-dashboard" viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="14" y="3" width="7" height="5" rx="2"/><rect x="14" y="11" width="7" height="10" rx="2"/><rect x="3" y="14" width="8" height="7" rx="2"/></symbol>
+      <symbol id="icon-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M20 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+      <symbol id="icon-card" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 10h18M7 15h3"/></symbol>
+      <symbol id="icon-access" viewBox="0 0 24 24"><path d="M4 21V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v17"/><path d="M2 21h20M14 12h.01"/><path d="M8 6h4v4H8z"/></symbol>
+      <symbol id="icon-dumbbell" viewBox="0 0 24 24"><path d="M6.5 6.5v11m11-11v11M3 9v6m18-6v6M6.5 12h11"/><path d="M3 9.5v5m18-5v5"/></symbol>
+      <symbol id="icon-team" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20v-1a6 6 0 0 1 12 0v1z"/><path d="M16 5.5a3 3 0 0 1 0 5.8M18 14a5 5 0 0 1 3 4.6V20h-3"/></symbol>
+      <symbol id="icon-building" viewBox="0 0 24 24"><path d="M3 21h18M5 21V5l7-3 7 3v16"/><path d="M9 9h.01M15 9h.01M9 13h.01M15 13h.01M10 21v-4h4v4"/></symbol>
+      <symbol id="icon-monitor" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="13" rx="2"/><path d="M8 21h8m-4-5v5M7 8h4m-4 3h7"/></symbol>
+      <symbol id="icon-refresh" viewBox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M5.6 9A7 7 0 0 1 17 6l3 3M4 15l3 3a7 7 0 0 0 11.4-3"/></symbol>
+      <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+      <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7"/></symbol>
+      <symbol id="icon-logout" viewBox="0 0 24 24"><path d="M10 17l5-5-5-5m5 5H3"/><path d="M12 3h6a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-6"/></symbol>
+      <symbol id="icon-alert" viewBox="0 0 24 24"><path d="m10.3 3.9-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.7-3.1l-8-14a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4m0 4h.01"/></symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+      <symbol id="icon-chart" viewBox="0 0 24 24"><path d="M3 3v18h18M7 16v-4m5 4V7m5 9v-6"/></symbol>
+      <symbol id="icon-settings" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3"/><circle cx="15" cy="17" r="3"/></symbol>
+      <symbol id="icon-shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6zM8 12l3 3 5-6"/></symbol>
+      <symbol id="icon-download" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M4 17v4h16v-4"/></symbol>
+      <symbol id="icon-backup" viewBox="0 0 24 24"><path d="M5 4h14v16H5z"/><path d="M8 8h8M8 12h8M8 16h5"/><path d="m17 2 3 3-3 3"/></symbol>
+      <symbol id="icon-cloud" viewBox="0 0 24 24"><path d="M7 18a4 4 0 1 1 1-7.9A5 5 0 0 1 18 12a3 3 0 1 1 0 6H7Z"/></symbol>
+      <symbol id="icon-camera" viewBox="0 0 24 24"><path d="M4 8h4l1.5-2h5L16 8h4a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2Z"/><circle cx="12" cy="14" r="3.5"/></symbol>
+      <symbol id="icon-youtube" viewBox="0 0 24 24"><path d="M21 7.2a2.8 2.8 0 0 0-2-2C17.3 4.7 12 4.7 12 4.7s-5.3 0-7 .5a2.8 2.8 0 0 0-2 2A28 28 0 0 0 2.5 12 28 28 0 0 0 3 16.8a2.8 2.8 0 0 0 2 2c1.7.5 7 .5 7 .5s5.3 0 7-.5a2.8 2.8 0 0 0 2-2 28 28 0 0 0 .5-4.8 28 28 0 0 0-.5-4.8Z"/><path d="m10 15.3 5.2-3.3L10 8.7v6.6Z"/></symbol>
+      <symbol id="icon-receipt" viewBox="0 0 24 24"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3Z"/><path d="M9 8h6M9 12h6M9 16h3"/></symbol>
+      <symbol id="icon-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 12 9 5 9-5M3 16l9 5 9-5"/></symbol>
+      <symbol id="icon-qr" viewBox="0 0 24 24"><path d="M4 4h6v6H4V4ZM14 4h6v6h-6V4ZM4 14h6v6H4v-6ZM14 14h2v2h-2v-2ZM18 14h2v4h-2v-4ZM14 18h4v2h-4v-2Z"/></symbol>
+    </svg>
+
+    <section id="login-view" class="login-view">
+      <div class="login-story">
+        <a class="brand login-brand" href="/app" aria-label="Frequency, início">
+          <img class="brand-lockup" src="/static/brand-lockup.svg" alt="Frequency">
+        </a>
+        <div class="story-copy">
+          <p class="eyebrow">GESTÃO QUE ACOMPANHA O SEU RITMO</p>
+          <h1>Mais tempo para o que move você.</h1>
+          <p>Alunos, mensalidades e acessos da sua academia em um só lugar.</p>
+        </div>
+        <div class="gym-art" aria-hidden="true">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="art-dumbbell"><span></span><b></b><span></span></div>
+          <div class="art-caption"><span class="art-pulse"></span> TREINO · GESTÃO · EVOLUÇÃO</div>
+        </div>
+      </div>
+      <div class="login-card">
+        <label class="language-control"><span>Idioma</span><select id="login-language" aria-label="Idioma"><option value="pt-BR">Português</option><option value="es-BO">Español</option><option value="en-US">English</option><option value="zh-CN">中文</option><option value="hi-IN">हिन्दी</option></select></label>
+        <div class="login-card-heading">
+          <span class="login-card-icon"><svg class="icon"><use href="#icon-dumbbell"></use></svg></span>
+          <p class="eyebrow">ÁREA DA ACADEMIA</p>
+        </div>
+        <h2>Bem-vindo de volta</h2>
+        <p class="muted">Entre com seu e-mail e senha para continuar.</p>
+        <form id="login-form" class="form-stack">
+          <label for="login-email">E-mail</label>
+          <input id="login-email" name="username" type="email" autocomplete="username" maxlength="254" required>
+          <label for="login-password">Senha</label>
+          <div class="password-field login-password-field"><input id="login-password" name="password" type="password" autocomplete="current-password" maxlength="256" required><button id="login-password-toggle" class="password-toggle" type="button" aria-label="Mostrar senha">Ver</button></div>
+          <button class="button button-primary button-wide" type="submit"><span>Entrar</span><svg class="icon"><use href="#icon-arrow-right"></use></svg></button>
+        </form>
+        <a class="button button-secondary button-wide google-login-action" href="/auth/google/start?flow=login">Continuar com Google</a>
+        <p id="login-feedback" class="feedback" role="status" aria-live="polite"></p>
+        <div class="student-entry-card">
+          <div class="student-entry-icon"><svg class="icon"><use href="#icon-dumbbell"></use></svg></div>
+          <div><strong>Você treina em uma academia?</strong><p>Entre no app do aluno para ver seu treino, pagamentos e evolução.</p></div>
+          <a class="student-entry-link" href="/app-aluno/" data-mode-switch>Ir para o app aluno <svg class="icon"><use href="#icon-arrow-right"></use></svg></a>
+        </div>
+        <details class="login-signup" id="login-signup-details">
+          <summary>Você ainda não tem conta? Crie sua academia grátis por 7 dias</summary>
+          <form id="academy-signup-form" class="form-stack">
+            <div class="signup-screen-header">
+              <a class="brand" href="/app" aria-label="Frequency Gym"><img class="brand-lockup" src="/static/brand-lockup-light.svg" alt="Frequency Gym"></a>
+              <button id="signup-back-login" class="button button-quiet" type="button">Entrar</button>
+            </div>
+            <div class="signup-screen-copy"><span class="eyebrow">7 DIAS GRÁTIS · SEM CARTÃO</span><h2>Sua academia em dia, <em>sem caderno.</em></h2><p>Alunos, planos, pagamentos e acessos em um só lugar. Crie sua conta em 1 minuto.</p></div>
+            <div class="signup-benefits" aria-label="Benefícios do Frequency Gym"><span>✓ Alunos e planos</span><span>✓ Pagamentos e vencimentos</span><span>✓ Controle de entrada</span></div>
+            <div id="signup-plan-context" class="signup-plan-context" hidden><span class="eyebrow">PLANO SELECIONADO</span><strong id="signup-plan-name"></strong><p>Crie sua conta grátis agora. Depois do login, o checkout será liberado para este plano.</p></div>
+            <input name="pais" id="signup-country" type="hidden" value="Bolivia">
+            <label>Nome da academia<input name="nome_academia" autocomplete="organization" maxlength="160" required></label>
+            <label>Seu nome<input name="nome_dono" autocomplete="name" maxlength="160" required></label>
+            <label class="signup-phone-field">WhatsApp
+              <select id="signup-phone-prefix" aria-label="Prefixo do país"><option value="BO">🇧🇴 BO +591</option><option value="BR">🇧🇷 BR +55</option><option value="US">🇺🇸 US +1</option><option value="PE">🇵🇪 PE +51</option><option value="CL">🇨🇱 CL +56</option><option value="AR">🇦🇷 AR +54</option></select>
+              <input name="telefone_dono" type="tel" inputmode="tel" autocomplete="tel" minlength="7" maxlength="40" placeholder="Número de WhatsApp" required>
+            </label>
+            <label>E-mail<input name="email_dono" type="email" autocomplete="email" maxlength="254" required></label>
+            <label>Senha <span class="field-help">Mínimo 8 caracteres</span><span class="password-field"><input id="signup-password" name="senha_dono" type="password" autocomplete="new-password" minlength="8" maxlength="256" required><button id="signup-password-toggle" class="password-toggle" type="button" aria-label="Mostrar senha">Ver</button></span></label>
+            <div class="signup-guarantees"><span>✓ Sem cartão e sem compromisso</span><span id="signup-bob-guarantee">✓ Preços em bolivianos, a partir de Bs 250/mês</span><span>✓ Funciona no computador e no celular</span></div>
+            <p class="field-help signup-legal">Ao criar sua conta você aceita os <a href="/termos">Termos</a> e a <a href="/privacidade">Política de privacidade</a>.</p>
+            <button id="academy-signup-submit" class="button button-primary button-wide" type="submit">Começar meus 7 dias grátis →</button>
+            <p id="academy-signup-feedback" class="feedback" role="status" aria-live="polite"></p>
+            <div id="signup-success" class="signup-success" hidden><span class="signup-success-icon" aria-hidden="true">✓</span><h2>Pronto! Sua academia foi criada.</h2><p>Seus 7 dias grátis começam agora. Enviamos um link para confirmar sua conta por e-mail.</p><h3>Seus primeiros passos</h3><ol><li>Confirme seu e-mail</li><li>Cadastre seus planos</li><li>Registre seus primeiros alunos</li></ol><button id="signup-open-login" class="button button-primary button-wide" type="button">Abrir minha academia</button><a id="signup-support-action" class="button button-secondary button-wide" href="https://web.whatsapp.com/send/?phone=59175443696&text=Hola%2C%20necesito%20ayuda%20para%20configurar%20mi%20gimnasio%20en%20Frequency." target="_blank" rel="noopener noreferrer">Ajudamos você a configurar</a></div>
+            <div id="signup-next-actions" class="signup-next-actions" hidden>
+              <strong>Próximo passo</strong>
+              <p>Seu espaço foi criado. Escolha como quer liberar a operação completa.</p>
+            <div class="signup-next-buttons"><a id="signup-checkout-action" class="button button-primary" href="/app">Ir para o checkout</a><a id="signup-whatsapp-action" class="button button-secondary" href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a></div>
+            <button id="forgot-password-action" class="button button-quiet button-wide" type="button">Esqueci minha senha</button>
+            </div>
+          </form>
+        </details>
+      </div>
+      <p class="login-foot muted">Acesso reservado à equipe da academia.</p>
+    </section>
+
+    <div id="app-view" class="app-view" hidden>
+      <header class="topbar">
+        <a class="brand" href="/app" aria-label="Frequency, início">
+          <img class="brand-lockup" src="/static/brand-lockup.svg" alt="Frequency">
+        </a>
+        <div class="account-area">
+          <label class="language-control"><span class="sr-only">Idioma</span><select id="app-language" aria-label="Idioma"><option value="pt-BR">PT</option><option value="es-BO">ES</option><option value="en-US">EN</option><option value="zh-CN">中文</option><option value="hi-IN">हिन्दी</option></select></label>
+          <div class="account-copy">
+            <strong id="account-name"></strong>
+            <span id="account-role" class="muted"></span>
+          </div>
+          <a id="mode-switch" class="button button-secondary" href="/app-aluno/" title="Abrir o app do aluno (web)" data-mode-switch><svg class="icon"><use href="#icon-dumbbell"></use></svg><span>Modo aluno</span></a>
+          <span id="sync-mode-pill" class="sync-mode-pill" hidden>Consulta na nuvem</span>
+          <button id="logout-button" class="button button-quiet" type="button"><svg class="icon"><use href="#icon-logout"></use></svg><span>Sair</span></button>
+        </div>
+      </header>
+
+      <div class="app-layout">
+        <aside class="sidebar">
+          <p class="eyebrow sidebar-label">MENU</p>
+          <nav class="main-nav" aria-label="Navegação principal">
+            <section class="nav-group" data-roles="admin_plataforma"><p class="nav-group-label">Visão da plataforma</p>
+              <button class="nav-button" data-page="negocio" data-role="admin_plataforma" type="button"><svg class="icon"><use href="#icon-chart"></use></svg><span>Meu negócio</span></button>
+              <button class="nav-button" data-page="site-analytics" data-role="admin_plataforma" type="button"><svg class="icon"><use href="#icon-chart"></use></svg><span>Analytics do site</span></button>
+              <button class="nav-button" data-page="prospeccao" data-role="admin_plataforma" type="button"><svg class="icon"><use href="#icon-team"></use></svg><span>Prospecção</span></button>
+              <button class="nav-button" data-page="academias" data-role="admin_plataforma" type="button"><svg class="icon"><use href="#icon-building"></use></svg><span>Academias</span></button>
+            </section>
+            <section class="nav-group" data-roles="admin_plataforma"><p class="nav-group-label">Financeiro Frequency</p>
+              <button class="nav-button" data-page="cobrancas-frequency" data-role="admin_plataforma" type="button"><svg class="icon"><use href="#icon-receipt"></use></svg><span>Cobranças Frequency</span></button>
+              <button class="nav-button" data-page="pacotes" data-role="admin_plataforma" type="button"><svg class="icon"><use href="#icon-layers"></use></svg><span>Pacotes e assinaturas</span></button>
+              <button class="nav-button" data-page="recebimento-frequency" data-role="admin_plataforma" type="button"><svg class="icon"><use href="#icon-qr"></use></svg><span>Meu QR e contato</span></button>
+              <button class="nav-button" data-page="gmail-frequency" data-role="admin_plataforma" type="button"><svg class="icon"><use href="#icon-mail"></use></svg><span>Gmail de recebimentos</span></button>
+            </section>
+            <section class="nav-group" data-roles="dono recepcao"><p class="nav-group-label">Operação da academia</p>
+              <button class="nav-button" data-page="dashboard" data-roles="dono recepcao" type="button"><svg class="icon"><use href="#icon-dashboard"></use></svg><span>Visão geral</span></button>
+              <button class="nav-button" data-page="alunos" data-roles="dono recepcao" type="button"><svg class="icon"><use href="#icon-users"></use></svg><span>Alunos</span></button>
+              <button class="nav-button" data-page="pagamentos" data-roles="dono recepcao" type="button"><svg class="icon"><use href="#icon-card"></use></svg><span>Pagamentos</span></button>
+              <button class="nav-button" data-page="presencas" data-roles="dono recepcao" type="button"><svg class="icon"><use href="#icon-access"></use></svg><span>Acessos</span></button>
+              <button class="nav-button" data-page="mapa-regiao" data-roles="dono recepcao" type="button"><svg class="icon"><use href="#icon-chart"></use></svg><span>Mapa regional</span></button>
+              <button class="nav-button" data-page="qr-acesso" data-roles="dono recepcao" type="button"><svg class="icon"><use href="#icon-qr"></use></svg><span>Conferir QR do aluno</span></button>
+            </section>
+            <section class="nav-group" data-roles="dono"><p class="nav-group-label">Gestão</p>
+              <button class="nav-button" data-page="planos" data-roles="dono recepcao" type="button"><svg class="icon"><use href="#icon-dumbbell"></use></svg><span>Planos</span></button>
+              <button class="nav-button" data-page="financeiro" data-role="dono" type="button"><svg class="icon"><use href="#icon-chart"></use></svg><span>Resultados</span></button>
+              <button class="nav-button" data-page="equipe" data-role="dono" type="button"><svg class="icon"><use href="#icon-team"></use></svg><span>Equipe</span></button>
+            </section>
+            <section class="nav-group" data-roles="dono recepcao professor"><p class="nav-group-label">Lutas e aulas</p>
+              <button class="nav-button" data-page="lutas" data-roles="dono recepcao professor" type="button"><svg class="icon"><use href="#icon-users"></use></svg><span>Turmas e chamada</span></button>
+            </section>
+            <section class="nav-group" data-roles="dono"><p class="nav-group-label">Experiência do aluno</p>
+              <button class="nav-button" data-page="desafios" data-role="dono" type="button"><svg class="icon"><use href="#icon-chart"></use></svg><span>Desafios</span></button>
+              <button class="nav-button" data-page="aparelhos" data-role="dono" type="button"><svg class="icon"><use href="#icon-dumbbell"></use></svg><span>Aparelhos</span></button>
+              <button class="nav-button" data-page="quiosques" data-role="dono" type="button"><svg class="icon"><use href="#icon-camera"></use></svg><span>Quiosques</span></button>
+              <button class="nav-button" data-page="exercicios" data-role="dono" type="button"><svg class="icon"><use href="#icon-dumbbell"></use></svg><span>Exercícios</span></button>
+              <button class="nav-button" data-page="tela-aluno" data-role="dono" type="button"><svg class="icon"><use href="#icon-monitor"></use></svg><span>Tela do aluno</span></button>
+              <button class="nav-button" data-page="cameras" data-feature-link="cameras" data-role="dono" type="button" hidden><svg class="icon"><use href="#icon-camera"></use></svg><span>Câmeras de segurança</span></button>
+              <button class="nav-button" data-page="youtube" data-feature-link="youtube" data-role="dono" type="button" hidden><svg class="icon"><use href="#icon-youtube"></use></svg><span>YouTube</span></button>
+            </section>
+            <section class="nav-group" data-roles="dono recepcao"><p class="nav-group-label">Conta e sistema</p>
+              <button class="nav-button" data-page="assinatura" data-roles="dono recepcao" type="button"><svg class="icon"><use href="#icon-shield"></use></svg><span>Assinatura Frequency</span></button>
+              <button class="nav-button" data-page="preferencias" data-roles="dono recepcao" type="button"><svg class="icon"><use href="#icon-settings"></use></svg><span>Preferências</span></button>
+              <button class="nav-button" data-page="backup" data-roles="dono" type="button"><svg class="icon"><use href="#icon-backup"></use></svg><span>Backup</span></button>
+            </section>
+          </nav>
+          <section class="facial-notifications" data-roles="dono recepcao" aria-labelledby="facial-title" aria-live="polite">
+            <div class="facial-heading"><div><p class="eyebrow">ACESSO</p><h2 id="facial-title">Acessos faciais</h2></div><span id="facial-count">0</span></div>
+            <div id="facial-events" role="log" aria-live="polite" aria-relevant="additions"></div>
+            <p id="facial-empty">Nenhum acesso facial novo nesta sessão.</p>
+          </section>
+          <div class="sidebar-note">
+            <img class="sidebar-mark" src="/static/brand-mark.svg" alt="">
+            <span><strong>Frequency</strong><small>Gestão da academia</small></span>
+          </div>
+        </aside>
+
+        <main class="main-content">
+          <div id="subscription-banner" class="subscription-banner" role="alert" hidden><svg class="icon"><use href="#icon-alert"></use></svg><div><strong id="subscription-banner-title"></strong><p id="subscription-banner-copy"></p></div><button class="button button-quiet button-small" data-go="assinatura" type="button">Ver assinatura</button></div>
+          <div id="app-notice" class="notice" role="status" aria-live="polite" hidden></div>
+
+          <section class="page" data-view="negocio" hidden>
+            <div class="page-heading"><div><p class="eyebrow">FREQUENCY · EMPRESA</p><h1>Meu negócio</h1><p class="muted">Da primeira academia ao próximo crescimento.</p></div><button class="button button-secondary" data-refresh-business type="button"><svg class="icon"><use href="#icon-refresh"></use></svg><span>Atualizar</span></button></div>
+            <div class="business-hero"><div><span class="eyebrow">O SEU NEGÓCIO EM MOVIMENTO</span><h2>Uma visão clara.<br>Decisões melhores.</h2><p>Receita recebida, novos contratos e atenção aos vencimentos.</p><button class="button button-primary" data-go="academias" type="button"><svg class="icon"><use href="#icon-plus"></use></svg><span>Cadastrar academia</span></button></div><div class="hero-graphic" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><svg class="icon"><use href="#icon-chart"></use></svg></div></div>
+            <div id="business-stats" class="stats-grid stats-four"></div>
+            <div class="section-toolbar"><div><h2>Saúde financeira</h2><p class="muted">Valores separados por moeda, sem conversão cambial.</p></div><label class="compact-label">Moeda<select id="business-currency"><option value="BRL">BRL</option><option value="BOB">BOB</option></select></label></div>
+            <div id="business-money" class="stats-grid"></div>
+            <div class="analytics-grid"><article class="panel"><div class="panel-heading"><div><h2>Receita recebida</h2><p class="muted">Últimos 12 meses · pela data de pagamento</p></div><span class="chart-key"><i></i><span>Recebido</span></span></div><div id="business-chart" class="revenue-chart"></div></article><article class="panel"><div class="panel-heading"><div><h2>Novas assinaturas</h2><p class="muted">Contratos criados por mês</p></div></div><div id="business-sales" class="revenue-chart"></div></article></div>
+            <article class="panel"><div class="panel-heading"><div><h2>Precisa da sua atenção</h2><p class="muted">Academias com aviso ou acesso bloqueado.</p></div><button class="button button-quiet button-small" data-go="cobrancas-frequency" type="button">Ver cobranças</button></div><div id="business-attention"></div></article>
+            <article class="panel owner-distribution-panel"><div class="panel-heading"><div><p class="eyebrow">ÁREA DO DONO DO FREQUENCY</p><h2>Distribuição local</h2><p class="muted">O instalador fica disponível somente nesta área administrativa.</p></div><svg class="panel-icon icon"><use href="#icon-download"></use></svg></div><a id="installer-download" class="button button-secondary" href="/downloads/FrequencyGym-1.0.001-Setup.exe" data-installer="FrequencyGym-1.0.001-Setup.exe">Baixar instalador do Frequency</a><p class="field-help">Não exibimos este download no site público.</p></article>
+          </section>
+
+          <section class="page" data-view="site-analytics" hidden>
+            <div class="page-heading"><div><p class="eyebrow">FREQUENCY · SITE PÚBLICO</p><h1>Analytics do site</h1><p class="muted">Acompanhe o alcance do site sem armazenar IP ou dados pessoais.</p></div><button class="button button-secondary" data-refresh-site-analytics type="button"><svg class="icon"><use href="#icon-refresh"></use></svg><span>Atualizar</span></button></div>
+            <div id="site-analytics-stats" class="stats-grid stats-three"></div>
+            <article class="panel"><div class="panel-heading"><div><h2>Últimos 30 dias</h2><p class="muted">Visitas registradas por dia.</p></div></div><div id="site-analytics-days" class="collection-list"></div></article>
+          </section>
+
+          <section class="page" data-view="prospeccao" hidden>
+            <div class="page-heading"><div><p class="eyebrow">COMERCIAL · PLATAFORMA</p><h1>Prospecção</h1><p class="muted">Organize contatos e confirme cada envio no seu e-mail ou WhatsApp.</p></div><button id="refresh-prospecting" class="button button-secondary" type="button"><svg class="icon"><use href="#icon-refresh"></use></svg><span>Atualizar</span></button></div>
+            <div id="prospecting-funnel" class="stats-grid stats-four"></div><div class="panel prospecting-bulk-toolbar"><label><input id="prospecting-select-all" type="checkbox"> Selecionar todos</label><span id="prospecting-selection-count" class="muted">0 selecionados</span><label class="compact-label">Canal<select id="prospecting-send-channel"><option value="email">E-mail</option><option value="whatsapp">WhatsApp Cloud API</option></select></label><button id="prospecting-bulk-whatsapp" class="button button-quiet button-small" type="button" disabled>Enviar WhatsApp pela API</button><button id="prospecting-bulk-email" class="button button-secondary button-small" type="button" disabled>Enviar e-mails em ordem</button><p class="field-help form-wide">O envio em lote por WhatsApp exige a API oficial da Meta. Para trabalhar agora sem a API, use o botão individual <b>Enviar WhatsApp</b> em cada lead.</p></div>
+            <div class="prospecting-guide panel"><img src="/static/frequency-cover-whatsapp.png" alt="Apresentação do Frequency" onerror="this.hidden=true"><div><h2>Contato profissional e controlado</h2><p class="muted">A busca por região importa negócios públicos para sua revisão. O Frequency não envia campanhas em massa sem sua aprovação.</p><p id="prospecting-gmail-status" class="field-help">Gmail comercial não conectado.</p><button id="prospecting-gmail-connect" class="button button-secondary button-small" type="button">Conectar Gmail para envio</button></div></div>
+            <details class="panel form-disclosure" id="prospecting-messages"><summary>Mensagens e imagem da campanha</summary><form id="prospecting-template-form" class="form-grid"><label class="form-wide">Mensagem de WhatsApp<textarea name="whatsapp_template" maxlength="2000" rows="3" required></textarea><span class="field-help">Use {academia} e {cidade} para personalizar cada lead.</span></label><label>Assunto do e-mail<input name="email_assunto_template" maxlength="200" required></label><label class="form-wide">Corpo do e-mail<textarea name="email_corpo_template" maxlength="4000" rows="6" required></textarea><span class="field-help">Use {academia} e {cidade}. Inclua sua identificação e uma forma de sair da lista.</span></label><label>Imagem da campanha<input id="prospecting-image-file" type="file" accept="image/jpeg,image/png,image/webp"><span class="field-help">A imagem fica guardada aqui para você abrir e anexar durante o envio. JPG, PNG ou WebP; até 5 MB.</span></label><div class="prospecting-image-preview"><img id="prospecting-campaign-image" alt="Imagem comercial da campanha" hidden><p id="prospecting-campaign-image-empty" class="muted">Nenhuma imagem comercial cadastrada.</p><button id="prospecting-open-image" class="button button-quiet button-small" type="button" hidden>Abrir imagem</button></div><div class="form-actions"><button class="button button-primary" type="submit">Salvar mensagens</button></div></form></details>
+            <article class="panel" id="prospecting-regions-panel"><div class="panel-heading"><div><h2>Busca automática por região</h2><p class="muted">Cadastre país, cidade e raio para encontrar academias públicas no OpenStreetMap.</p></div><button id="prospecting-region-refresh" class="button button-secondary" type="button">Atualizar regiões</button></div><form id="prospecting-region-form" class="form-grid"><label>Nome da região *<input name="nome" required maxlength="160"></label><label>País *<input name="pais" required maxlength="120"></label><label>Estado ou cidade<input name="cidade" maxlength="120"></label><label>Bairro<input name="bairro" maxlength="120"></label><label>Latitude (opcional)<input name="latitude" type="number" step="any"></label><label>Longitude (opcional)<input name="longitude" type="number" step="any"></label><label>Raio (metros)<input name="raio_metros" type="number" min="100" max="50000" value="5000" required></label><div class="form-actions"><button class="button button-primary" type="submit">Salvar região</button></div></form><div id="prospecting-regions" class="collection-list"></div></article>            <form id="prospecting-form" class="panel form-grid">
+              <input id="prospecting-lead-id" name="id" type="hidden">
+              <div class="panel-heading form-heading"><div><h2 id="prospecting-form-title">Novo lead</h2><p class="muted">Leads são contatos comerciais; não criam academia nem acesso ao sistema.</p></div></div>
+              <label>Nome da academia *<input name="nome" required maxlength="160"></label>
+              <label>Cidade<input name="cidade" maxlength="120"></label>
+              <label>Endereço<input name="endereco" maxlength="300"></label>
+              <label>Telefone / WhatsApp<input name="telefone" type="tel" maxlength="40"></label>
+              <label>E-mail<input name="email" type="email" maxlength="254"></label>
+              <label class="compact-label"><input name="whatsapp_opt_in" type="checkbox"> Autorizou contato por WhatsApp</label>
+              <label>Site ou Instagram<input name="site_instagram" type="url" maxlength="500" placeholder="https://"></label>
+              <label>Avaliação<input name="avaliacao" type="number" min="0" max="5" step="0.1"></label>
+              <label>Prioridade<select name="prioridade"><option value="A">A — alta</option><option value="B">B — média</option><option value="C" selected>C — baixa</option></select></label>
+              <label>Status comercial<select name="status_comercial"><option value="nao_contatado">Não contatado</option><option value="mensagem_enviada">Mensagem enviada</option><option value="respondeu">Respondeu</option><option value="demonstracao">Demonstração</option><option value="interessado">Interessado</option><option value="cliente">Cliente</option><option value="nao_interessado">Não interessado</option></select></label>
+              <label>Último contato<input name="ultimo_contato" type="date"></label>
+              <label class="form-wide">Observações<textarea name="observacoes" maxlength="2000" rows="3" placeholder="Ex.: prefere contato à tarde"></textarea></label>
+              <div class="form-actions"><button class="button button-primary" type="submit">Salvar lead</button><button id="prospecting-cancel-edit" class="button button-quiet" type="button" hidden>Cancelar edição</button></div>
+            </form>
+            <article class="panel"><div class="panel-heading"><div><h2>Importar CSV</h2><p class="muted">Colunas aceitas: nome, cidade, endereço, telefone, e-mail, site_instagram, avaliacao, prioridade, status_comercial e observacoes.</p></div><label class="button button-secondary" for="prospecting-csv">Escolher CSV<input id="prospecting-csv" type="file" accept=".csv,text/csv" hidden></label></div><p id="prospecting-import-result" class="field-help" role="status"></p></article>
+            <article class="panel table-panel"><div class="panel-heading"><div><h2>Leads</h2><p class="muted">Abra um contato por vez e confirme o envio no aplicativo escolhido.</p></div></div><div class="collection-filters"><label class="select-label">Prioridade<select id="prospecting-priority-filter"><option value="">Todas</option><option value="A">A</option><option value="B">B</option><option value="C">C</option></select></label><label class="select-label">Status<select id="prospecting-status-filter"><option value="">Todos</option><option value="nao_contatado">Não contatado</option><option value="mensagem_enviada">Mensagem enviada</option><option value="respondeu">Respondeu</option><option value="demonstracao">Demonstração</option><option value="interessado">Interessado</option><option value="cliente">Cliente</option><option value="nao_interessado">Não interessado</option></select></label><label class="select-label">Cidade<input id="prospecting-city-filter" type="search" maxlength="120" placeholder="Filtrar cidade"></label></div><div class="table-wrap"><table><thead><tr><th>Academia</th><th>Contato</th><th>Prioridade</th><th>Status</th><th>Último contato</th><th>Ações</th></tr></thead><tbody id="prospecting-leads"></tbody></table></div><p id="prospecting-empty" class="list-empty" hidden>Nenhum lead encontrado.</p></article>
+          </section>
+
+          <section class="page" data-view="financeiro" hidden>
+            <div class="page-heading"><div><p class="eyebrow">GESTÃO FINANCEIRA</p><h1>Resultados da academia</h1><p class="muted">Acompanhe recebimentos, pendências e novas matrículas.</p></div><button class="button button-secondary" id="refresh-finance" type="button">Atualizar</button></div>
+            <div class="section-toolbar"><p class="muted">Valores separados por moeda, sem conversão cambial.</p><label class="compact-label">Moeda<select id="finance-currency"></select></label></div>
+            <div id="finance-stats" class="stats-grid"></div>
+            <div class="analytics-toolbar"><label class="compact-label">Período<select id="finance-period" aria-label="Período do gráfico"></select></label><p id="finance-chart-focus" class="chart-focus" role="status" aria-live="polite">Passe o cursor sobre uma barra para ver o valor.</p></div><div class="analytics-grid"><article class="panel"><div class="panel-heading"><div><h2>Receita recebida</h2><p id="finance-chart-description" class="muted">Últimos 12 meses · pela data de pagamento</p></div></div><div id="finance-chart" class="revenue-chart"></div></article><article class="panel"><div class="panel-heading"><div><h2>Situação das cobranças</h2><p class="muted">Distribuição por status no período selecionado</p></div></div><div id="finance-sales" class="revenue-chart"></div></article></div>
+            <article class="panel heatmap-panel"><div class="panel-heading"><div><h2>Mapa de calor de acessos</h2><p class="muted">Veja quando a academia concentra entradas para ajustar equipe e aulas.</p></div><label class="compact-label">Período<select id="heatmap-period" aria-label="Período do mapa de calor"><option value="30">30 dias</option><option value="90" selected>90 dias</option><option value="180">180 dias</option></select></label></div><div id="attendance-heatmap" class="attendance-heatmap" role="grid" aria-label="Mapa de calor de acessos"></div><p id="heatmap-summary" class="field-help" role="status"></p></article>
+            <div class="panel metric-explanation"><svg class="icon"><use href="#icon-chart"></use></svg><p>Receita corresponde aos pagamentos confirmados. Cobranças em aberto representam valores a receber. O lucro exige também o registro das despesas.</p></div>
+          </section>
+
+          <section class="page" data-view="cobrancas-frequency" hidden>
+            <div class="page-heading"><div><p class="eyebrow">RECEBIMENTOS DA PLATAFORMA</p><h1>Cobranças Frequency</h1><p class="muted">Gerencie o que as academias pagam pelo software.</p></div><button id="export-frequency-invoices" class="button button-secondary" type="button"><svg class="icon"><use href="#icon-download"></use></svg><span>Exportar CSV</span></button></div>
+            <div class="policy-strip"><span><strong>2 dias</strong> Aviso de atraso</span><span><strong>5 dias</strong> Sistema e catraca bloqueados</span><span><svg class="icon"><use href="#icon-shield"></use></svg> Regularização pelo administrador</span></div>
+            <article class="panel"><div class="collection-filters"><label class="select-label">Situação<select id="frequency-invoice-filter"><option value="todas">Todas as cobranças</option><option value="em_aberto">Em aberto</option><option value="pago">Pagas</option><option value="cancelado">Canceladas</option><option value="estornado">Estornadas</option></select></label><label class="select-label">Buscar academia<input id="frequency-invoice-search" type="search" placeholder="Digite para filtrar"></label></div><div class="table-wrap"><table><thead><tr><th>Academia / referência</th><th>Vencimento</th><th>Valor</th><th>Status</th><th>Ações</th></tr></thead><tbody id="frequency-invoices"></tbody></table></div><p id="frequency-invoices-empty" class="list-empty" hidden>Nenhuma cobrança encontrada para este filtro.</p><p class="field-help">Mostrando até 500 faturas. A exportação acompanha o filtro atual.</p></article>
+            <details class="panel audit-panel"><summary>Histórico de alterações</summary><div id="frequency-audit" class="audit-list"></div></details>
+          </section>
+
+          <section class="page" data-view="pacotes" hidden>
+            <div class="page-heading"><div><p class="eyebrow">OFERTA COMERCIAL</p><h1>Pacotes e assinaturas</h1><p class="muted">Defina seus preços e vincule cada academia a um pacote.</p></div></div>
+            <div class="template-strip"><div><strong>Comece com três pacotes</strong><p class="muted">Use os nomes sugeridos e defina seu preço e condições.</p></div><button class="button button-quiet" data-package-template="Essencial" type="button">Essencial</button><button class="button button-quiet" data-package-template="Profissional" type="button">Profissional</button><button class="button button-quiet" data-package-template="Premium" type="button">Premium</button></div>
+            <div id="frequency-plans" class="plans-grid"></div>
+            <details class="panel form-disclosure" id="package-create"><summary>Novo pacote</summary><form id="frequency-plan-form" class="form-grid" data-sync-write><label>Nome *<input name="nome" required maxlength="100"></label><label>Descrição<input name="descricao" maxlength="600"></label><label>Valor *<input name="valor" type="number" min="0.01" max="9999999999.99" step="0.01" required></label><label>Moeda<select name="moeda"><option>BRL</option><option>BOB</option><option>USD</option><option>EUR</option><option>GBP</option><option>CNY</option><option>INR</option></select></label><label>Duração em dias *<input name="duracao_dias" type="number" min="1" max="3660" step="1" value="30" required></label><label>Categoria<select name="nivel" id="package-level"><option value="essencial">Essencial</option><option value="profissional">Profissional</option><option value="premium">Premium — plano mais completo</option></select></label><label>Máximo de alunos ativos<input name="max_alunos" type="number" min="1" max="1000000" value="120" required></label><label>Máximo de computadores/telas<input name="max_monitores" type="number" min="0" max="1000" value="0"></label><label>Máximo de leitores faciais/catracas<input name="max_leitores" type="number" min="0" max="1000" value="0"></label><fieldset id="package-extras" disabled><legend>Opções exclusivas do Premium</legend><label><input name="cameras" type="checkbox"> Câmeras de segurança</label><label><input name="youtube" type="checkbox"> Controle do YouTube</label></fieldset><p class="field-help">Defina os limites de alunos, computadores/telas e leitores faciais por pacote. Câmeras e YouTube são opções independentes.</p><div class="form-actions"><button class="button button-primary" type="submit">Criar pacote</button></div></form></details>
+            <form id="frequency-subscription-form" class="panel form-grid" data-sync-write><div class="panel-heading form-heading"><div><h2>Vincular academia</h2><p class="muted">Cria a assinatura e sua primeira fatura.</p></div></div><label>Academia *<select name="academia_id" id="subscription-academy" required></select></label><label>Pacote *<select name="plano_id" id="subscription-plan" required></select></label><label>Primeiro vencimento *<input name="vencimento" type="date" required></label><p class="field-help">Cada pagamento confirmado gera a fatura do próximo período. Não há débito automático no banco.</p><div class="form-actions"><button class="button button-primary" type="submit">Criar assinatura</button></div></form>
+            <article class="panel"><div class="panel-heading"><h2>Assinaturas das academias</h2></div><div class="table-wrap"><table><thead><tr><th>Academia</th><th>Pacote</th><th>Situação</th><th>Vencimento</th><th>Ações</th></tr></thead><tbody id="frequency-subscriptions"></tbody></table></div></article>
+          </section>
+
+          <section class="page" data-view="recebimento-frequency" hidden>
+            <div class="page-heading"><div><p class="eyebrow">CONFIGURAÇÃO DE RECEBIMENTO</p><h1>Meu QR e contato</h1><p class="muted">Seus dados para as academias pagarem o Frequency.</p></div></div>
+            <div class="settings-columns"><article class="panel"><h2>QR do Frequency</h2><p class="muted">Cadastre uma imagem de QR para cada moeda em que você recebe.</p><label>Moeda<select id="platform-qr-currency"><option>BRL</option><option>BOB</option><option>USD</option><option>EUR</option><option>GBP</option><option>CNY</option><option>INR</option></select></label><div class="qr-frame"><img id="platform-qr-image" alt="QR do Frequency" hidden><p id="platform-qr-empty" class="muted">Nenhum QR cadastrado.</p></div><label class="upload-card" data-sync-write><svg class="icon"><use href="#icon-plus"></use></svg><strong>Adicionar ou substituir o QR</strong><span class="field-help">PNG, JPG ou WebP · até 2 MB</span><input id="platform-qr-file" type="file" accept="image/png,image/jpeg,image/webp"></label><button id="platform-qr-remove" class="button button-quiet button-small" type="button" data-sync-write hidden>Remover QR</button><p class="qr-payment-note">Confirme o recebimento no banco antes de baixar uma fatura. A imagem do QR, sozinha, não confirma pagamentos.</p></article>
+            <form id="frequency-contact-form" class="panel form-stack" data-sync-write><h2>Contato do administrador</h2><p class="muted">Aparece para a academia quando ela precisa regularizar a assinatura.</p><label>E-mail<input name="contato_email" type="email" maxlength="254"></label><label>Telefone<input name="contato_telefone" type="tel" maxlength="40"></label><button class="button button-primary" type="submit">Salvar contato</button></form></div>
+          </section>
+
+          <section class="page" data-view="gmail-frequency" hidden>
+            <div class="page-heading"><div><p class="eyebrow">AUTOMAÇÃO DE RECEBIMENTOS</p><h1>Gmail de recebimentos</h1><p class="muted">Conecte o Gmail usado pela conta bancária do Frequency para acompanhar comprovantes das academias.</p></div></div>
+            <article class="panel"><div class="panel-heading"><div><h2>Conta bancária do Frequency</h2><p class="muted">A conexão é exclusiva da plataforma e fica separada do Gmail de cada academia.</p></div><svg class="panel-icon icon"><use href="#icon-mail"></use></svg></div><label class="select-label">Servidor de e-mail<select id="platform-gmail-provider"><option value="gmail">Gmail — API de leitura (ativo)</option><option value="outlook" disabled>Outlook / Hotmail — Microsoft Graph (em breve)</option><option value="imap" disabled>Outro servidor — IMAP seguro (em breve)</option></select></label><p id="platform-gmail-status" class="field-help">Nenhum Gmail conectado.</p><div class="form-actions"><button id="platform-gmail-connect" class="button button-primary" type="button">Conectar Gmail do Frequency</button><button id="platform-gmail-disconnect" class="button button-quiet" type="button" hidden>Desconectar</button></div></article>
+          </section>
+
+          <section class="page" data-view="assinatura" hidden>
+            <div class="page-heading"><div><p class="eyebrow">SUA CONTA FREQUENCY</p><h1>Assinatura Frequency</h1><p class="muted">Consulte o vencimento e os dados para regularizar sua assinatura.</p></div><button id="refresh-subscription" class="button button-secondary" type="button">Atualizar situação</button></div>
+            <div id="owner-subscription-state" class="subscription-state"></div>
+            <div id="owner-billing-content" hidden><div class="settings-columns"><article class="panel"><h2>Próxima cobrança</h2><div id="owner-invoice-summary"></div><div id="owner-payment-actions" class="form-actions"></div><div class="qr-frame"><img id="owner-frequency-qr" alt="QR do Frequency" hidden><p id="owner-frequency-qr-empty" class="muted">Nenhum QR cadastrado.</p></div><p class="qr-payment-note">1. Faça o depósito pelo QR. 2. Guarde o comprovante. 3. Envie-o pelo WhatsApp ao administrador.</p></article><article class="panel"><h2>Contato do administrador</h2><div id="owner-frequency-contact" class="contact-card"></div><div class="policy-card"><svg class="icon"><use href="#icon-shield"></use></svg><h3>Evite a interrupção do serviço</h3><p>Com 2 dias de atraso, um aviso aparece no sistema. Com 5 dias, o sistema e as entradas pela catraca são bloqueados.</p></div></article></div><article class="panel" id="owner-gmail-panel"><div class="panel-heading"><div><h2>Confirmação por e-mail</h2><p class="muted">Conecte o Gmail usado pelo banco para localizar comprovantes recebidos.</p></div><svg class="panel-icon icon"><use href="#icon-mail"></use></svg></div><p id="owner-gmail-status" class="field-help">Nenhum Gmail conectado.</p><div class="form-actions"><button id="owner-gmail-connect" class="button button-secondary" type="button">Conectar Gmail do banco</button><button id="owner-gmail-scan" class="button button-quiet" type="button" hidden>Verificar comprovantes</button><button id="owner-gmail-disconnect" class="button button-quiet" type="button" hidden>Desconectar</button></div><p id="owner-gmail-results" class="field-help"></p></article><article class="panel"><h2>Histórico de faturas</h2><div class="table-wrap"><table><thead><tr><th>Referência</th><th>Vencimento</th><th>Valor</th><th>Status</th></tr></thead><tbody id="owner-frequency-invoices"></tbody></table></div></article></div>
+          </section>
+
+          <section class="page" data-view="preferencias" hidden>
+            <div class="page-heading"><div><p class="eyebrow">DO SEU JEITO</p><h1>Preferências</h1><p class="muted">Idioma, localização e identidade da academia.</p></div></div>
+            <article class="panel"><h2>Idioma da sua conta</h2><p class="muted">Você escolhe o idioma. A moeda acompanha o país da academia.</p><label class="select-label">Idioma<select id="preference-language"><option value="pt-BR">Português (Brasil)</option><option value="es-BO">Español</option><option value="en-US">English</option><option value="zh-CN">中文（简体）</option><option value="hi-IN">हिन्दी</option></select></label><p id="language-save-state" class="field-help" role="status"></p></article>
+            <form id="academy-preferences-form" class="panel form-grid" data-role="dono" data-sync-write><div class="panel-heading form-heading"><div><h2>Localização da academia</h2><p class="muted">Confira o endereço e as referências de pagamento.</p></div></div><label>País<select name="pais" id="preferences-country" required><option value="">Selecione</option><option value="Brasil">Brasil</option><option value="Bolivia">Bolívia</option></select></label><label>Cidade<input name="cidade" maxlength="120"></label><label>Estado / departamento<input name="estado" maxlength="120"></label><label>Endereço<input name="endereco" maxlength="300"></label><label>Código postal<input name="codigo_postal" maxlength="30"></label><div id="preferences-country-summary" class="country-summary"></div><div class="form-actions"><button class="button button-primary" type="submit">Salvar localização</button></div></form>
+            <article class="panel" data-role="dono" id="sync-pairing-panel"><div class="panel-heading"><div><h2>Frequency Local e web</h2><p class="muted">Conecte esta instalação local à nuvem com um código seguro de uso único.</p></div></div><div id="sync-cloud-start-area"><p class="field-help">No painel online, gere um código e informe-o nesta instalação.</p><button id="sync-pairing-start" class="button button-secondary" type="button">Gerar código de conexão</button><p id="sync-pairing-code" class="field-help" role="status"></p></div><form id="sync-pairing-connect-form" class="form-grid"><label>Código de conexão<input id="sync-pairing-code-input" autocomplete="one-time-code" minlength="8" maxlength="32" required></label><div class="form-actions"><button class="button button-primary" type="submit">Conectar esta instalação</button></div></form><p id="sync-pairing-status" class="field-help" role="status"></p></article>
+            <article class="panel" data-role="dono"><div class="panel-heading"><div><h2>Identidade na entrada</h2><p class="muted">Mostre a logo da sua academia no monitor do aluno.</p></div><button class="button button-secondary" data-go="tela-aluno" type="button">Personalizar monitor</button></div></article>
+            <form id="change-password-form" class="panel form-grid" data-roles="dono recepcao admin_plataforma"><div class="panel-heading form-heading"><div><h2>Alterar senha</h2><p class="muted">Use uma senha nova com pelo menos 8 caracteres.</p></div></div><label>Senha atual<input name="senha_atual" type="password" autocomplete="current-password" minlength="1" maxlength="256" required></label><label>Nova senha<input name="nova_senha" type="password" autocomplete="new-password" minlength="8" maxlength="256" required></label><label>Confirmar nova senha<input name="confirmacao" type="password" autocomplete="new-password" minlength="8" maxlength="256" required></label><div class="form-actions"><button class="button button-primary" type="submit">Salvar nova senha</button></div></form>
+          </section>
+
+          <section class="page" data-view="dashboard" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">RESUMO</p>
+                <h1>Visão geral</h1>
+                <p class="muted">Acompanhe a situação dos alunos da sua academia.</p>
+              </div>
+              <button class="button button-secondary" data-go="alunos" type="button"><span>Ver alunos</span><svg class="icon"><use href="#icon-arrow-right"></use></svg></button>
+            </div>
+            <div id="dashboard-stats" class="stats-grid"></div>
+            <div id="dashboard-visuals" class="dashboard-visuals" aria-label="Indicadores visuais"></div>
+            <article class="panel operation-panel" data-roles="admin_plataforma dono">
+              <div class="panel-heading">
+                <div><h2>Estado da operação</h2><p class="muted">Banco de dados e sincronização desta instalação.</p></div>
+                <div class="panel-actions"><button class="button button-secondary" data-go="backup" type="button"><svg class="icon"><use href="#icon-backup"></use></svg><span>Ver backup</span></button><button id="refresh-operation-status" class="button button-quiet" type="button">Atualizar</button></div>
+              </div>
+              <div id="operation-status" class="operation-status" role="status" aria-live="polite">Carregando…</div>
+            </article>
+            <div class="panel">
+              <div class="panel-heading">
+                <div>
+                  <h2>Situação dos alunos</h2>
+                  <p class="muted">Informações de vencimento e alertas.</p>
+                </div>
+                <button id="refresh-dashboard" class="button button-quiet" type="button"><svg class="icon"><use href="#icon-refresh"></use></svg><span>Atualizar</span></button>
+              </div>
+              <div id="dashboard-list" class="list-empty">Carregando…</div>
+            </div>
+          </section>
+
+          <section class="page" data-view="alunos" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">CADASTRO</p>
+                <h1>Alunos</h1>
+                <p id="students-description" class="muted">Consulte os alunos e cadastre novas matrículas.</p>
+              </div>
+              <button id="show-student-form" class="button button-primary" type="button" data-sync-write><svg class="icon"><use href="#icon-plus"></use></svg><span>Novo aluno</span></button>
+            </div>
+            <form id="student-form" class="panel form-grid" data-sync-write data-write-collapsed hidden>
+              <div class="panel-heading form-heading">
+                <div><h2>Novo aluno</h2><p class="muted">Os campos com * são obrigatórios.</p></div>
+                <button id="cancel-student-form" class="button button-quiet" type="button">Cancelar</button>
+              </div>
+              <label>Nome *<input name="nome" required maxlength="160"></label>
+              <label>Documento *<input name="documento" required maxlength="80"></label>
+              <label>Telefone<input name="telefone" maxlength="40"></label>
+              <label>E-mail * (acesso ao app)<input name="email" type="email" required maxlength="254" autocomplete="off" placeholder="aluno@exemplo.com"></label>
+              <label>Bairro<input name="bairro" maxlength="160" placeholder="Ex.: Centro"></label>
+              <label>Data de nascimento<input name="data_nascimento" type="date"></label>
+              <fieldset class="student-ficha" style="grid-column:1/-1;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;border:1px solid rgba(128,128,128,.35);border-radius:8px;padding:12px">
+                <legend style="grid-column:1/-1">Ficha complementar (opcional)</legend>
+                <label>Contato de emergência (nome)<input name="ficha_contato_emergencia_nome" maxlength="160" autocomplete="off"></label>
+                <label>Telefone de emergência<input name="ficha_contato_emergencia_telefone" maxlength="40" inputmode="tel" autocomplete="off"></label>
+                <label>Rua<input name="ficha_endereco_rua" maxlength="200" autocomplete="off"></label>
+                <label>Número<input name="ficha_endereco_numero" maxlength="20" autocomplete="off"></label>
+                <label>Cidade<input name="ficha_endereco_cidade" maxlength="120" autocomplete="off"></label>
+                <label>Objetivo de treino<input name="ficha_objetivo" maxlength="200" placeholder="Ex.: hipertrofia, emagrecer"></label>
+                <label>Lesões ou restrições de saúde<textarea name="ficha_restricoes_saude" maxlength="1000" rows="2"></textarea></label>
+                <label class="check-row"><input name="ficha_atestado_medico" type="checkbox"> Entregou atestado médico</label>
+                <label>Sexo<select name="ficha_sexo"><option value="">Não informado</option><option value="feminino">Feminino</option><option value="masculino">Masculino</option><option value="outro">Outro</option><option value="nao_informar">Prefere não informar</option></select></label>
+                <label>Peso (kg)<input name="ficha_peso_kg" type="number" min="20" max="400" step="0.1" inputmode="decimal"></label>
+                <label>Altura (cm)<input name="ficha_altura_cm" type="number" min="80" max="250" step="1" inputmode="numeric"></label>
+                <p class="field-help" style="grid-column:1/-1">Dados de saúde são sensíveis: peça só com a autorização do aluno.</p>
+              </fieldset>
+              <div class="photo-capture" aria-labelledby="student-photo-heading">
+                <div class="photo-capture-heading">
+                  <strong id="student-photo-heading">Foto e cadastro facial (opcional)</strong>
+                  <span class="muted">Capture três ângulos com autorização. O processamento acontece neste Frequency.</span>
+                </div>
+                <div class="photo-preview-frame student-camera-stage">
+                  <img id="student-photo-preview" alt="Prévia da foto do aluno" hidden>
+                  <video id="student-camera-video" autoplay playsinline muted hidden></video>
+                  <div class="face-position-guide" aria-hidden="true" hidden><span></span></div>
+                  <span id="student-face-angle" class="face-angle-label" hidden>Posicione seu rosto no centro</span>
+                  <div id="student-photo-placeholder" class="photo-placeholder">Foto opcional</div>
+                </div>
+                <div class="photo-capture-actions">
+                  <button id="start-student-camera" class="button button-secondary" type="button">Abrir webcam</button>
+                  <button id="capture-student-photo" class="button button-primary" type="button" hidden>Capturar rosto</button>
+                  <button id="cancel-student-camera" class="button button-quiet" type="button" hidden>Cancelar câmera</button>
+                  <button id="choose-student-photo" class="button button-quiet" type="button">Selecionar imagem</button>
+                  <input id="student-photo-file" class="photo-file-input" type="file" accept="image/jpeg,image/png,image/webp">
+                  <button id="clear-student-photo" class="button button-quiet" type="button" hidden>Remover foto</button>
+                </div>
+                <div class="face-samples" aria-live="polite">
+                  <div class="face-samples-heading"><strong>Capturas faciais</strong><span class="muted">Frente, esquerda e direita</span></div>
+                  <div class="face-samples-grid">
+                    <div class="face-sample-card"><div class="face-sample-frame"><img id="student-face-preview-1" alt="Captura facial 1" hidden><span>1</span></div><small>Frente</small></div>
+                    <div class="face-sample-card"><div class="face-sample-frame"><img id="student-face-preview-2" alt="Captura facial 2" hidden><span>2</span></div><small>Esquerda</small></div>
+                    <div class="face-sample-card"><div class="face-sample-frame"><img id="student-face-preview-3" alt="Captura facial 3" hidden><span>3</span></div><small>Direita</small></div>
+                  </div>
+                </div>
+                <p id="student-face-status" class="field-help" aria-live="polite">Nenhum cadastro facial iniciado.</p>
+                <label class="photo-authorization">
+                  <input id="student-photo-authorized" type="checkbox">
+                  <span>Confirmo que a pessoa autorizou o cadastro desta foto.</span>
+                </label>
+              </div>
+              <label>Plano<select name="plano_id" id="student-plan"><option value="">Sem plano</option></select></label>
+              <div class="form-actions"><button class="button button-primary" type="submit">Salvar aluno</button></div>
+            </form>
+            <form id="student-edit-form" class="panel form-grid" data-sync-write data-write-collapsed hidden>
+              <div class="panel-heading form-heading">
+                <div><h2>Editar dados do aluno</h2><p class="muted">Documento, telefone, nascimento e foto. Plano e cobranças não serão alterados.</p></div>
+                <button id="cancel-student-edit-form" class="button button-quiet" type="button">Cancelar</button>
+              </div>
+              <label>Documento *<input name="documento" required maxlength="80"></label>
+              <label>Telefone<input name="telefone" maxlength="40"></label>
+              <label>Bairro<input name="bairro" maxlength="160" placeholder="Ex.: Centro"></label>
+              <label>Data de nascimento<input name="data_nascimento" type="date"></label>
+              <fieldset class="student-ficha" style="grid-column:1/-1;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;border:1px solid rgba(128,128,128,.35);border-radius:8px;padding:12px">
+                <legend style="grid-column:1/-1">Ficha complementar (opcional)</legend>
+                <label>Contato de emergência (nome)<input name="ficha_contato_emergencia_nome" maxlength="160" autocomplete="off"></label>
+                <label>Telefone de emergência<input name="ficha_contato_emergencia_telefone" maxlength="40" inputmode="tel" autocomplete="off"></label>
+                <label>Rua<input name="ficha_endereco_rua" maxlength="200" autocomplete="off"></label>
+                <label>Número<input name="ficha_endereco_numero" maxlength="20" autocomplete="off"></label>
+                <label>Cidade<input name="ficha_endereco_cidade" maxlength="120" autocomplete="off"></label>
+                <label>Objetivo de treino<input name="ficha_objetivo" maxlength="200" placeholder="Ex.: hipertrofia, emagrecer"></label>
+                <label>Lesões ou restrições de saúde<textarea name="ficha_restricoes_saude" maxlength="1000" rows="2"></textarea></label>
+                <label class="check-row"><input name="ficha_atestado_medico" type="checkbox"> Entregou atestado médico</label>
+                <label>Sexo<select name="ficha_sexo"><option value="">Não informado</option><option value="feminino">Feminino</option><option value="masculino">Masculino</option><option value="outro">Outro</option><option value="nao_informar">Prefere não informar</option></select></label>
+                <label>Peso (kg)<input name="ficha_peso_kg" type="number" min="20" max="400" step="0.1" inputmode="decimal"></label>
+                <label>Altura (cm)<input name="ficha_altura_cm" type="number" min="80" max="250" step="1" inputmode="numeric"></label>
+                <p class="field-help" style="grid-column:1/-1">Dados de saúde são sensíveis: peça só com a autorização do aluno.</p>
+              </fieldset>
+              <div id="student-app-access" class="edit-photo-field" hidden>
+                <label>E-mail para acesso ao app<input name="email" type="email" maxlength="254" autocomplete="off"></label>
+                <span id="student-app-access-status" class="field-help" aria-live="polite"></span>
+                <div class="photo-capture-actions"><button id="student-app-invite" class="button button-secondary" type="button" hidden>Enviar convite</button><button id="student-app-reset" class="button button-quiet" type="button" hidden>Redefinir acesso</button></div>
+              </div>
+              <label class="edit-photo-field">Foto do aluno<input id="student-edit-photo-file" type="file" accept="image/jpeg,image/png,image/webp"><span id="student-edit-photo-name" class="field-help">Selecione uma nova foto para substituir a atual.</span></label>
+              <div class="edit-photo-field photo-capture-actions"><button id="start-student-edit-camera" class="button button-secondary" type="button">Tirar foto com a câmera</button><button id="capture-student-edit-photo" class="button button-primary" type="button" hidden>Capturar foto</button><button id="cancel-student-edit-camera" class="button button-quiet" type="button" hidden>Cancelar câmera</button><video id="student-edit-camera-video" class="edit-camera-video" autoplay playsinline muted hidden></video></div>
+              <label class="photo-authorization edit-photo-field"><input id="student-edit-photo-authorized" type="checkbox"><span>Confirmo que a pessoa autorizou a substituição desta foto.</span></label>
+              <div class="form-actions"><button class="button button-primary" type="submit">Salvar alterações</button></div>
+            </form>
+            <div class="panel table-panel">
+              <div class="panel-heading"><h2>Alunos cadastrados</h2><span id="students-count" class="count-pill">0</span></div>
+              <label class="student-search"><span id="student-search-label">Buscar por nome ou documento</span>
+                <input id="student-search" type="search" placeholder="Digite para filtrar" autocomplete="off">
+              </label>
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>Nome</th><th>Documento</th><th>Bairro</th><th>Plano</th><th>Status</th><th></th></tr></thead>
+                  <tbody id="students-table"></tbody>
+                </table>
+              </div>
+              <p id="students-empty" class="list-empty" hidden>Nenhum aluno cadastrado ainda.</p>
+              <p id="students-no-results" class="list-empty" hidden>Nenhum aluno corresponde à busca.</p>
+            </div>
+          </section>
+
+          <section class="page" data-view="pagamentos" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">FINANCEIRO</p>
+                <h1>Pagamentos</h1>
+                <p id="payments-description" class="muted">Consulte cobranças e registre pagamentos recebidos.</p>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="collection-filters">
+                <label class="select-label">Aluno
+                  <select id="payment-student"><option value="">Todos os alunos</option></select>
+                </label>
+                <label class="select-label">Situação
+                  <select id="payment-filter">
+                    <option value="todos">Todas as cobranças</option>
+                    <option value="abertos">Em aberto</option>
+                    <option value="atrasados">Atrasadas</option>
+                    <option value="pagos">Pagas</option>
+                  </select>
+                </label>
+              </div>
+              <div class="panel qr-payment-panel">
+                <div class="panel-heading">
+                  <div><h2>QR de pagamento da academia</h2><p class="muted">Adicione ou troque a imagem do QR usado para receber.</p></div>
+                </div>
+                <p id="academy-qr-empty" class="muted">Nenhum QR cadastrado.</p>
+                <img id="academy-qr-image" class="academy-qr-image" alt="QR de pagamento da academia" hidden>
+                <label class="qr-upload-label" data-role="dono">Adicionar ou substituir o QR
+                  <input id="academy-qr-file" type="file" accept="image/png,image/jpeg,image/webp">
+                </label>
+                <button id="remove-academy-qr" class="button button-quiet button-small" type="button" data-role="dono" hidden>Remover QR</button>
+                <p class="qr-payment-note">Este QR é uma imagem informativa. Até conectar um provedor bancário com confirmação automática, a equipe precisa confirmar o recebimento antes de baixar a cobrança.</p>
+              </div>
+              <div class="table-wrap payment-table-wrap">
+                <table>
+                  <thead><tr><th>Aluno</th><th>Vencimento</th><th>Valor</th><th>Status</th><th></th></tr></thead>
+                  <tbody id="payments-table"></tbody>
+                </table>
+              </div>
+              <p id="payments-empty" class="list-empty" hidden>Nenhuma cobrança encontrada para este filtro.</p>
+            </div>
+          </section>
+
+          <section class="page" data-view="presencas" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">CATRACA</p>
+                <h1>Histórico de acessos</h1>
+                <p class="muted">Últimas 100 tentativas de entrada registradas.</p>
+              </div>
+              <button id="refresh-presencas" class="button button-secondary" type="button">Atualizar</button>
+            </div>
+            <div class="panel table-panel">
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>Data e hora</th><th>Aluno</th><th>Resultado</th><th>Motivo</th></tr></thead>
+                  <tbody id="presencas-table"></tbody>
+                </table>
+              </div>
+              <p id="presencas-empty" class="list-empty" hidden>Nenhum acesso registrado ainda.</p>
+            </div>
+          </section>
+
+          <section class="page" data-view="mapa-regiao" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">INTELIGÊNCIA DA ACADEMIA</p>
+                <h1>Mapa regional dos alunos</h1>
+                <p class="muted">Entenda onde estão seus alunos ativos e concentre ações, horários e divulgação nas regiões com maior presença.</p>
+              </div>
+              <button id="refresh-region-map" class="button button-secondary" type="button"><svg class="icon"><use href="#icon-refresh"></use></svg><span>Atualizar mapa</span></button>
+            </div>
+            <div id="region-map-stats" class="stats-grid"></div>
+            <article class="panel region-map-panel">
+              <div class="panel-heading"><div><h2>Concentração por bairro</h2><p id="region-map-description" class="muted">Alunos ativos agrupados pelo bairro informado no cadastro.</p></div><span id="region-map-area" class="count-pill">—</span></div>
+              <div id="student-region-map" class="student-region-map" role="list" aria-live="polite"></div>
+              <p id="region-map-empty" class="list-empty" hidden>Nenhum aluno ativo possui bairro informado.</p>
+            </article>
+            <div class="panel metric-explanation"><svg class="icon"><use href="#icon-chart"></use></svg><p>Use esta visão para decidir onde divulgar a academia, ajustar campanhas locais e planejar ações de captação.</p></div>
+          </section>
+
+          <section class="page" data-view="exercicios" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">APP DO ALUNO</p>
+                <h1>Exercícios</h1>
+                <p class="muted">Escolha quais exercícios do catálogo Frequency aparecem para os seus alunos e cadastre os da sua academia.</p>
+              </div>
+            </div>
+            <div id="exercises-summary" class="panel" aria-live="polite"></div>
+            <div class="panel">
+              <div class="form-grid">
+                <label>Buscar<input id="exercises-search" type="search" maxlength="80" placeholder="Nome do exercício"></label>
+                <label>Grupo<select id="exercises-group"><option value="">Todos</option></select></label>
+              </div>
+              <div id="exercises-list" class="table-wrap"></div>
+              <p id="exercises-empty" class="muted" hidden>Nenhum exercício encontrado.</p>
+            </div>
+            <form id="exercise-form" class="panel form-grid" data-role="dono" data-sync-write>
+              <div class="panel-heading form-heading"><div><h2>Novo exercício</h2><p class="muted">Aparece para todos os alunos da academia.</p></div></div>
+              <label>Nome *<input name="nome" required minlength="2" maxlength="120" placeholder="Supino na máquina da casa"></label>
+              <label>Grupo *<select name="grupo" id="exercise-form-group" required></select></label>
+              <label>Equipamento<input name="equipamento" maxlength="80" placeholder="Máquina"></label>
+              <label class="check"><input name="tempo" type="checkbox"> Medido em segundos</label>
+              <div class="form-actions"><button class="button button-primary" type="submit">Adicionar exercício</button></div>
+            </form>
+          </section>
+          <section class="page" data-view="quiosques" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">APP DO ALUNO</p>
+                <h1>Quiosques</h1>
+                <p class="muted">Tablets na recepção que reconhecem o aluno e mostram o treino do dia. Cada tablet usa um código próprio; você pode revogar a qualquer momento.</p>
+              </div>
+            </div>
+            <div id="kiosk-status" class="panel" aria-live="polite"></div>
+            <div id="kiosk-token-box" class="panel" hidden>
+              <h2>Código do novo quiosque</h2>
+              <p class="muted">Copie agora e digite no tablet. Por segurança, ele não será mostrado de novo.</p>
+              <p><code id="kiosk-token" class="mono-block"></code></p>
+            </div>
+            <div class="panel"><div id="kiosk-list" class="table-wrap"></div><p id="kiosk-empty" class="muted" hidden>Nenhum quiosque cadastrado.</p></div>
+            <form id="kiosk-form" class="panel form-grid" data-role="dono" data-sync-write>
+              <div class="panel-heading form-heading"><div><h2>Novo quiosque</h2></div></div>
+              <label>Nome *<input name="nome" required minlength="2" maxlength="80" placeholder="Tablet da recepção"></label>
+              <div class="form-actions"><button class="button button-primary" type="submit">Cadastrar quiosque</button></div>
+            </form>
+          </section>
+          <section class="page" data-view="lutas" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">LUTAS E AULAS</p>
+                <h1>Turmas e chamada</h1>
+                <p class="muted">Modalidades, turmas, faixas e a chamada do dia. Só a presença validada pelo professor conta para a frequência e a graduação.</p>
+              </div>
+            </div>
+            <div id="lutas-root"></div>
+          </section>
+          <section class="page" data-view="desafios" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">APP DO ALUNO</p>
+                <h1>Desafios</h1>
+                <p class="muted">Competições entre alunos, com ranking no app e em uma tela para a TV da academia.</p>
+              </div>
+            </div>
+            <div id="desafios-root"></div>
+          </section>
+          <section class="page" data-view="aparelhos" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">APP DO ALUNO</p>
+                <h1>Aparelhos disponíveis</h1>
+                <p class="muted">Desmarque o que a sua academia não tem. O gerador de treino deixa de sugerir esses exercícios.</p>
+              </div>
+            </div>
+            <div id="aparelhos-root"></div>
+          </section>
+          <section class="page" data-view="qr-acesso" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">RECEPÇÃO</p>
+                <h1>Conferir QR do aluno</h1>
+                <p class="muted">Leia o QR mostrado no app do aluno (aba Academia) e veja se a mensalidade está em dia. Só consulta: nada é registrado.</p>
+              </div>
+            </div>
+            <div id="qr-acesso-root"></div>
+          </section>
+          <section class="page" data-view="planos" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">MATRÍCULAS</p>
+                <h1>Planos</h1>
+                <p class="muted">Veja os planos disponíveis para os alunos.</p>
+              </div>
+            </div>
+            <form id="plan-form" class="panel form-grid" data-role="dono" data-sync-write>
+              <div class="panel-heading form-heading"><div><h2>Novo plano</h2><p class="muted">Defina o valor e a duração.</p></div></div>
+              <label>Nome do plano *<input name="nome" required maxlength="100" placeholder="Mensal"></label>
+              <label><span id="plan-value-label">Valor (BRL) *</span><input name="valor" type="number" min="0.01" step="0.01" required></label>
+              <label>Duração em dias *<input name="duracao_dias" type="number" min="1" max="3660" step="1" required></label>
+              <div class="form-actions"><button class="button button-primary" type="submit">Criar plano</button></div>
+            </form>
+            <div id="plans-list" class="plans-grid"></div>
+            <p id="plans-empty" class="list-empty" hidden>Nenhum plano cadastrado ainda.</p>
+          </section>
+
+          <section class="page" data-view="tela-aluno" data-role="dono" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">EXPERIÊNCIA NA ENTRADA</p>
+                <h1>Telas do aluno</h1>
+                <p class="muted">Use um único código compartilhado. Cada janela que conectar receberá um número independente e poderá usar sua própria câmera.</p>
+              </div>
+              <a class="button button-secondary" href="/monitor" target="_blank" rel="noopener">Abrir uma tela</a>
+            </div>
+            <div class="panel form-grid monitor-settings-grid">
+              <div class="monitor-settings-copy">
+                <h2>Conectar telas com um código único</h2>
+                <p class="muted">Gere o código uma vez e use-o em todas as janelas. No computador de cada tela, abra <strong>/monitor</strong>, informe o mesmo código e ative a câmera daquele computador. Cada tela conectada recebe um número enquanto estiver aberta, sempre respeitando o limite do seu plano.</p>
+                <p id="monitor-key-status" class="field-help">Verificando telas e limite do plano…</p>
+                <button id="generate-monitor-key" class="button button-primary" type="button">Gerar código compartilhado</button>
+                <div id="monitor-list" class="monitor-list" aria-live="polite"></div>
+                <label id="monitor-key-wrap" hidden>Código da tela<input id="monitor-key-value" readonly autocomplete="off" spellcheck="false"></label>
+                <button id="copy-monitor-key" class="button button-quiet" type="button" hidden>Copiar código</button>
+              </div>
+              <div class="monitor-logo-panel">
+                <div>
+                  <h2>Logo da academia</h2>
+                  <p class="muted">A imagem será exibida na segunda tela. Ela fica nesta instalação e pode ser trocada ou removida.</p>
+                </div>
+                <div class="monitor-logo-preview-frame"><img id="monitor-logo-preview" alt="Logo da academia" hidden><span id="monitor-logo-placeholder">Sua logo aparece aqui</span></div>
+                <label class="button button-secondary monitor-logo-select">Escolher logo<input id="monitor-logo-file" type="file" accept="image/jpeg,image/png,image/webp"></label>
+                <button id="remove-monitor-logo" class="button button-quiet" type="button" hidden>Remover logo</button>
+              </div>
+            </div>
+            <div class="panel monitor-notes">
+              <h2>O que aparece para o aluno</h2>
+              <ul>
+                <li>Som curto e claro quando a entrada é liberada; tom diferente quando é recusada.</li>
+                <li>Ícone e mensagem grandes, com bom contraste, que desaparecem automaticamente.</li>
+                <li>Nome abreviado e foto opcional; documento, telefone e histórico não aparecem.</li>
+              </ul>
+              <p class="field-help">Ative o som uma vez no próprio monitor. Navegadores exigem esse toque antes de permitir áudio.</p>
+            </div>
+          </section>
+
+          <section class="page" data-view="equipe" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">ACESSO</p>
+                <h1>Equipe</h1>
+                <p class="muted">Crie, consulte e suspenda acessos da recepção da sua academia.</p>
+              </div>
+            </div>
+            <form id="reception-form" class="panel form-grid narrow-form" data-sync-write>
+              <label>Nome *<input name="nome" required maxlength="160"></label>
+              <label>E-mail *<input name="email" type="email" required maxlength="254"></label>
+              <label>Senha inicial *<input name="senha" type="password" minlength="8" maxlength="256" required autocomplete="new-password"><span class="field-help">Use pelo menos 8 caracteres e compartilhe a senha por um canal seguro.</span></label>
+              <div class="form-actions"><button class="button button-primary" type="submit">Criar acesso</button></div>
+            </form>
+            <div class="panel table-panel">
+              <div class="panel-heading"><h2>Contas de recepção</h2><button id="refresh-reception" class="button button-quiet" type="button">Atualizar</button></div>
+              <div class="table-wrap"><table><thead><tr><th>Nome</th><th>E-mail</th><th>Status</th><th>Ações</th></tr></thead><tbody id="reception-table"></tbody></table></div>
+              <p id="reception-empty" class="list-empty" hidden>Nenhuma conta de recepção cadastrada.</p>
+            </div>
+          </section>
+
+          <section class="page" data-view="academias" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">PLATAFORMA</p>
+                <h1>Academias</h1>
+                <p id="academies-description" class="muted">Cadastre e administre academias na plataforma.</p>
+              </div>
+            </div>
+            <form id="academy-form" class="panel form-grid" data-sync-write>
+              <div class="panel-heading form-heading"><div><h2>Nova academia</h2><p class="muted">Será criado também o acesso do dono.</p></div></div>
+              <label>Nome da academia *<input name="nome_academia" required maxlength="160"></label>
+              <label>País *<select name="pais" id="academy-country" required><option value="Brasil">🇧🇷 Brasil</option><option value="Bolivia">🇧🇴 Bolívia</option></select></label>
+              <label>Logo da academia (opcional)<input id="academy-logo-file" type="file" accept="image/jpeg,image/png,image/webp"><span class="field-help">Ela pode aparecer na tela do aluno. PNG, JPG ou WebP; até 5 MB.</span></label>
+              <label>Nome do dono *<input name="nome_dono" required maxlength="160"></label>
+              <label>E-mail do dono *<input name="email_dono" type="email" required maxlength="254"></label>
+              <label>Telefone do dono *<input name="telefone_dono" type="tel" inputmode="tel" required minlength="7" maxlength="40"></label>
+              <label>Senha inicial do dono *<input name="senha_dono" type="password" minlength="8" maxlength="256" required autocomplete="new-password"></label>
+              <div class="form-actions"><button class="button button-primary" type="submit">Criar academia</button></div>
+            </form>
+            <div class="panel table-panel">
+              <div class="panel-heading"><h2>Academias cadastradas</h2><button id="refresh-academies" class="button button-quiet" type="button">Atualizar</button></div>
+              <div class="table-wrap"><table><thead><tr><th>Nome</th><th>País</th><th>Dono</th><th>Status</th><th></th></tr></thead><tbody id="academies-table"></tbody></table></div>
+              <p id="academies-empty" class="list-empty" hidden>Nenhuma academia cadastrada.</p>
+            </div>
+          </section>
+
+          <section class="page" data-view="backup" hidden>
+            <div class="page-heading"><div><p class="eyebrow">PROTEÇÃO DOS DADOS</p><h1>Backup</h1><p class="muted">Escolha onde guardar suas cópias e mantenha a academia protegida.</p></div><button id="backup-run-page" class="button button-primary" type="button"><svg class="icon"><use href="#icon-backup"></use></svg><span>Fazer backup agora</span></button><button id="backup-download-latest" class="button button-secondary" type="button"><svg class="icon"><use href="#icon-download"></use></svg><span>Salvar no dispositivo</span></button></div>
+            <div id="backup-device-notice" class="backup-device-notice" role="status" aria-live="polite" hidden></div>
+            <div class="settings-columns">
+              <form id="backup-destination-form" class="panel form-stack backup-local-panel"><div class="panel-heading"><div><h2>Destino local</h2><p class="muted">A cópia é criptografada antes de ser salva na pasta configurada pelo computador que hospeda o Frequency.</p></div><svg class="panel-icon icon"><use href="#icon-backup"></use></svg></div><label for="backup-destination">Pasta de destino<input id="backup-destination" name="destino" type="text" maxlength="500" placeholder="C:\\Users\\seu-usuario\\Frequency Backups" required></label><p class="field-help">Este caminho pertence ao computador que executa o Frequency. Em celular ou tablet, use “Baixar última cópia” para guardar o arquivo no dispositivo atual.</p><div class="form-actions"><button id="backup-choose-folder" class="button button-secondary" type="button">Escolher pasta</button><button class="button button-primary" type="submit">Salvar destino</button></div><p id="backup-destination-status" class="field-help" role="status"></p></form>
+              <article id="backup-cloud-panel" class="panel"><div class="panel-heading"><div><h2>Google Drive</h2><p class="muted">O backup local continua funcionando sem depender da nuvem.</p></div><svg class="panel-icon icon"><use href="#icon-cloud"></use></svg></div><div class="cloud-provider-card"><strong>Google Drive para computador</strong><span id="backup-google-status" class="status-pill">Verificando…</span><p id="backup-google-copy" class="field-help">Quando instalado e conectado, o Frequency cria a pasta Frequency Backups dentro do seu Drive.</p><button id="backup-google-login" class="button button-secondary" type="button">Usar meu Google Drive</button><a id="backup-google-download" class="button button-quiet" href="https://www.google.com/drive/download/" target="_blank" rel="noopener" hidden>Baixar Google Drive</a></div></article>
+            </div>
+            <article id="backup-status-panel" class="panel operation-panel"><div class="panel-heading"><div><h2>Estado do backup</h2><p class="muted">Execução manual e agendamento diário desta instalação.</p></div><button id="refresh-backup-page" class="button button-quiet" type="button">Atualizar</button></div><div id="backup-page-status" class="operation-status" role="status" aria-live="polite">Carregando…</div></article>
+          </section>
+          <section class="page feature-page" data-view="cameras" hidden>
+            <div class="page-heading"><div><p class="eyebrow">PACOTE PREMIUM</p><h1>Câmeras de segurança</h1><p class="muted">Acompanhe suas câmeras sem sair do Frequency.</p></div></div>
+            <iframe id="feature-frame-cameras" title="Câmeras de segurança" allow="camera; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+          </section>
+          <section class="page feature-page" data-view="youtube" hidden>
+            <div class="page-heading"><div><p class="eyebrow">PACOTE PREMIUM</p><h1>YouTube</h1><p class="muted">Pesquise e controle o player dentro do Frequency.</p></div></div>
+            <iframe id="feature-frame-youtube" title="YouTube" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+          </section>
+        </main>
+      </div>
+    </div>
+    <dialog id="business-dialog" aria-labelledby="business-dialog-title"><form id="business-dialog-form"><h2 id="business-dialog-title"></h2><p id="business-dialog-description"></p><div id="business-dialog-fields" class="form-grid"></div><p id="business-dialog-error" role="alert"></p><div class="form-actions"><button id="business-dialog-cancel" class="button button-secondary" type="button">Cancelar</button><button id="business-dialog-submit" class="button button-primary" type="submit">Salvar</button></div></form></dialog>
+</body>
+</html>
+
+

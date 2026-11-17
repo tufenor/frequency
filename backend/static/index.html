@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="#14221c">
+    <title>Frequency — gestão da academia</title>
+    <link rel="icon" type="image/svg+xml" href="/static/brand-mark.svg">
+    <link rel="stylesheet" href="/static/styles.css?v=11">
+    <script src="/static/i18n.js?v=1" defer></script>
+    <script src="/static/app.js?v=22" defer></script>
+    <script src="/static/business.js?v=1" defer></script>
+  </head>
+  <body>
+    <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+      <symbol id="icon-dashboard" viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="14" y="3" width="7" height="5" rx="2"/><rect x="14" y="11" width="7" height="10" rx="2"/><rect x="3" y="14" width="8" height="7" rx="2"/></symbol>
+      <symbol id="icon-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M20 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+      <symbol id="icon-card" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 10h18M7 15h3"/></symbol>
+      <symbol id="icon-access" viewBox="0 0 24 24"><path d="M4 21V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v17"/><path d="M2 21h20M14 12h.01"/><path d="M8 6h4v4H8z"/></symbol>
+      <symbol id="icon-dumbbell" viewBox="0 0 24 24"><path d="M6.5 6.5v11m11-11v11M3 9v6m18-6v6M6.5 12h11"/><path d="M3 9.5v5m18-5v5"/></symbol>
+      <symbol id="icon-team" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20v-1a6 6 0 0 1 12 0v1z"/><path d="M16 5.5a3 3 0 0 1 0 5.8M18 14a5 5 0 0 1 3 4.6V20h-3"/></symbol>
+      <symbol id="icon-building" viewBox="0 0 24 24"><path d="M3 21h18M5 21V5l7-3 7 3v16"/><path d="M9 9h.01M15 9h.01M9 13h.01M15 13h.01M10 21v-4h4v4"/></symbol>
+      <symbol id="icon-monitor" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="13" rx="2"/><path d="M8 21h8m-4-5v5M7 8h4m-4 3h7"/></symbol>
+      <symbol id="icon-refresh" viewBox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M5.6 9A7 7 0 0 1 17 6l3 3M4 15l3 3a7 7 0 0 0 11.4-3"/></symbol>
+      <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+      <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7"/></symbol>
+      <symbol id="icon-logout" viewBox="0 0 24 24"><path d="M10 17l5-5-5-5m5 5H3"/><path d="M12 3h6a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-6"/></symbol>
+      <symbol id="icon-alert" viewBox="0 0 24 24"><path d="m10.3 3.9-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.7-3.1l-8-14a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4m0 4h.01"/></symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+      <symbol id="icon-chart" viewBox="0 0 24 24"><path d="M3 3v18h18M7 16v-4m5 4V7m5 9v-6"/></symbol>
+      <symbol id="icon-settings" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3"/><circle cx="15" cy="17" r="3"/></symbol>
+      <symbol id="icon-shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6zM8 12l3 3 5-6"/></symbol>
+      <symbol id="icon-download" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M4 17v4h16v-4"/></symbol>
+    </svg>
+
+    <section id="login-view" class="login-view">
+      <div class="login-story">
+        <a class="brand login-brand" href="/app" aria-label="Frequency, início">
+          <img class="brand-lockup" src="/static/brand-lockup.svg" alt="Frequency">
+        </a>
+        <div class="story-copy">
+          <p class="eyebrow">GESTÃO QUE ACOMPANHA O SEU RITMO</p>
+          <h1>Mais tempo para o que move você.</h1>
+          <p>Alunos, mensalidades e acessos da sua academia em um só lugar.</p>
+        </div>
+        <div class="gym-art" aria-hidden="true">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="art-dumbbell"><span></span><b></b><span></span></div>
+          <div class="art-caption"><span class="art-pulse"></span> TREINO · GESTÃO · EVOLUÇÃO</div>
+        </div>
+      </div>
+      <div class="login-card">
+        <label class="language-control"><span>Idioma</span><select id="login-language" aria-label="Idioma"><option value="pt-BR">Português</option><option value="es-BO">Español</option><option value="en-US">English</option><option value="zh-CN">中文</option><option value="hi-IN">हिन्दी</option></select></label>
+        <div class="login-card-heading">
+          <span class="login-card-icon"><svg class="icon"><use href="#icon-dumbbell"></use></svg></span>
+          <p class="eyebrow">ÁREA DA ACADEMIA</p>
+        </div>
+        <h2>Bem-vindo de volta</h2>
+        <p class="muted">Entre com seu e-mail e senha para continuar.</p>
+        <form id="login-form" class="form-stack">
+          <label for="login-email">E-mail</label>
+          <input id="login-email" name="username" type="email" autocomplete="username" maxlength="254" required>
+          <label for="login-password">Senha</label>
+          <input id="login-password" name="password" type="password" autocomplete="current-password" maxlength="256" required>
+          <button class="button button-primary button-wide" type="submit"><span>Entrar</span><svg class="icon"><use href="#icon-arrow-right"></use></svg></button>
+        </form>
+        <p id="login-feedback" class="feedback" role="status" aria-live="polite"></p>
+      </div>
+      <p class="login-foot muted">Acesso reservado à equipe da academia.</p>
+    </section>
+
+    <div id="app-view" class="app-view" hidden>
+      <header class="topbar">
+        <a class="brand" href="/app" aria-label="Frequency, início">
+          <img class="brand-lockup" src="/static/brand-lockup.svg" alt="Frequency">
+        </a>
+        <div class="account-area">
+          <label class="language-control"><span class="sr-only">Idioma</span><select id="app-language" aria-label="Idioma"><option value="pt-BR">PT</option><option value="es-BO">ES</option><option value="en-US">EN</option><option value="zh-CN">中文</option><option value="hi-IN">हिन्दी</option></select></label>
+          <div class="account-copy">
+            <strong id="account-name"></strong>
+            <span id="account-role" class="muted"></span>
+          </div>
+          <span id="sync-mode-pill" class="sync-mode-pill" hidden>Consulta na nuvem</span>
+          <button id="logout-button" class="button button-quiet" type="button"><svg class="icon"><use href="#icon-logout"></use></svg><span>Sair</span></button>
+        </div>
+      </header>
+
+      <div class="app-layout">
+        <aside class="sidebar">
+          <p class="eyebrow sidebar-label">MENU</p>
+          <nav class="main-nav" aria-label="Navegação principal">
+            <button class="nav-button" data-page="negocio" data-role="admin_plataforma" type="button"><svg class="icon"><use href="#icon-chart"></use></svg><span>Meu negócio</span></button>
+            <button class="nav-button" data-page="dashboard" data-roles="dono recepcao" type="button"><svg class="icon"><use href="#icon-dashboard"></use></svg><span>Visão geral</span></button>
+            <button class="nav-button" data-page="alunos" data-roles="dono recepcao" type="button"><svg class="icon"><use href="#icon-users"></use></svg><span>Alunos</span></button>
+            <button class="nav-button" data-page="pagamentos" data-roles="dono recepcao" type="button"><svg class="icon"><use href="#icon-card"></use></svg><span>Pagamentos</span></button>
+            <button class="nav-button" data-page="financeiro" data-role="dono" type="button"><svg class="icon"><use href="#icon-chart"></use></svg><span>Resultados</span></button>
+            <button class="nav-button" data-page="presencas" data-roles="dono recepcao" type="button"><svg class="icon"><use href="#icon-access"></use></svg><span>Acessos</span></button>
+            <button class="nav-button" data-page="planos" data-roles="dono recepcao" type="button"><svg class="icon"><use href="#icon-dumbbell"></use></svg><span>Planos</span></button>
+            <button class="nav-button" data-page="equipe" data-role="dono" type="button"><svg class="icon"><use href="#icon-team"></use></svg><span>Equipe</span></button>
+            <button class="nav-button" data-page="tela-aluno" data-role="dono" type="button"><svg class="icon"><use href="#icon-monitor"></use></svg><span>Tela do aluno</span></button>
+            <button class="nav-button" data-page="academias" data-role="admin_plataforma" type="button"><svg class="icon"><use href="#icon-building"></use></svg><span>Academias</span></button>
+            <button class="nav-button" data-page="cobrancas-frequency" data-role="admin_plataforma" type="button"><svg class="icon"><use href="#icon-card"></use></svg><span>Cobranças Frequency</span></button>
+            <button class="nav-button" data-page="pacotes" data-role="admin_plataforma" type="button"><svg class="icon"><use href="#icon-dumbbell"></use></svg><span>Pacotes e assinaturas</span></button>
+            <button class="nav-button" data-page="recebimento-frequency" data-role="admin_plataforma" type="button"><svg class="icon"><use href="#icon-settings"></use></svg><span>Meu QR e contato</span></button>
+            <button class="nav-button" data-page="assinatura" data-roles="dono recepcao" type="button"><svg class="icon"><use href="#icon-shield"></use></svg><span>Assinatura Frequency</span></button>
+            <button class="nav-button" data-page="preferencias" data-roles="dono recepcao" type="button"><svg class="icon"><use href="#icon-settings"></use></svg><span>Preferências</span></button>
+            <a class="nav-button" href="/integracoes#cameras" data-role="dono" hidden><svg class="icon"><use href="#icon-monitor"></use></svg><span>Câmeras de segurança</span></a>
+            <a class="nav-button" href="/integracoes#spotify" data-role="dono" hidden><svg class="icon"><use href="#icon-settings"></use></svg><span>Spotify</span></a>
+          </nav>
+          <div class="sidebar-note">
+            <img class="sidebar-mark" src="/static/brand-mark.svg" alt="">
+            <span><strong>Frequency</strong><small>Gestão da academia</small></span>
+          </div>
+        </aside>
+
+        <main class="main-content">
+          <div id="subscription-banner" class="subscription-banner" role="alert" hidden><svg class="icon"><use href="#icon-alert"></use></svg><div><strong id="subscription-banner-title"></strong><p id="subscription-banner-copy"></p></div><button class="button button-quiet button-small" data-go="assinatura" type="button">Ver assinatura</button></div>
+          <div id="app-notice" class="notice" role="status" aria-live="polite" hidden></div>
+
+          <section class="page" data-view="negocio" hidden>
+            <div class="page-heading"><div><p class="eyebrow">FREQUENCY · EMPRESA</p><h1>Meu negócio</h1><p class="muted">Da primeira academia ao próximo crescimento.</p></div><button class="button button-secondary" data-refresh-business type="button"><svg class="icon"><use href="#icon-refresh"></use></svg><span>Atualizar</span></button></div>
+            <div class="business-hero"><div><span class="eyebrow">O SEU NEGÓCIO EM MOVIMENTO</span><h2>Uma visão clara.<br>Decisões melhores.</h2><p>Receita recebida, novos contratos e atenção aos vencimentos.</p><button class="button button-primary" data-go="academias" type="button"><svg class="icon"><use href="#icon-plus"></use></svg><span>Cadastrar academia</span></button></div><div class="hero-graphic" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><svg class="icon"><use href="#icon-chart"></use></svg></div></div>
+            <div id="business-stats" class="stats-grid stats-four"></div>
+            <div class="section-toolbar"><div><h2>Saúde financeira</h2><p class="muted">Valores separados por moeda, sem conversão cambial.</p></div><label class="compact-label">Moeda<select id="business-currency"><option value="BRL">BRL</option><option value="BOB">BOB</option></select></label></div>
+            <div id="business-money" class="stats-grid"></div>
+            <div class="analytics-grid"><article class="panel"><div class="panel-heading"><div><h2>Receita recebida</h2><p class="muted">Últimos 12 meses · pela data de pagamento</p></div><span class="chart-key"><i></i><span>Recebido</span></span></div><div id="business-chart" class="revenue-chart"></div></article><article class="panel"><div class="panel-heading"><div><h2>Novas assinaturas</h2><p class="muted">Contratos criados por mês</p></div></div><div id="business-sales" class="revenue-chart"></div></article></div>
+            <article class="panel"><div class="panel-heading"><div><h2>Precisa da sua atenção</h2><p class="muted">Academias com aviso ou acesso bloqueado.</p></div><button class="button button-quiet button-small" data-go="cobrancas-frequency" type="button">Ver cobranças</button></div><div id="business-attention"></div></article>
+          </section>
+
+          <section class="page" data-view="financeiro" hidden>
+            <div class="page-heading"><div><p class="eyebrow">GESTÃO FINANCEIRA</p><h1>Resultados da academia</h1><p class="muted">Acompanhe recebimentos, pendências e novas matrículas.</p></div><button class="button button-secondary" id="refresh-finance" type="button">Atualizar</button></div>
+            <div class="section-toolbar"><p class="muted">Valores separados por moeda, sem conversão cambial.</p><label class="compact-label">Moeda<select id="finance-currency"></select></label></div>
+            <div id="finance-stats" class="stats-grid"></div>
+            <div class="analytics-grid"><article class="panel"><div class="panel-heading"><div><h2>Receita recebida</h2><p class="muted">Últimos 12 meses · pela data de pagamento</p></div></div><div id="finance-chart" class="revenue-chart"></div></article><article class="panel"><div class="panel-heading"><div><h2>Novas matrículas</h2><p class="muted">Alunos cadastrados por mês</p></div></div><div id="finance-sales" class="revenue-chart"></div></article></div>
+            <div class="panel metric-explanation"><svg class="icon"><use href="#icon-chart"></use></svg><p>Receita corresponde aos pagamentos confirmados. Cobranças em aberto representam valores a receber. O lucro exige também o registro das despesas.</p></div>
+          </section>
+
+          <section class="page" data-view="cobrancas-frequency" hidden>
+            <div class="page-heading"><div><p class="eyebrow">RECEBIMENTOS DA PLATAFORMA</p><h1>Cobranças Frequency</h1><p class="muted">Gerencie o que as academias pagam pelo software.</p></div><button id="export-frequency-invoices" class="button button-secondary" type="button"><svg class="icon"><use href="#icon-download"></use></svg><span>Exportar CSV</span></button></div>
+            <div class="policy-strip"><span><strong>2 dias</strong> Aviso de atraso</span><span><strong>5 dias</strong> Sistema e catraca bloqueados</span><span><svg class="icon"><use href="#icon-shield"></use></svg> Regularização pelo administrador</span></div>
+            <article class="panel"><div class="collection-filters"><label class="select-label">Situação<select id="frequency-invoice-filter"><option value="todas">Todas as cobranças</option><option value="em_aberto">Em aberto</option><option value="pago">Pagas</option><option value="cancelado">Canceladas</option><option value="estornado">Estornadas</option></select></label><label class="select-label">Buscar academia<input id="frequency-invoice-search" type="search" placeholder="Digite para filtrar"></label></div><div class="table-wrap"><table><thead><tr><th>Academia / referência</th><th>Vencimento</th><th>Valor</th><th>Status</th><th>Ações</th></tr></thead><tbody id="frequency-invoices"></tbody></table></div><p id="frequency-invoices-empty" class="list-empty" hidden>Nenhuma cobrança encontrada para este filtro.</p><p class="field-help">Mostrando até 500 faturas. A exportação acompanha o filtro atual.</p></article>
+            <details class="panel audit-panel"><summary>Histórico de alterações</summary><div id="frequency-audit" class="audit-list"></div></details>
+          </section>
+
+          <section class="page" data-view="pacotes" hidden>
+            <div class="page-heading"><div><p class="eyebrow">OFERTA COMERCIAL</p><h1>Pacotes e assinaturas</h1><p class="muted">Defina seus preços e vincule cada academia a um pacote.</p></div></div>
+            <div class="template-strip"><div><strong>Comece com três pacotes</strong><p class="muted">Use os nomes sugeridos e defina seu preço e condições.</p></div><button class="button button-quiet" data-package-template="Essencial" type="button">Essencial</button><button class="button button-quiet" data-package-template="Profissional" type="button">Profissional</button><button class="button button-quiet" data-package-template="Premium" type="button">Premium</button></div>
+            <div id="frequency-plans" class="plans-grid"></div>
+            <details class="panel form-disclosure" id="package-create"><summary>Novo pacote</summary><form id="frequency-plan-form" class="form-grid" data-sync-write><label>Nome *<input name="nome" required maxlength="100"></label><label>Descrição<input name="descricao" maxlength="600"></label><label>Valor *<input name="valor" type="number" min="0.01" max="9999999999.99" step="0.01" required></label><label>Moeda<select name="moeda"><option>BRL</option><option>BOB</option><option>USD</option><option>EUR</option><option>GBP</option><option>CNY</option><option>INR</option></select></label><label>Duração em dias *<input name="duracao_dias" type="number" min="1" max="3660" step="1" value="30" required></label><div class="form-actions"><button class="button button-primary" type="submit">Criar pacote</button></div></form></details>
+            <form id="frequency-subscription-form" class="panel form-grid" data-sync-write><div class="panel-heading form-heading"><div><h2>Vincular academia</h2><p class="muted">Cria a assinatura e sua primeira fatura.</p></div></div><label>Academia *<select name="academia_id" id="subscription-academy" required></select></label><label>Pacote *<select name="plano_id" id="subscription-plan" required></select></label><label>Primeiro vencimento *<input name="vencimento" type="date" required></label><p class="field-help">Cada pagamento confirmado gera a fatura do próximo período. Não há débito automático no banco.</p><div class="form-actions"><button class="button button-primary" type="submit">Criar assinatura</button></div></form>
+            <article class="panel"><div class="panel-heading"><h2>Assinaturas das academias</h2></div><div class="table-wrap"><table><thead><tr><th>Academia</th><th>Pacote</th><th>Situação</th><th>Vencimento</th><th>Ações</th></tr></thead><tbody id="frequency-subscriptions"></tbody></table></div></article>
+          </section>
+
+          <section class="page" data-view="recebimento-frequency" hidden>
+            <div class="page-heading"><div><p class="eyebrow">CONFIGURAÇÃO DE RECEBIMENTO</p><h1>Meu QR e contato</h1><p class="muted">Seus dados para as academias pagarem o Frequency.</p></div></div>
+            <div class="settings-columns"><article class="panel"><h2>QR do Frequency</h2><p class="muted">Cadastre uma imagem de QR para cada moeda em que você recebe.</p><label>Moeda<select id="platform-qr-currency"><option>BRL</option><option>BOB</option><option>USD</option><option>EUR</option><option>GBP</option><option>CNY</option><option>INR</option></select></label><div class="qr-frame"><img id="platform-qr-image" alt="QR do Frequency" hidden><p id="platform-qr-empty" class="muted">Nenhum QR cadastrado.</p></div><label class="upload-card" data-sync-write><svg class="icon"><use href="#icon-plus"></use></svg><strong>Adicionar ou substituir o QR</strong><span class="field-help">PNG, JPG ou WebP · até 2 MB</span><input id="platform-qr-file" type="file" accept="image/png,image/jpeg,image/webp"></label><button id="platform-qr-remove" class="button button-quiet button-small" type="button" data-sync-write hidden>Remover QR</button><p class="qr-payment-note">Confirme o recebimento no banco antes de baixar uma fatura. A imagem do QR, sozinha, não confirma pagamentos.</p></article>
+            <form id="frequency-contact-form" class="panel form-stack" data-sync-write><h2>Contato do administrador</h2><p class="muted">Aparece para a academia quando ela precisa regularizar a assinatura.</p><label>E-mail<input name="contato_email" type="email" maxlength="254"></label><label>Telefone<input name="contato_telefone" type="tel" maxlength="40"></label><button class="button button-primary" type="submit">Salvar contato</button></form></div>
+          </section>
+
+          <section class="page" data-view="assinatura" hidden>
+            <div class="page-heading"><div><p class="eyebrow">SUA CONTA FREQUENCY</p><h1>Assinatura Frequency</h1><p class="muted">Consulte o vencimento e os dados para regularizar sua assinatura.</p></div><button id="refresh-subscription" class="button button-secondary" type="button">Atualizar situação</button></div>
+            <div id="owner-subscription-state" class="subscription-state"></div>
+            <div id="owner-billing-content" hidden><div class="settings-columns"><article class="panel"><h2>Próxima cobrança</h2><div id="owner-invoice-summary"></div><div id="owner-payment-actions" class="form-actions"></div><div class="qr-frame"><img id="owner-frequency-qr" alt="QR do Frequency" hidden><p id="owner-frequency-qr-empty" class="muted">Nenhum QR cadastrado.</p></div><p class="qr-payment-note">1. Faça o depósito pelo QR. 2. Guarde o comprovante. 3. Envie-o pelo WhatsApp ao administrador.</p></article><article class="panel"><h2>Contato do administrador</h2><div id="owner-frequency-contact" class="contact-card"></div><div class="policy-card"><svg class="icon"><use href="#icon-shield"></use></svg><h3>Evite a interrupção do serviço</h3><p>Com 2 dias de atraso, um aviso aparece no sistema. Com 5 dias, o sistema e as entradas pela catraca são bloqueados.</p></div></article></div><article class="panel"><h2>Histórico de faturas</h2><div class="table-wrap"><table><thead><tr><th>Referência</th><th>Vencimento</th><th>Valor</th><th>Status</th></tr></thead><tbody id="owner-frequency-invoices"></tbody></table></div></article></div>
+          </section>
+
+          <section class="page" data-view="preferencias" hidden>
+            <div class="page-heading"><div><p class="eyebrow">DO SEU JEITO</p><h1>Preferências</h1><p class="muted">Idioma, localização e identidade da academia.</p></div></div>
+            <article class="panel"><h2>Idioma da sua conta</h2><p class="muted">Você escolhe o idioma. A moeda acompanha o país da academia.</p><label class="select-label">Idioma<select id="preference-language"><option value="pt-BR">Português (Brasil)</option><option value="es-BO">Español</option><option value="en-US">English</option><option value="zh-CN">中文（简体）</option><option value="hi-IN">हिन्दी</option></select></label><p id="language-save-state" class="field-help" role="status"></p></article>
+            <form id="academy-preferences-form" class="panel form-grid" data-role="dono" data-sync-write><div class="panel-heading form-heading"><div><h2>Localização da academia</h2><p class="muted">Confira o endereço e as referências de pagamento.</p></div></div><label>País<select name="pais" id="preferences-country" required></select></label><label>Cidade<input name="cidade" maxlength="120"></label><label>Estado / departamento<input name="estado" maxlength="120"></label><label>Endereço<input name="endereco" maxlength="300"></label><label>Código postal<input name="codigo_postal" maxlength="30"></label><div id="preferences-country-summary" class="country-summary"></div><div class="form-actions"><button class="button button-primary" type="submit">Salvar localização</button></div></form>
+            <article class="panel" data-role="dono"><div class="panel-heading"><div><h2>Identidade na entrada</h2><p class="muted">Mostre a logo da sua academia no monitor do aluno.</p></div><button class="button button-secondary" data-go="tela-aluno" type="button">Personalizar monitor</button></div></article>
+          </section>
+
+          <section class="page" data-view="dashboard" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">RESUMO</p>
+                <h1>Visão geral</h1>
+                <p class="muted">Acompanhe a situação dos alunos da sua academia.</p>
+              </div>
+              <button class="button button-secondary" data-go="alunos" type="button"><span>Ver alunos</span><svg class="icon"><use href="#icon-arrow-right"></use></svg></button>
+            </div>
+            <div id="dashboard-stats" class="stats-grid"></div>
+            <div class="panel">
+              <div class="panel-heading">
+                <div>
+                  <h2>Situação dos alunos</h2>
+                  <p class="muted">Informações de vencimento e alertas.</p>
+                </div>
+                <button id="refresh-dashboard" class="button button-quiet" type="button"><svg class="icon"><use href="#icon-refresh"></use></svg><span>Atualizar</span></button>
+              </div>
+              <div id="dashboard-list" class="list-empty">Carregando…</div>
+            </div>
+          </section>
+
+          <section class="page" data-view="alunos" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">CADASTRO</p>
+                <h1>Alunos</h1>
+                <p id="students-description" class="muted">Consulte os alunos e cadastre novas matrículas.</p>
+              </div>
+              <button id="show-student-form" class="button button-primary" type="button" data-sync-write><svg class="icon"><use href="#icon-plus"></use></svg><span>Novo aluno</span></button>
+            </div>
+            <form id="student-form" class="panel form-grid" data-sync-write data-write-collapsed hidden>
+              <div class="panel-heading form-heading">
+                <div><h2>Novo aluno</h2><p class="muted">Os campos com * são obrigatórios.</p></div>
+                <button id="cancel-student-form" class="button button-quiet" type="button">Cancelar</button>
+              </div>
+              <label>Nome *<input name="nome" required maxlength="160"></label>
+              <label>Documento *<input name="documento" required maxlength="80"></label>
+              <label>Telefone<input name="telefone" maxlength="40"></label>
+              <label>Data de nascimento<input name="data_nascimento" type="date"></label>
+              <div class="photo-capture" aria-labelledby="student-photo-heading">
+                <div class="photo-capture-heading">
+                  <strong id="student-photo-heading">Foto do aluno (opcional)</strong>
+                  <span class="muted">Só registre uma imagem com autorização da pessoa.</span>
+                </div>
+                <div class="photo-preview-frame">
+                  <img id="student-photo-preview" alt="Prévia da foto do aluno" hidden>
+                  <video id="student-camera-video" autoplay playsinline muted hidden></video>
+                  <div id="student-photo-placeholder" class="photo-placeholder">Foto opcional</div>
+                </div>
+                <div class="photo-capture-actions">
+                  <button id="start-student-camera" class="button button-secondary" type="button">Tirar foto</button>
+                  <button id="capture-student-photo" class="button button-primary" type="button" hidden>Capturar foto</button>
+                  <button id="cancel-student-camera" class="button button-quiet" type="button" hidden>Cancelar câmera</button>
+                  <button id="choose-student-photo" class="button button-quiet" type="button">Selecionar imagem</button>
+                  <input id="student-photo-file" class="photo-file-input" type="file" accept="image/jpeg,image/png,image/webp">
+                  <button id="clear-student-photo" class="button button-quiet" type="button" hidden>Remover foto</button>
+                </div>
+                <label class="photo-authorization">
+                  <input id="student-photo-authorized" type="checkbox">
+                  <span>Confirmo que a pessoa autorizou o cadastro desta foto.</span>
+                </label>
+              </div>
+              <label>Plano<select name="plano_id" id="student-plan"><option value="">Sem plano</option></select></label>
+              <label>Identificador da biometria<input name="id_biometria" type="number" min="1" step="1"></label>
+              <div class="form-actions"><button class="button button-primary" type="submit">Salvar aluno</button></div>
+            </form>
+            <form id="student-edit-form" class="panel form-grid" data-sync-write data-write-collapsed hidden>
+              <div class="panel-heading form-heading">
+                <div><h2>Editar dados do aluno</h2><p class="muted">Documento, telefone e nascimento. Plano, cobranças e biometria não serão alterados.</p></div>
+                <button id="cancel-student-edit-form" class="button button-quiet" type="button">Cancelar</button>
+              </div>
+              <label>Documento *<input name="documento" required maxlength="80"></label>
+              <label>Telefone<input name="telefone" maxlength="40"></label>
+              <label>Data de nascimento<input name="data_nascimento" type="date"></label>
+              <div class="form-actions"><button class="button button-primary" type="submit">Salvar alterações</button></div>
+            </form>
+            <div class="panel table-panel">
+              <div class="panel-heading"><h2>Alunos cadastrados</h2><span id="students-count" class="count-pill">0</span></div>
+              <label class="student-search"><span id="student-search-label">Buscar por nome ou documento</span>
+                <input id="student-search" type="search" placeholder="Digite para filtrar" autocomplete="off">
+              </label>
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>Nome</th><th>Documento</th><th>Plano</th><th>Status</th><th></th></tr></thead>
+                  <tbody id="students-table"></tbody>
+                </table>
+              </div>
+              <p id="students-empty" class="list-empty" hidden>Nenhum aluno cadastrado ainda.</p>
+              <p id="students-no-results" class="list-empty" hidden>Nenhum aluno corresponde à busca.</p>
+            </div>
+          </section>
+
+          <section class="page" data-view="pagamentos" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">FINANCEIRO</p>
+                <h1>Pagamentos</h1>
+                <p id="payments-description" class="muted">Consulte cobranças e registre pagamentos recebidos.</p>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="collection-filters">
+                <label class="select-label">Aluno
+                  <select id="payment-student"><option value="">Todos os alunos</option></select>
+                </label>
+                <label class="select-label">Situação
+                  <select id="payment-filter">
+                    <option value="todos">Todas as cobranças</option>
+                    <option value="abertos">Em aberto</option>
+                    <option value="atrasados">Atrasadas</option>
+                    <option value="pagos">Pagas</option>
+                  </select>
+                </label>
+              </div>
+              <div class="panel qr-payment-panel">
+                <div class="panel-heading">
+                  <div><h2>QR de pagamento da academia</h2><p class="muted">Adicione ou troque a imagem do QR usado para receber.</p></div>
+                </div>
+                <p id="academy-qr-empty" class="muted">Nenhum QR cadastrado.</p>
+                <img id="academy-qr-image" class="academy-qr-image" alt="QR de pagamento da academia" hidden>
+                <label class="qr-upload-label" data-role="dono">Adicionar ou substituir o QR
+                  <input id="academy-qr-file" type="file" accept="image/png,image/jpeg,image/webp">
+                </label>
+                <button id="remove-academy-qr" class="button button-quiet button-small" type="button" data-role="dono" hidden>Remover QR</button>
+                <p class="qr-payment-note">Este QR é uma imagem informativa. Até conectar um provedor bancário com confirmação automática, a equipe precisa confirmar o recebimento antes de baixar a cobrança.</p>
+              </div>
+              <div class="table-wrap payment-table-wrap">
+                <table>
+                  <thead><tr><th>Aluno</th><th>Vencimento</th><th>Valor</th><th>Status</th><th></th></tr></thead>
+                  <tbody id="payments-table"></tbody>
+                </table>
+              </div>
+              <p id="payments-empty" class="list-empty" hidden>Nenhuma cobrança encontrada para este filtro.</p>
+            </div>
+          </section>
+
+          <section class="page" data-view="presencas" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">CATRACA</p>
+                <h1>Histórico de acessos</h1>
+                <p class="muted">Últimas 100 tentativas de entrada registradas.</p>
+              </div>
+              <button id="refresh-presencas" class="button button-secondary" type="button">Atualizar</button>
+            </div>
+            <div class="panel table-panel">
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>Data e hora</th><th>Aluno</th><th>Resultado</th><th>Motivo</th></tr></thead>
+                  <tbody id="presencas-table"></tbody>
+                </table>
+              </div>
+              <p id="presencas-empty" class="list-empty" hidden>Nenhum acesso registrado ainda.</p>
+            </div>
+          </section>
+
+          <section class="page" data-view="planos" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">MATRÍCULAS</p>
+                <h1>Planos</h1>
+                <p class="muted">Veja os planos disponíveis para os alunos.</p>
+              </div>
+            </div>
+            <form id="plan-form" class="panel form-grid" data-role="dono" data-sync-write>
+              <div class="panel-heading form-heading"><div><h2>Novo plano</h2><p class="muted">Defina o valor e a duração.</p></div></div>
+              <label>Nome do plano *<input name="nome" required maxlength="100" placeholder="Mensal"></label>
+              <label><span id="plan-value-label">Valor (BRL) *</span><input name="valor" type="number" min="0.01" step="0.01" required></label>
+              <label>Duração em dias *<input name="duracao_dias" type="number" min="1" max="3660" step="1" required></label>
+              <div class="form-actions"><button class="button button-primary" type="submit">Criar plano</button></div>
+            </form>
+            <div id="plans-list" class="plans-grid"></div>
+            <p id="plans-empty" class="list-empty" hidden>Nenhum plano cadastrado ainda.</p>
+          </section>
+
+          <section class="page" data-view="tela-aluno" data-role="dono" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">EXPERIÊNCIA NA ENTRADA</p>
+                <h1>Tela do aluno</h1>
+                <p class="muted">Configure o segundo monitor, o som de acesso e a identidade visual da academia.</p>
+              </div>
+              <a class="button button-secondary" href="/monitor" target="_blank" rel="noopener">Abrir segunda tela</a>
+            </div>
+            <div class="panel form-grid monitor-settings-grid">
+              <div class="monitor-settings-copy">
+                <h2>Conectar o monitor</h2>
+                <p class="muted">Gere um código e informe-o somente no computador ligado ao monitor da entrada. O código libera apenas a tela de resultado; não dá acesso ao painel nem ao histórico.</p>
+                <p id="monitor-key-status" class="field-help">Verificando configuração…</p>
+                <button id="generate-monitor-key" class="button button-primary" type="button">Gerar ou renovar código</button>
+                <label id="monitor-key-wrap" hidden>Código da tela<input id="monitor-key-value" readonly autocomplete="off" spellcheck="false"></label>
+                <button id="copy-monitor-key" class="button button-quiet" type="button" hidden>Copiar código</button>
+              </div>
+              <div class="monitor-logo-panel">
+                <div>
+                  <h2>Logo da academia</h2>
+                  <p class="muted">A imagem será exibida na segunda tela. Ela fica nesta instalação e pode ser trocada ou removida.</p>
+                </div>
+                <div class="monitor-logo-preview-frame"><img id="monitor-logo-preview" alt="Logo da academia" hidden><span id="monitor-logo-placeholder">Sua logo aparece aqui</span></div>
+                <label class="button button-secondary monitor-logo-select">Escolher logo<input id="monitor-logo-file" type="file" accept="image/jpeg,image/png,image/webp"></label>
+                <button id="remove-monitor-logo" class="button button-quiet" type="button" hidden>Remover logo</button>
+              </div>
+            </div>
+            <div class="panel monitor-notes">
+              <h2>O que aparece para o aluno</h2>
+              <ul>
+                <li>Som curto e claro quando a entrada é liberada; tom diferente quando é recusada.</li>
+                <li>Ícone e mensagem grandes, com bom contraste, que desaparecem automaticamente.</li>
+                <li>Nome abreviado e foto opcional; documento, telefone e histórico não aparecem.</li>
+              </ul>
+              <p class="field-help">Ative o som uma vez no próprio monitor. Navegadores exigem esse toque antes de permitir áudio.</p>
+            </div>
+          </section>
+
+          <section class="page" data-view="equipe" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">ACESSO</p>
+                <h1>Equipe</h1>
+                <p class="muted">Crie, consulte e suspenda acessos da recepção da sua academia.</p>
+              </div>
+            </div>
+            <form id="reception-form" class="panel form-grid narrow-form" data-sync-write>
+              <label>Nome *<input name="nome" required maxlength="160"></label>
+              <label>E-mail *<input name="email" type="email" required maxlength="254"></label>
+              <label>Senha inicial *<input name="senha" type="password" minlength="8" maxlength="256" required autocomplete="new-password"><span class="field-help">Use pelo menos 8 caracteres e compartilhe a senha por um canal seguro.</span></label>
+              <div class="form-actions"><button class="button button-primary" type="submit">Criar acesso</button></div>
+            </form>
+            <div class="panel table-panel">
+              <div class="panel-heading"><h2>Contas de recepção</h2><button id="refresh-reception" class="button button-quiet" type="button">Atualizar</button></div>
+              <div class="table-wrap"><table><thead><tr><th>Nome</th><th>E-mail</th><th>Status</th><th>Ações</th></tr></thead><tbody id="reception-table"></tbody></table></div>
+              <p id="reception-empty" class="list-empty" hidden>Nenhuma conta de recepção cadastrada.</p>
+            </div>
+          </section>
+
+          <section class="page" data-view="academias" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">PLATAFORMA</p>
+                <h1>Academias</h1>
+                <p id="academies-description" class="muted">Cadastre e administre academias na plataforma.</p>
+              </div>
+            </div>
+            <form id="academy-form" class="panel form-grid" data-sync-write>
+              <div class="panel-heading form-heading"><div><h2>Nova academia</h2><p class="muted">Será criado também o acesso do dono.</p></div></div>
+              <label>Nome da academia *<input name="nome_academia" required maxlength="160"></label>
+              <label>País *<input name="pais" required maxlength="80"></label>
+              <label>Logo da academia (opcional)<input id="academy-logo-file" type="file" accept="image/jpeg,image/png,image/webp"><span class="field-help">Ela pode aparecer na tela do aluno. PNG, JPG ou WebP; até 5 MB.</span></label>
+              <label>Nome do dono *<input name="nome_dono" required maxlength="160"></label>
+              <label>E-mail do dono *<input name="email_dono" type="email" required maxlength="254"></label>
+              <label>Senha inicial do dono *<input name="senha_dono" type="password" minlength="8" maxlength="256" required autocomplete="new-password"></label>
+              <div class="form-actions"><button class="button button-primary" type="submit">Criar academia</button></div>
+            </form>
+            <div class="panel table-panel">
+              <div class="panel-heading"><h2>Academias cadastradas</h2><button id="refresh-academies" class="button button-quiet" type="button">Atualizar</button></div>
+              <div class="table-wrap"><table><thead><tr><th>Nome</th><th>País</th><th>Status</th><th></th></tr></thead><tbody id="academies-table"></tbody></table></div>
+              <p id="academies-empty" class="list-empty" hidden>Nenhuma academia cadastrada.</p>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
+

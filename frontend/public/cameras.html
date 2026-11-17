@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Câmeras de segurança · Frequency</title>
+  <link rel="icon" href="/static/brand-mark.svg"><link rel="stylesheet" href="/static/styles.css?v=14">
+  <link rel="stylesheet" href="/static/integracoes.css?v=4">
+  <script src="/static/i18n.js?v=3"></script><script type="module" src="/static/integracoes.mjs?v=20"></script>
+</head>
+<body data-feature="cameras">
+  <svg class="camera-icon-library" aria-hidden="true" focusable="false">
+    <symbol id="camera-eye" viewBox="0 0 24 24"><path d="M3 12s3.2-5 9-5 9 5 9 5-3.2 5-9 5-9-5-9-5Z"/><circle cx="12" cy="12" r="2.4"/></symbol>
+    <symbol id="camera-plus" viewBox="0 0 24 24"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="M8 12h5M10.5 9.5v5M16 10l5-3v10l-5-3"/></symbol>
+    <symbol id="camera-wifi" viewBox="0 0 24 24"><path d="M3 9a14 14 0 0 1 18 0M6 12a9 9 0 0 1 12 0M9 15a5 5 0 0 1 6 0M12 19h.01"/></symbol>
+  </svg>
+  <main class="integrations">
+    <a class="integration-back" href="/app">← Voltar ao Frequency</a>
+    <header class="camera-page-header"><span class="camera-brand-mark"><svg class="camera-icon"><use href="#camera-eye"></use></svg></span><div><p class="eyebrow">MONITORAMENTO OPCIONAL</p><h1>Câmeras de segurança</h1><p class="muted">Acompanhe os pontos da academia sem gravar imagens no Frequency.</p></div><label class="integration-language"><span>Idioma</span><select id="integration-language" aria-label="Idioma"><option value="pt-BR">Português</option><option value="es-BO">Español</option><option value="en-US">English</option><option value="zh-CN">中文</option><option value="hi-IN">हिन्दी</option></select></label><span class="camera-status-pill"><i></i> Privacidade ativa</span></header>
+    <p id="integration-status" role="status" aria-live="polite">Verificando acesso…</p>
+    <div id="integration-content" hidden>
+      <section id="cameras" class="camera-shell">
+        <div class="camera-toolbar"><div><p class="eyebrow">CENTRAL DE CÂMERAS</p><h2>Visualização ao vivo</h2><p class="muted">Cadastre uma transmissão e conecte somente quando precisar acompanhar.</p></div><div class="camera-toolbar-note"><svg class="camera-icon"><use href="#camera-wifi"></use></svg><span>Até 8 pontos<br><small>por navegador</small></span></div></div>
+        <div class="camera-privacy"><svg class="camera-icon"><use href="#camera-eye"></use></svg><span><strong>Seus streams ficam locais</strong><br>O endereço é salvo apenas neste navegador. Nenhuma imagem é armazenada ou enviada ao Frequency.</span></div>
+        <div class="camera-add-heading"><div><p class="eyebrow">ADICIONAR PONTO</p><h3>Nova câmera</h3></div><span>Use os dados fornecidos pelo instalador</span></div>
+        <form id="camera-form" class="form-grid">
+          <label>Nome da câmera<input name="name" required maxlength="80" placeholder="Entrada principal"><small>Um nome fácil de reconhecer</small></label>
+          <label>Formato<select name="kind"><option value="mjpeg">MJPEG ao vivo</option><option value="video">Vídeo do navegador</option></select><small>Confirme o formato com o instalador</small></label>
+          <label class="wide">Endereço da transmissão<input name="url" type="url" required maxlength="2048" placeholder="https://camera.exemplo/stream"></label>
+          <p class="wide field-help">Use HTTPS quando o Frequency estiver em HTTPS. RTSP e ONVIF precisam de uma ponte local instalada pelo técnico. Não coloque senha ou token no endereço.</p>
+          <button class="button button-primary" type="submit"><svg class="camera-icon"><use href="#camera-plus"></use></svg><span>Adicionar câmera</span></button>
+        </form>
+        <div class="camera-list-heading"><div><p class="eyebrow">SEUS PONTOS</p><h3>Câmeras cadastradas</h3></div><span>Conecte manualmente quando quiser</span></div>
+        <div id="camera-list" class="camera-grid"></div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
+

@@ -1,0 +1,14 @@
+frequencygym.tech, www.frequencygym.tech {
+    encode gzip
+    header {
+        # "?" só define o cabeçalho quando a aplicação não definiu o seu.
+        # Assim /app, /monitor, /cameras e /youtube mantêm a política própria
+        # (DENY/SAMEORIGIN + CSP) sem valores duplicados ou conflitantes.
+        ?X-Content-Type-Options "nosniff"
+        ?X-Frame-Options "SAMEORIGIN"
+        ?Referrer-Policy "strict-origin-when-cross-origin"
+        Strict-Transport-Security "max-age=31536000; includeSubDomains"
+        Permissions-Policy "camera=(self), microphone=(self), geolocation=()"
+    }
+    reverse_proxy app:8000
+}
