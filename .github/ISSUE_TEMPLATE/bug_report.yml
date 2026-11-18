@@ -1,0 +1,38 @@
+name: Relatar um problema
+description: Relate um defeito com passos reproduzíveis e dados de demonstração.
+title: "[BUG] "
+labels: ["bug", "triagem"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use somente uma academia e alunos fictícios. Remova tokens, cookies e URLs privadas.
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passos para reproduzir
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Resultado esperado
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Resultado atual
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Ambiente
+      description: Informe versão, navegador, sistema e se foi local/staging; não inclua credenciais.
+    validations:
+      required: true

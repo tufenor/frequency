@@ -52,6 +52,10 @@ As variáveis de ambiente seguem o modelo em `backend/.env.example`. Nenhuma cre
 
 Em desenvolvimento. Cada módulo tem seu próprio estágio de validação; este repositório é o código-fonte, não um produto lançado.
 
+## Como sugerir código
+
+Você pode propor uma melhoria de produto, API, interface ou teste abrindo uma [issue de ideia](../../issues/new?template=feature_request.yml). Para um defeito, use o [modelo de bug](../../issues/new?template=bug_report.yml). Consulte a [guia de contribuição](CONTRIBUTING.md) antes de incluir migrations, capturas ou dados de demonstração.
+
 Os dados que aparecem nas capturas são de demonstração. O manual em `docs/manual_cliente/` foi escrito para acompanhar a entrega.
 
 ## O que **não** está aqui

@@ -1,0 +1,53 @@
+name: Ideia de código ou melhoria
+description: Proponha uma melhoria de produto, API, interface, teste ou documentação.
+title: "[IDEIA] "
+labels: ["ideia", "triagem"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use dados fictícios. Não cole dados de alunos, tokens, dumps ou URLs internas.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema observado
+      description: Quem encontra o problema e em qual fluxo?
+    validations:
+      required: true
+  - type: dropdown
+    id: module
+    attributes:
+      label: Módulo
+      options:
+        - Alunos
+        - Planos e pagamentos
+        - Controle de acesso
+        - Relatórios
+        - Integrações
+        - App mobile
+        - API/backend
+        - Frontend/acessibilidade
+        - Infraestrutura/documentação
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposta
+      description: Descreva o comportamento desejado e as restrições conhecidas.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critérios de aceite
+      description: Inclua testes, telas, endpoints ou cenários que devem passar.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Segurança dos dados
+      options:
+        - label: Não incluí dados pessoais, credenciais, dumps ou segredos.
+          required: true
